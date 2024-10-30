@@ -158,7 +158,7 @@ const tableHtmlBody = document.getElementById("code-html-explanation-table");
 codeHtmlExplanations.forEach(item => {
     const row = `
         <tr>
-            <td class="py-2 px-4 text-sm text-gray-800 mono text-center">${item.nomor}</td>
+            <td class="py-2 px-4 text-sm text-gray-800 font-mono text-center">${item.nomor}</td>
             <td class="py-2 px-4 text-sm text-gray-800 font-mono">${item.code_html}</td>
             <td class="py-2 px-4 text-sm text-gray-700">${item.explanation_html}</td>
         </tr>
@@ -179,7 +179,7 @@ const tableCssBody = document.getElementById("code-css-explanation-table");
 codeCssExplanations.forEach(item => {
     const row = `
         <tr>
-            <td class="py-2 px-4 text-sm text-gray-800 mono text-center">${item.nomor}</td>
+            <td class="py-2 px-4 text-sm text-gray-800 font-mono text-center">${item.nomor}</td>
             <td class="py-2 px-4 text-sm text-gray-800 font-mono">${item.code_css}</td>
             <td class="py-2 px-4 text-sm text-gray-700">${item.explanation_css}</td>
         </tr>
