@@ -1,0 +1,75 @@
+/* Each element is rearranged to ensure no margins, padding, or border-boxes affect the layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The body of the page is set to display the content centered and has a height of 100% of the viewport */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f9fc;
+    font-family: Arial, sans-serif;
+}
+
+/* The scene (view block) is set to 250px x 250px and has a 3D perspective */
+.scene {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+/* Cube is set to 100% of the scene and has a 3D rotation effect */
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg);
+    animation: rotateCube 15s infinite linear;
+}
+
+/* Each side of the cube is set with a different background color */
+.face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 150, 255, 0.8);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Each side of the cube is set with a different 3D transformation */
+.front  { transform: translateZ(125px); background: #1e90ff; }
+.back   { transform: rotateY(180deg) translateZ(125px); background: #ff6347; }
+.left   { transform: rotateY(-90deg) translateZ(125px); background: #32cd32; }
+.right  { transform: rotateY(90deg) translateZ(125px); background: #ff4500; }
+.top    { transform: rotateX(90deg) translateZ(125px); background: #ffd700; }
+.bottom { transform: rotateX(-90deg) translateZ(125px); background: #dcdcdc; }
+
+/* Continuously rotating cube animation */
+@keyframes rotateCube {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Responsiveness of cube and its sides for screens with width less than 600px */
+@media (max-width: 600px) {
+    .scene {
+        width: 200px;
+        height: 200px;
+    }
+    .face {
+        width: 200px;
+        height: 200px;
+    }
+}

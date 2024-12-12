@@ -1,0 +1,164 @@
+[
+    {
+        "icon": "/src/public/aes.png",
+        "title": "AES Encoder/Decoder",
+        "summary": "Secures text with AES standard encryption, providing tools to encrypt and decrypt sensitive data.",
+        "link": "/tools/encoder%20decoder%20tools/AES%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/arrays.png",
+        "title": "Arrays Encoder/Decoder",
+        "summary": "Converting data arrays or text into encrypted form and decrypting them back into their original format, makes data storage and processing easier.",
+        "link": "/tools/encoder%20decoder%20tools/Arrays%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/ascii.png",
+        "title": "ASCII Encoder/Decoder",
+        "summary": "A tool for converting text to ASCII code and vice versa, allowing the conversion of characters to numeric representation.",
+        "link": "/tools/encoder%20decoder%20tools/ASCII%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/atbash.png",
+        "title": "Atbash Encoder/Decoder",
+        "summary": "A classic cipher that reverses the alphabet, changing each letter to its opposite (A to Z, B to Y, etc.).",
+        "link": "/tools/encoder%20decoder%20tools/Atbash%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/base16.png",
+        "title": "Base16 Encoder/Decoder",
+        "summary": "Converts text to hexadecimal (Base16) representation and decrypts it back to its original text form.",
+        "link": "/tools/encoder%20decoder%20tools/Base16%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/base32.png",
+        "title": "Base32 Encoder/Decoder",
+        "summary": "A tool for converting text to Base32 code, often used in data encryption and secure processing.",
+        "link": "/tools/encoder%20decoder%20tools/Base32%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/base64.png",
+        "title": "Base64 Encoder/Decoder",
+        "summary": "Converts text to Base64 format, making it easy to send binary data in a secure text format.",
+        "link": "/tools/encoder%20decoder%20tools/Base64%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/binary.png",
+        "title": "Binary Encoder/Decoder",
+        "summary": "Converting text to binary code and vice versa, allows digital representation of text in the form of binary numbers.",
+        "link": "/tools/encoder%20decoder%20tools/Binary%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/block cipher.png",
+        "title": "Block Cipher Encoder/Decoder",
+        "summary": "A tool for encrypting and decrypting data using block ciphers, processing data in block chunks for more secure and stronger protection.",
+        "link": "/tools/encoder%20decoder%20tools/Block%20Cipher%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/blowfish.png",
+        "title": "Blowfish Encoder/Decoder",
+        "summary": "Using Blowfish algorithm to encrypt and decrypt data, with high security strength in block encryption, efficient and fast in the process.",
+        "link": "/tools/encoder%20decoder%20tools/Blowfish%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/caesar cipher.png",
+        "title": "Caesar Cipher Encoder/Decoder",
+        "summary": "A classic rotation cipher that replaces each letter with a letter moved a few positions in the alphabet.",
+        "link": "/tools/encoder%20decoder%20tools/Caesar%20Cipher%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/color.png",
+        "title": "Color Encoder/Decoder",
+        "summary": "Converting colors in color code formats (RGB, Hex) and vice versa, helps developers manage color data.",
+        "link": "/tools/encoder%20decoder%20tools/Color%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/file.png",
+        "title": "File Encoder/Decoder",
+        "summary": "A tool to encrypt and decrypt files to maintain data confidentiality and security.",
+        "link": "/tools/encoder%20decoder%20tools/File%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/hexadecimal.png",
+        "title": "Hexadecimal Encoder/Decoder",
+        "summary": "Converting text to hexadecimal representation and decrypting it back to its original form, often used in computer data processing.",
+        "link": "/tools/encoder%20decoder%20tools/Hexadecimal%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/html.png",
+        "title": "HTML Encoder/Decoder",
+        "summary": "Converting text to safe HTML entities and vice versa, helps avoid rendering and security issues on web pages.",
+        "link": "/tools/encoder%20decoder%20tools/HTML%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/image.png",
+        "title": "Image Encoder/Decoder",
+        "summary": "A tool for encrypting and decrypting images, allowing visual protection of data in image format.",
+        "link": "/tools/encoder%20decoder%20tools/Image%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/lowercase.png",
+        "title": "Lowercase Encoder/Decoder",
+        "summary": "Converting text to lowercase and vice versa, helps in normalization of text-based data.",
+        "link": "/tools/encoder%20decoder%20tools/Lowercase%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/morse.png",
+        "title": "Morse Encoder/Decoder",
+        "summary": "Converting text to Morse code and vice versa, allowing communication in dots and dashes format.",
+        "link": "/tools/encoder%20decoder%20tools/Morse%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/nato.png",
+        "title": "Nato Encoder/Decoder",
+        "summary": "Converting text to NATO phonetic alphabet code (A to Alpha, B to Bravo, etc.) and vice versa, often used in radio communications for clarity.",
+        "link": "/tools/encoder%20decoder%20tools/Nato%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/octal.png",
+        "title": "Octal Encoder/Decoder",
+        "summary": "Converting text to base-8 (octal) number representation and vice versa, is useful in low-level data processing.",
+        "link": "/tools/encoder%20decoder%20tools/Octal%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/rivest cipher.png",
+        "title": "Rivest Cipher Encoder/Decoder",
+        "summary": "Using RC4 stream cipher for data encryption and decryption, it is fast in processing and is often used in protocols such as SSL and WEP.",
+        "link": "/tools/encoder%20decoder%20tools/Rivest%20Cipher%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/rot-13.png",
+        "title": "ROT-13 Encoder/Decoder",
+        "summary": "Using the ROT-13 cipher to encrypt text by replacing each letter with a letter 13 positions away in the alphabet, and can be decrypted in the same way.",
+        "link": "/tools/encoder%20decoder%20tools/ROT-13%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/subscript.png",
+        "title": "Subscript Encoder/Decoder",
+        "summary": "Converting text to subscript form and vice versa, often used in scientific and mathematical notation.",
+        "link": "/tools/encoder%20decoder%20tools/Subscript%20Encoder%20Decoder/"
+    },
+    {   
+        "icon": "/src/public/superscript.png",
+        "title": "Superscript Encoder/Decoder",
+        "summary": "Converting text to superscript form and vice versa, facilitates the presentation of mathematical symbols and exponents.",
+        "link": "/tools/encoder%20decoder%20tools/Superscript%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/unicode.png",
+        "title": "Unicode Encoder/Decoder",
+        "summary": "Tool to convert text to Unicode code and vice versa, supporting various international symbols and characters.",
+        "link": "/tools/encoder%20decoder%20tools/Unicode%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/uppercase.png",
+        "title": "Uppercase Encoder/Decoder",
+        "summary": "Converting text to uppercase and vice versa, helps in formatting and standardizing text data.",
+        "link": "/tools/encoder%20decoder%20tools/Uppercase%20Encoder%20Decoder/"
+    },
+    {
+        "icon": "/src/public/url.png",
+        "title": "URL Encoder/Decoder",
+        "summary": "Converting text into a safe URL format (URL encoding) and decrypting it back, helps in managing safe URL parameters and data.",
+        "link": "/tools/encoder%20decoder%20tools/URL%20Encoder%20Decoder/"
+    }
+]

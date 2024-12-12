@@ -1,0 +1,21 @@
+/* Sets the font for the entire body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sets the grid display for the heatmap */
+.heatmap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Sets the appearance of each div in the heatmap */
+.heatmap div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
