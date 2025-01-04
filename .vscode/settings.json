@@ -1,0 +1,121 @@
+{
+    "vscode_custom_css.imports": ["file:///C:/Users/Lapto/.vscode/extensions/custom/custom.css"],
+    "animations.Install-Method": "Apc Customize UI++",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.activityBar.location": "top",
+    "explorer.confirmDragAndDrop": false,
+    "editor.wordWrap": "off",
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.cursorBlinking": "smooth",
+    "editor.mouseWheelZoom": false,
+    "workbench.editor.wrapTabs": true,
+    "editor.fontFamily": "'Comic Mono', monospace",
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        {"column": 79, "color": "#fd0606"},
+        {"column": 72, "color": "#8b00fd"}
+    ],
+    "editor.fontLigatures": true,
+    "explorer.openEditors.visible": 1,
+    "workbench.editor.customLabels.patterns": {
+        "*/src/**/index.html": "/${dirname}"
+    },
+    "liveServer.settings.port": 5503,
+    "powermode.enabled": false,
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.location": "off",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.env.windows": {},
+    "explorer.confirmPasteNative": false,
+    "background.windowBackgrounds": [
+        "d:/RPL/.vscode/bg_vscode.png"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#2f7c47",
+        "activityBar.background": "#2f7c47",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#422c74",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#2f7c47",
+        "statusBar.background": "#215732",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#2f7c47",
+        "statusBarItem.remoteBackground": "#215732",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#215732",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#21573299",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "terminal.background": "#00000000"
+    },
+    "peacock.color": "#215732",
+    "vscode-pets.petSize": "small",
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.theme": "forest",
+    "go.toolsEnvVars": {},
+    "highlightOnCopy.backgroundColor": "rgba(230, 97, 89, 0.7)",
+    "highlightOnCopy.foregroundColor": "#fff",
+    "highlightOnCopy.timeout": 200,
+    "highlight-matching-tag.styles": {
+        "opening": {
+            "name": {
+                "underline": "yellow"
+            }
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "foreground": "red",
+        "background": "white",
+        "opacity": 50,
+        "iconColour": "blue"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "type": "line"
+        },
+        "FIXME": {
+            "foreground": "black",
+            "iconColour": "yellow",
+            "gutterIcon": true
+        }
+    },
+    "editor.RainbowBrackets.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "RainbowBrackets.forceIterationColorCycle": true,
+    "RainbowBrackets.forceUniqueOpeningColor": true,
+    "RainbowBrackets.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        ["teal", "yellow", "tomato"],
+        "Revioletd"
+    ],
+    "RainbowBrackets.timeOut": 200,
+    "typescript.referencesCodeLens.enabled": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true
+}

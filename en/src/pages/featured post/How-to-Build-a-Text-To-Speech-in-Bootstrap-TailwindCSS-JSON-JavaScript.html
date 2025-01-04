@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</title>
+    <meta name="author" content="CodingIndo">
+    <meta name="copyright" content="2024 CodingIndo">
+    <meta name="description" content="A guide on how to create Text To Speech using Bootstrap, TailwindCSS, JSON and JavaScript.">
+    <meta name="keywords" content="Text To Speech, Bootstrap, TailwindCSS, JSON, JavaScript, tutorial">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Building Text To Speech using Bootstrap, TailwindCSS, JSON & JavaScript">
+    <meta property="og:description" content="A guide on how to create Text To Speech using Bootstrap, TailwindCSS, JSON and JavaScript.">
+    <meta property="og:url" content="https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html">
+    <link rel="stylesheet" href="/en/src/assets/css/featured post/pages.css">
+    <link rel="icon" href="/en/src/assets/images/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-prism.min.css" rel="stylesheet" id="theme-link">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="container navbar navbar-expand-lg navbar-light fixed-top text-primary" style="border-bottom: 2px solid; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.8);">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <button id="drawerToggle" class="lg:hidden text-gray-700 focus:outline-none transition-transform duration-300 mr-4">
+                    <i id="toggleIcon" class="fas fa-bars text-2xl"></i> 
+                </button>
+                <a class="navbar-brand d-flex align-items-center ml-4" href="https://codingindo.vercel.app/">
+                    <img src="/en/src/assets/images/logo.png" alt="logo" class="w-10 h-10 mr-2.5 rounded-lg">
+                    <span class="text-2xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://codingindo.vercel.app/">Home</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://cek-khodam-online-peach.vercel.app/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-spa" style="font-size: 20px; margin-right: 10px;"></i> Check Khodam Online
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/encoder%20decoder%20tools/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-code" style="font-size: 20px; margin-right: 10px;"></i> Encoder Decoder Tools
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/text%20repeater/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="bi bi-body-text" style="font-size: 20px; margin-right: 10px;"></i> Text Repeater
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/text%20editor/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-pen-to-square" style="font-size: 20px; margin-right: 10px;"></i> Text Editor
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/en/tools/converter/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-exchange-alt" style="font-size: 20px; margin-right: 10px;"></i> Converter
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><hr class="dropdown-divider d-none d-md-flex"></li>
+                    <li class="nav-item d-none d-md-flex">
+                        <a class="nav-link" href="/en/src/components/extension/">Extension</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://deviswisley.github.io/" target="_blank" rel="noopener">Portfolio</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/src/pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/src/pages/about.html">About</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row flex-wrap justify-content-center">
+                    <li class="nav-item dropdown d-none d-md-block" style="margin-right: 5px;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="uil uil-share-alt"></i> Social Media
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="CodePen" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-codepen" style="font-size: 20px; margin-right: 10px;"></i> CodePen
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Facebook" onmouseover="this.style.background='linear-gradient(to right, #4b70ba, #5c7fca)'" onmouseout="this.style.background='linear-gradient(to right, #3b5998, #4b70ba)'">
+                                    <i class="bi bi-facebook" style="font-size: 20px; margin-right: 10px;"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Instagram" onmouseover="this.style.background='linear-gradient(to right, #f06292, #ff7f8f)'" onmouseout="this.style.background='linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)'">
+                                    <i class="bi bi-instagram" style="font-size: 20px; margin-right: 10px;"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="GitHub" onmouseover="this.style.background='linear-gradient(to right, #8b949e, #a3acf2)'" onmouseout="this.style.background='linear-gradient(to right, #6B7280, #8b949e)'">
+                                    <i class="bi bi-github" style="font-size: 20px; margin-right: 10px;"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Gmail" onmouseover="this.style.background='linear-gradient(to right, #e57373, #f8b3b3)'" onmouseout="this.style.background='linear-gradient(to right, #D44638, #e57373)'">
+                                    <i class="bi bi-envelope" style="font-size: 20px; margin-right: 10px;"></i> Gmail
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://t.me/deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Telegram" onmouseover="this.style.background='linear-gradient(to right, #33aaff, #66ccff)'" onmouseout="this.style.background='linear-gradient(to right, #0088cc, #33aaff)'">
+                                    <i class="bi bi-telegram" style="font-size: 20px; margin-right: 10px;"></i> Telegram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Threads" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-threads" style="font-size: 20px; margin-right: 10px;"></i> Threads
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="background: linear-gradient(to right, #010101, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="TikTok" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #010101, #333333)'">
+                                    <i class="bi bi-tiktok" style="font-size: 20px; margin-right: 10px;"></i> TikTok
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="WhatsApp" onmouseover="this.style.background='linear-gradient(to right, #4caf50, #66d37e)'" onmouseout="this.style.background='linear-gradient(to right, #25D366, #4caf50)'">
+                                    <i class="bi bi-whatsapp" style="font-size: 20px; margin-right: 10px;"></i> WhatsApp
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="loading-bar" id="loadingBar"></div>
+        <div id="scrollBar">
+            <div></div>
+        </div>
+    </nav>
+    <div id="drawer" class="lg:hidden drawer-blur fixed inset-y-0 left-0 w-65 shadow-lg transform -translate-x-full drawer-transition z-40 flex flex-col justify-between">
+        <div class="mt-16">
+            <div class="p-6 flex flex-col items-center">
+                <img src="/en/src/assets/images/logo.png" alt="Drawer Image" class="h-24 w-24 rounded-lg">
+                <h2 class="text-2xl font-bold text-gray-800 brand-gradient text-center">CodingIndo</h2>
+                <p class="text-sm text-gray-600 text-center">Created By Devis Wisley</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://codingindo.vercel.app/en/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <div class="relative">
+                        <button id="dropdownToggle" class="w-full text-left px-4 py-2 text-gray-700 transition duration-300 flex items-center justify-between hover-gradient">
+                            <span>
+                                <i class="fas fa-tools mr-2"></i> Tools
+                            </span>
+                            <i id="dropdownIcon" class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <ul id="dropdownMenu" class="hidden pl-6">
+                            <li>
+                                <a href="https://cek-khodam-online-peach.vercel.app/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-spa mr-2"></i> Check Khodam Online
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/encoder%20decoder%20tools/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-code mr-2"></i> Encoder Decoder Tools
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/text%20repeater/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="bi bi-body-text mr-2"></i> Text Repeater
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/text%20editor/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-pen-to-square mr-2"></i> Text Editor
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/converter/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-exchange-alt mr-2"></i> Converter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-briefcase mr-2"></i> Portfolio
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/contact-us.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-envelope mr-2"></i> Contact Us
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/about.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-info-circle mr-2"></i> About
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex justify-center space-x-4 flex-wrap">
+                <a href="https://codepen.io" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-codepen text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-facebook text-xl" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-instagram text-xl instagram-gradient"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-github text-xl" style="color: #181717;"></i>
+                </a>
+                <a href="https://gmail.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="bi bi-envelope text-xl" style="color: #EA4335;"></i>
+                </a>
+                <a href="https://telegram.org" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-telegram text-xl" style="color: #26A5E4;"></i>
+                </a>
+                <a href="https://threads.net" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-threads text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-tiktok text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-whatsapp text-xl" style="color: #25D366;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden z-30"></div>
+    <div class="social-sidebar" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 0 10px 10px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="color: #000000;" title="CodePen">
+                    <i class="fa-brands fa-codepen" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="color: #3b5998;" title="Facebook">
+                    <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex;" title="Instagram">
+                    <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="color: #6B7280;" title="GitHub">
+                    <i class="bi bi-github" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="color: #D44638;" title="Gmail">
+                    <i class="bi bi-envelope" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://t.me/deviswisley" target="_blank" rel="noopener" style="color: #0088cc;" title="Telegram">
+                    <i class="bi bi-telegram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="color: #000000;" title="Threads">
+                    <i class="fa-brands fa-threads" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="color: #010101;" title="TikTok">
+                    <i class="bi bi-tiktok" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="color: #25D366;" title="WhatsApp">
+                    <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="editor-sidebar" style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 10px 0 0 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" data-bs-toggle="modal" data-bs-target="#themeModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-palette text-black cursor-pointer" style="font-size: 24px;" title="Theme Editor"></i>
+            </li>
+            <li class="mb-2 d-md-none" data-bs-toggle="modal" data-bs-target="#shareModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-share text-black cursor-pointer" style="font-size: 24px;" title="Share"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="container mt-14 bg-light p-4 rounded">
+        <div class="container mx-auto px-3">
+            <div class="row">
+                <main class="col-md-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white p-3 shadow-sm rounded flex flex-wrap">
+                            <li class="breadcrumb-item"><a href="https://codingindo.vercel.app/" class="text-indigo-500">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/en/src/menu/Bootstrap & TailwindCSS/index.html" class="text-indigo-500">Bootstrap, TailwindCSS</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Text To Speech</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-2">How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</h1>
+                            <p class="mb-4" style="font-size: 12px;">Sunday, September 08, 2024</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-10 d-none d-md-flex">
+                            <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#shareModal" style="font-size: 15px; color: white; border-radius: 10px; padding: 10px 20px;">
+                                <i class="bi bi-share me-2" style="color: white;"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="img-preview" class="mr-10" style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 10px; cursor: pointer;" onclick="showImageReview()">
+                        <img src="/en/src/assets/images/featured post/image.png" alt="Currency Converter Preview" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                    </div>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <a href="/en/src/pages/featured post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" class="text-blue-500 underline">Text To Speech (TTS)</a> is a technology that can convert written text into spoken sound. This technology allows computers or other digital devices to "read" the given text using a synthetic voice that resembles the human voice. TTS is very useful for a variety of applications, especially for accessibility and communication needs.
+                        <br><br>
+                        In this blog post, I will walk you through creating an interactive Text to Speech (TTS) application using Bootstrap, TailwindCSS, JSON, and JavaScript. We will replicate the main features of TTS such as text input, speed control, pitch, volume, language selection, and voice selection options. The application will also be responsive and have an attractive interface, leveraging a combination of two popular CSS frameworks and the dynamic functionality of JavaScript. Let’s get started building a project that allows text to be converted to speech in real-time!
+                        <br><br>
+                        As you work on this project, you’ll learn how to structure and style websites effectively to ensure they look great on all devices.
+                    </p>
+                    <h2 class="text-3xl font-bold mb-4">Key Features:</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li><b>Dynamic Text Input:</b> Users can type text to be converted into voice with a simple and intuitive interface.</li>
+                        <li><b>Rate Control:</b> Adjust the speech rate with the slider to increase or decrease the tempo of the resulting voice.</li>
+                        <li><b>Pitch Adjustment:</b> Change the pitch of the sound via the pitch controller, allowing for variations in the pitch of the sound according to preference.</li>
+                        <li><b>Volume Settings:</b> Adjust the volume level of the sound produced with easy-to-use controls.</li>
+                        <li><b>Language Selection:</b> Support for multiple languages, providing flexibility in text to speech conversion in various dialects.</li>
+                        <li><b>Voice Selection:</b> Users can select a voice from a variety of options, both male and female, depending on their preference.</li>
+                        <li><b>Responsive Interface:</b> Mobile-friendly and responsive design using a combination of <b style="background-color: #ececec;">Bootstrap</b> and <b style="background-color: #ececec;">TailwindCSS</b>.</li>
+                        <li><b>Modern Theme:</b> Combines visual elements from Bootstrap and Tailwind to create a clean and modern interface.</li>
+                        <li><b>JSON Support for Language Data:</b> Use JSON to map and manage supported languages ​​in an application.</li>
+                        <li><b>Accessibility:</b> Enables users with visual impairments to convert text to speech, supporting better accessibility on the web.</li>
+                    </ol>
+                    <p class="text-lg text-gray-700 mb-4">
+                        With these features, your Text To Speech application will have complete functionality and an attractive design, making it not only useful but also fun to use.
+                    </p>
+                    <h2 class="text-3xl font-bold mb-4">Why Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript?</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            By building this Text to Speech project using Bootstrap, TailwindCSS, JSON, and JavaScript, you can gain the following skills:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>Bootstrap and TailwindCSS:</b> Master how to use two popular CSS frameworks to build modern, responsive user interfaces.</li>
+                            <li><b>Interacting with the Web Speech API:</b> Learn how to use the JavaScript API to convert text to speech and control speed, pitch, volume, and select multiple languages.</li>
+                            <li><b>JSON Data Management:</b> Use JSON files to store and manage voice and language data in your app.</li>
+                            <li><b>Dynamic Functionality with JavaScript:</b> Understand how to implement dynamic features such as sound selection, slider controls, and action buttons using JavaScript.</li>
+                            <li><b>Web Accessibility Improvements:</b> Create accessibility-enabled applications with TTS, making them more inclusive for users with visual impairments.</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 mb-4">
+                            This project will provide a solid foundation in responsive web design and front-end development, paving the way for more complex web projects in the future. Good luck and may the skills you gain be useful in developing future projects!
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Steps to  build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            Here are the steps to create a Text-To-Speech application using Bootstrap, TailwindCSS, JSON and JavaScript.
+                        </p>
+                        <h2 class="text-2xl font-bold mb-4">1. Set Up HTML Structure</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Use the HTML structure provided. Here's a simplified overview:
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-html5 fa-2x mr-2"></i> index.html</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;!-- Coding By CodingIndo - https://codingindo.vercel.app/ --&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;!-- Meta tag for character encoding --&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;!-- Meta tag to make the viewport responsive on mobile devices --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;!-- Page title --&gt;
+    &lt;title&gt;Text To Speech&lt;/title&gt;
+    &lt;!-- Link to Bootstrap CSS file --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;!-- Link to Tailwind CSS JavaScript file --&gt;
+    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+    &lt;!-- Link to Font Awesome CSS file --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /&gt;
+    &lt;style&gt;
+        /* Styling for the page body */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styling for card */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Styling for card title */
+        .card h2 {
+            color: #333;
+        }
+
+        /* Styling for form controls and form select */
+        .form-control, .form-select {
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for input group text */
+        .input-group-text {
+            background-color: #f3f4f6;
+            border-radius: 10px;
+        }
+
+        /* Styling for primary button */
+        .btn-primary {
+            background-color: #4f46e5;
+            border: none;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        /* Styling for hover on primary button */
+        .btn-primary:hover {
+            background-color: #4338ca;
+            transform: scale(1.05);
+        }
+
+        /* Styling for labels */
+        label {
+            font-size: 1.125rem;
+            color: #444;
+        }
+
+        /* Styling for input range */
+        input[type="range"] {
+            accent-color: #4f46e5;
+        }
+
+        /* Styling for display values ​​*/
+        .value-display {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.125rem;
+            color: #4f46e5;
+            margin-left: 10px;
+        }
+
+        /* Styling for icon */
+        .icon {
+            color: #4f46e5;
+            font-size: 1.25rem;
+            margin-right: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Container for cards --&gt;
+    &lt;div class="card p-6 shadow-lg"&gt;
+        &lt;!-- Card title --&gt;
+        &lt;h2 class="text-3xl font-semibold text-center mb-4"&gt;Text to Speech&lt;/h2&gt;
+        &lt;!-- Form for text input and other settings --&gt;
+        &lt;div class="d-flex justify-content-between align-items-start"&gt;
+            &lt;!-- Form group for text input --&gt;
+            &lt;div class="form-group mb-4" style="flex: 1; margin-right: 20px;"&gt;
+                &lt;label for="textInput" class="form-label"&gt;&lt;i class="fas fa-keyboard icon"&gt;&lt;/i&gt;Enter Text&lt;/label&gt;
+                &lt;textarea class="form-control p-3" id="textInput" rows="4" placeholder="Type something..."&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;!-- Form group for rate, pitch, and volume settings --&gt;
+            &lt;div style="flex: 0.5;"&gt;
+                &lt;div class="form-group mb-4"&gt;
+                    &lt;label for="rateRange" class="form-label"&gt;&lt;i class="fas fa-tachometer-alt icon"&gt;&lt;/i&gt;Speed (Rate)&lt;/label&gt;
+                    &lt;input type="range" id="rateRange" class="form-range" min="0.5" max="2" step="0.1" value="1"&gt;
+                    &lt;span class="value-display" id="rateValue"&gt;1&lt;/span&gt;x
+                &lt;/div&gt;
+                &lt;div class="form-group mb-4"&gt;
+                    &lt;label for="pitchRange" class="form-label"&gt;&lt;i class="fas fa-sliders-h icon"&gt;&lt;/i&gt;Effect (Pitch)&lt;/label&gt;
+                    &lt;input type="range" id="pitchRange" class="form-range" min="0" max="2" step="0.1" value="1"&gt;
+                    &lt;span class="value-display" id="pitchValue"&gt;1&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group mb-4"&gt;
+                    &lt;label for="volumeRange" class="form-label"&gt;&lt;i class="fas fa-volume-up icon"&gt;&lt;/i&gt;Volume&lt;/label&gt;
+                    &lt;input type="range" id="volumeRange" class="form-range" min="0" max="1" step="0.1" value="1"&gt;
+                    &lt;span class="value-display" id="volumeValue"&gt;100&lt;/span&gt;%
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Form group to select language --&gt;
+        &lt;div class="form-group mb-4"&gt;
+            &lt;label for="languageSelect" class="form-label"&gt;&lt;i class="fas fa-language icon"&gt;&lt;/i&gt;Select Language&lt;/label&gt;
+            &lt;select id="languageSelect" class="form-select p-3"&gt;&lt;/select&gt;
+        &lt;/div&gt;
+        &lt;!-- Form group to select sound --&gt;
+        &lt;div class="form-group mb-4"&gt;
+            &lt;label for="voiceSelect" class="form-label"&gt;&lt;i class="fas fa-microphone icon"&gt;&lt;/i&gt;Select Voice&lt;/label&gt;
+            &lt;select id="voiceSelect" class="form-select p-3"&gt;&lt;/select&gt;
+        &lt;/div&gt;
+        &lt;!-- Button to start text to speech --&gt;
+        &lt;button id="speakBtn" class="btn btn-primary w-full py-3 text-lg font-bold"&gt;&lt;i class="fas fa-play icon"&gt;&lt;/i&gt;Speak&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!-- Link to JavaScript file for Text To Speech --&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;!-- Link to Bootstrap JavaScript file --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-html-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">2. Create JSON File</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Create a file named <b style="background-color: #ececec;">language.json</b> with the following structure.
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-solid fa-code fa-2x mr-2"></i> language.json</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-json">
+{
+    "af": "Afrikaans (Suid-Afrika)",
+    "sq": "Shqip (Shqipëri)",
+    "am": "አማርኛ (ኢትዮጵያ)",
+    "ar": "العربية (السعودية)",
+    "az": "Azərbaycan (Azərbaycan)",
+    "bn": "বাংলা (বাংলাদেশ)",
+    "bs": "Bosanski (Bosna i Hercegovina)",
+    "bg": "Български (България)",
+    "my": "ဗမာ (မြန်မာ)",
+    "ca": "Català (Andorra)",
+    "zh": "中文（中国）",
+    "hr": "Hrvatski (Hrvatska)",
+    "cs": "Čeština (Česká Republika)",
+    "da": "Dansk (Danmark)",
+    "nl": "Nederlands (Nederland)",
+    "en": "English (United Kingdom)",
+    "et": "Eesti (Estonia)",
+    "fil": "Tagalog (Pilipinas)",
+    "fi": "Suomen (Suomi)",
+    "fr": "Français (France)",
+    "gl": "Galego (España)",
+    "ka": "ქართული (საქართველო)",
+    "de": "Deutsch (Deutschland)",
+    "el": "Ελληνικά (Ελλάδα)",
+    "gu": "ગુજરાતી (ભારત)",
+    "he": "עברית (ישראל)",
+    "hi": "हिन्दी (भारत)",
+    "hu": "Magyar (Magyarország)",
+    "is": "Íslenska (Ísland)",
+    "id": "Bahasa Indonesia (Indonesia)",
+    "ga": "Gaeilge (Éire)",
+    "it": "Italiano (Italia)",
+    "ja": "日本語 (日本)",
+    "jv": "Basa Jawa (Indonesia)",
+    "kn": "ಕನ್ನಡ (ಕೆನಡಾ)",
+    "kk": "Қазақ (Қазақстан)",
+    "km": "ខ្មែរ (កម្ពុជា)",
+    "ko": "한국어 (대한민국)",
+    "lo": "ລາວ (ປະເທດລາວ)",
+    "lv": "Latviešu (Latvija)",
+    "lt": "Lietuvių (Lietuva)",
+    "mk": "Македонски (Северна Македонија)",
+    "ms": "Bahasa Melayu (Malaysia)",
+    "ml": "മലയാളം (ഇന്ത്യ)",
+    "mt": "Malti (Malta)",
+    "mr": "मराठी (भारत)",
+    "mn": "Монгол (Монгол)",
+    "ne": "नेपाली (नेपाल)",
+    "nb": "Norsk (Norge)",
+    "ps": "پښتو (افغانستان)",
+    "fa": "فارسی (ایران)",
+    "pl": "Polski (Polska)",
+    "pt": "Português (Portugal)",
+    "ro": "Română (România)",
+    "ru": "Русский (Россия)",
+    "sr": "Српски (Србија)",
+    "si": "සිංහල (ශ්‍රී ලංකා)",
+    "sk": "Slovenčina (Slovensko)",
+    "sl": "Slovenščina (Slovenija)",
+    "so": "Soomaali (Soomaaliya)",
+    "es": "Español (España)",
+    "su": "Basa Sunda (Indonésia)",
+    "sw": "Kiswahili (Kenya)",
+    "sv": "Svenska (Sverige)",
+    "ta": "தமிழ் (சிங்கப்பூர்)",
+    "te": "తెలుగు (భారతదేశం)",
+    "th": "ไทย (ประเทศไทย)",
+    "tr": "Türkçe (Türkiye)",
+    "uk": "Українська (Україна)",
+    "ur": "اردو (پاکستان)",
+    "uz": "O'zbekcha (O'zbekiston)",
+    "vi": "Tiếng Việt (Việt Nam)",
+    "cy": "Cymraeg (Cymru)",
+    "zu": "IsiZulu (Ningizimu Afrika)"
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Language Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Language Name (Country)</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-json-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">3. Add JavaScript Logic</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Create a file named <b style="background-color: #ececec;">script.js</b> to handle the functionality:
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-js fa-2x mr-2"></i> script.js</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-js">
+// Get text input element from DOM
+const textInput = document.getElementById('textInput');
+// Get the language select element from the DOM
+const languageSelect = document.getElementById('languageSelect');
+// Get the sound select element from the DOM
+const voiceSelect = document.getElementById('voiceSelect');
+// Get the talk button element from the DOM
+const speakBtn = document.getElementById('speakBtn');
+// Get the speed range element from the DOM
+const rateRange = document.getElementById('rateRange');
+// Get the tone range element from the DOM
+const pitchRange = document.getElementById('pitchRange');
+// Get volume range elements from DOM
+const volumeRange = document.getElementById('volumeRange');
+// Get the speed value element from the DOM
+const rateValue = document.getElementById('rateValue');
+// Get the tone value element from the DOM
+const pitchValue = document.getElementById('pitchValue');
+// Get the volume value element from the DOM
+const volumeValue = document.getElementById('volumeValue');
+
+// Initialize an array to store sounds
+let voices = [];
+
+// Function to load language names from JSON file
+function loadLanguageNames() {
+    return fetch('language.json')
+        .then(response => response.json())
+        .then(data => data);
+}
+
+// Function to fill the sound select element with available sounds.
+function populateVoices() {
+    voices = speechSynthesis.getVoices();
+    voiceSelect.innerHTML = '';
+    const selectedLang = languageSelect.value;
+    voices
+        .filter(voice => voice.lang.startsWith(selectedLang))
+        .forEach(voice => {
+            const option = document.createElement('option');
+            option.textContent = `${voice.name} (${voice.lang})`;
+            option.value = voice.name;
+            voiceSelect.appendChild(option);
+        });
+}
+
+// Function to fill the language select element with available languages.
+function populateLanguages(languageNames) {
+    const uniqueLangs = [...new Set(voices.map(voice => voice.lang.split('-')[0]))];
+    languageSelect.innerHTML = '';
+    uniqueLangs.forEach(lang => {
+        const option = document.createElement('option');
+        option.value = lang;
+        option.textContent = languageNames[lang] || lang;
+        languageSelect.appendChild(option);
+    });
+    populateVoices();
+}
+
+// Add event listener to voice when language changes
+languageSelect.addEventListener('change', populateVoices);
+
+// Add event listener to update the speed value when the input changes.
+rateRange.addEventListener('input', () => {
+    rateValue.textContent = rateRange.value;
+});
+
+// Add event listener to update pitch value when input changes
+pitchRange.addEventListener('input', () => {
+    pitchValue.textContent = pitchRange.value;
+});
+
+// Add an event listener to update the volume value when the input changes.
+volumeRange.addEventListener('input', () => {
+    volumeValue.textContent = Math.round(volumeRange.value * 100);
+});
+
+// Function to start text to speech
+function speakText() {
+    const text = textInput.value;
+    if (!text) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    const selectedVoiceName = voiceSelect.value;
+    const selectedVoice = voices.find(voice => voice.name === selectedVoiceName);
+    utterance.voice = selectedVoice;
+    utterance.rate = rateRange.value;
+    utterance.pitch = pitchRange.value;
+    utterance.volume = volumeRange.value;
+    speechSynthesis.speak(utterance);
+}
+
+// Add event listener to load voice and language when voice changes
+speechSynthesis.onvoiceschanged = () => {
+    loadLanguageNames().then(languageNames => {
+        voices = speechSynthesis.getVoices();
+        populateLanguages(languageNames);
+    });
+};
+
+// Add event listener for speak button
+speakBtn.addEventListener('click', speakText);
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-js-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">4. Run Your Project</h2>
+                        <ul class="list-disc pl-5">
+                            <li>Open your <b style="background-color: #ececec;">index.html</b> file in a web browser.</li>
+                            <li>Test the input, sliders, and language/voice selection functionality.</li>
+                            <li>Make sure the text-to-speech feature works as expected.</li>
+                        </ul>
+                    </ul>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">Additional Notes</h2>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li><b>Cross-Browser Compatibility:</b> Ensure that your Text to Speech application works across different web browsers (e.g., Chrome, Firefox, Safari) and devices. Testing on multiple platforms will help you identify and fix compatibility issues.</li>
+                            <li><b>Performance Optimization:</b> Optimize the performance of your application to handle large texts or frequent requests efficiently. This includes minimizing the use of heavy libraries and optimizing JavaScript functions.</li>
+                            <li><b>Error Handling:</b> Implement robust error handling to manage scenarios where the speech synthesis may fail, such as unsupported languages or issues with the SpeechSynthesis API. Provide clear error messages to users.</li>
+                            <li><b>Internationalization:</b> If your application supports multiple languages, consider using localization techniques to provide translations for UI elements, ensuring a consistent experience for users around the world.</li>
+                            <li><b>User Feedback:</b> Include feedback mechanisms, such as notifications or status indicators, to inform users about the progress of the speech synthesis (e.g., loading indicators or confirmation messages).</li>
+                            <li><b>Accessibility Considerations:</b> Beyond basic accessibility, ensure your application meets Web Content Accessibility Guidelines (WCAG). This includes ensuring that all interactive elements are navigable via keyboard and that screen readers can properly interpret the interface.</li>
+                            <li><b>Security Best Practices:</b> Implement security best practices to protect against potential vulnerabilities. This includes sanitizing user input and securing API calls to prevent misuse.</li>
+                            <li><b>Documentation:</b> Provide clear documentation for users on how to use the application, including how to access different features and any limitations. This will enhance user experience and support.</li>
+                            <li><b>Scalability:</b> Design your application to be scalable so that it can handle increased usage or additional features in the future without major overhauls.</li>
+                            <li><b>Regular Updates:</b> Keep your application up to date with the latest web technologies and security patches to ensure ongoing compatibility and protection.</li>
+                        </ol>
+                        <p class="text-lg text-gray-700 mb-4">
+                            By keeping these additional notes in mind, you can create a Text to Speech application that is not only effective and user-friendly but also reliable, secure, and adaptable to future needs.
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Conclusion and final words</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Text to Speech (TTS) is a technology that converts text into sounds that resemble human speech. It plays a vital role in improving accessibility for people with disabilities, supporting applications such as virtual assistants, language learning, GPS navigation, and media content. With the ability to adjust language, speed, pitch, and volume, TTS is a flexible solution that is becoming increasingly common in everyday life.
+                        <br><br>
+                        Despite some limitations such as voices that still sound less natural in some systems, developments in AI and Natural Language Processing (NLP) continue to improve the quality of synthetic voices. TTS plays a crucial role in accelerating access to information, making this technology a useful tool in the future.
+                        <br><br>
+                        Text to Speech technology opens a new window for accessibility and communication in the digital age. With continued development, TTS is getting closer to natural human speech and providing innovative solutions for various interaction needs with technology. In the future, we can expect improved voice quality, more emotional interactions, and smoother pronunciation, making TTS increasingly integral to modern life.
+                        <br><br>
+                        If you are having trouble creating a Text to Speech application using Bootstrap, TailwindCSS, JSON and JavaScript, you can download the source code of this project for free by clicking the “Download” button. You can also view a live demo of this application by clicking the “View Live” button to see how the TTS design and functionality work in real time.
+                        <br><br>
+                        By accessing the source code and live demo, you can easily understand the code implementation and customize the project to your needs. Feel free to explore the code, experiment with the design, and modify the features to improve your skills in using HTML, CSS, and JavaScript.
+                        <br><br>
+                        This is a great opportunity to learn more about integrating CSS frameworks with JavaScript and deepen your understanding of interactive web applications and accessibility. Happy learning and experimenting!
+                    </p>
+                    <div class="flex items-center justify-center p-4 mt-4">
+                        <a href="/en/src/demo/Text To Speech/index.html" class="btn btn-success mr-2 d-flex align-items-center">
+                            <i class="bi bi-play-circle me-2"></i>
+                            <span>View Live Demo</span>
+                        </a>
+                        <button id="openDownloadDialog" class="btn btn-info d-flex align-items-center">
+                            <i class="bi bi-download me-2"></i>
+                            <span>Download Code Files</span>
+                        </button>
+                    </div>
+                    <div class="related-articles mt-4 mb-4">
+                        <div class="section-header">Related Articles</div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/How-to-make-a-currency-converter-using-HTML-Bootstrap-TailwindCSS-CSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image1.png" class="card-img-top" alt="Article 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Building a AES Encoder Decoder using HTML, CSS, JavaScript | Best Beginner Project</h5>
+                                            <p class="card-text">Sunday, August 11, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image2.png" class="card-img-top" alt="Article 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Responsive calculator using Bootstrap, TailwindCSS & JavaScript</h5>
+                                            <p class="card-text">Tuesday, August 13, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/Building-a-AES-Encoder-Decoder-using-HTML-CSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image3.png" class="card-img-top" alt="Article 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Building a AES Encoder Decoder using HTML, CSS & JavaScript</h5>
+                                            <p class="card-text">Saturday, August 24, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment mt-4 mb-4">
+                        <div id="commentTitle" class="section-header">Comment</div>
+                        <div class="divider"></div>
+                        <div id="commentsList" class="mt-2">
+                            <div id="commentsContainer" class="space-y-4"></div>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2">LEAVE A REPLY</h2>
+                        <div class="bg-white p-4 shadow-md rounded-lg">
+                            <form id="commentForm">
+                                <div class="mb-3">
+                                    <textarea id="comment" rows="3" class="form-control" placeholder="Comment:" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="username" class="form-control" placeholder="Name:*" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" id="email" class="form-control" placeholder="Email:*" required>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" id="saveInfo" class="form-check-input">
+                                    <label for="saveInfo" class="form-check-label">Save my name and email in this browser for the next time I comment.</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+                <aside class="col-md-4">
+                    <div class="block-header">
+                        <div class="block-title">Recent Posts</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="list-group mb-4">
+                            <a href="/en/src/pages/recent posts/How-to-create-Bar-Chart-in-Bootstrap-TailwindCSS-JavaScript.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image3.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">How to create Bar Chart in Bootstrap, TailwindCSS & JavaScript</h6>
+                                    <p class="card-text">Thursday, October 17, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/en/src/pages/recent posts/Make-a-Ripple-Effect-on-a-Button-with-a-Gradient-Background-in-HTML-CSS-JavaScript.html" class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image2.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Make a Ripple Effect on a Button with a Gradient Background in HTML, CSS & JavaScript</h6>
+                                    <p class="card-text">Sunday, September 01, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/en/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image1.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</h6>
+                                    <p class="card-text">Saturday, August 31, 2024</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block-header">
+                        <div class="block-title">Featured Post</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <a href="/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html">
+                        <div class="card mb-4" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                            <img src="/en/src/assets/images/featured post/image.png" alt="..." class="featured-post-img">
+                            <div class="p-3">
+                                <h5 class="card-title text-lg font-bold">How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</h5>
+                                <p class="card-text">Sunday, September 08, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="block-header">
+                        <div class="block-title">Categories</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <ul class="category-list">
+                        <a href="/en/src/menu/HTML CSS & JavaScript/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>HTML CSS & JavaScript</span>
+                                <span>3</span>
+                            </li>
+                        </a>
+                        <a href="/en/src/menu/Bootstrap & TailwindCSS/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Bootstrap, TailwindCSS</span>
+                                <span>4</span>
+                            </li>
+                        </a>
+                        <a href="/en/src/menu/Encoder Decoder Tools/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Encoder Decoder Tools</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Linktree</span>
+                            <span>1</span>
+                        </li>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Timeline</span>
+                            <span>1</span>
+                        </li>
+                        <a href="/en/src/menu/Chart/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Chart</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="themeModal" tabindex="-1" aria-labelledby="themeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl" id="themeModalLabel">Select a code theme</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('prism')">Default</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('dark')">Dark</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('funky')">Funky</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('okaidia')">Okaidia</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('twilight')">Twilight</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('coy')">Coy</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('solarizedlight')">Solarized Light</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('tomorrownight')">Tomorrow Night</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-labelledby="imagePreviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="/en/src/assets/images/featured post/image.png" alt="Image Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-blue-500">
+                    <h5 class="modal-title text-white" id="downloadModalLabel">
+                        <i class="fas fa-file-download"></i> Download Code Files
+                    </h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to download the source code files for this project?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" id="confirmDownload">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-green-500">
+                    <h5 class="modal-title text-white" id="progressModalLabel">
+                        <i class="fas fa-spinner"></i> Downloading...
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-3 text-center" id="progressText">0% completed</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelDownload">
+                        <i class="fas fa-times"></i> Cancel Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="completedModal" tabindex="-1" aria-labelledby="completedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title text-white" id="completedModalLabel">
+                        <i class="fas fa-check-circle"></i> Download Completed!
+                    </h5>
+                    <button type="button" class="btn-close text-white closeCompleted" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Your file has been successfully downloaded.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success closeCompleted">
+                        <i class="fas fa-check"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-white shadow-lg rounded-lg fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">
+                        <i class="fas fa-hourglass-start modal-icon"></i>
+                        Coming Soon
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="font-bold">We're working hard to bring this feature to you!</h6>
+                    <p class="text-gray-600 mt-2">
+                        Our team is currently working on this exciting feature, and we can’t wait for you to try it out. Stay tuned for updates and get ready to explore what’s coming next!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-4 shadow-lg">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl font-semibold" id="shareModalLabel">Share this blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid grid-cols-5 gap-4 text-center mb-4">
+                        <div class="social-icon">
+                            <a href="https://www.blogger.com/blog-this.g?u=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #f57d00;">
+                                <i class="fa-brands fa-blogger-b text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Blogger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://discord.com/share?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #7289da;">
+                                <i class="fa-brands fa-discord text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Discord</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="mailto:?subject=Check%20this%20out&body=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #d93025;">
+                                <i class="fa fa-envelope text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Email</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #3b5998;">
+                                <i class="bi bi-facebook text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Facebook</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://share.flipboard.com/bookmarklet/popout?v=2&url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #E12828;">
+                                <i class="fa-brands fa-flipboard text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Flipboard</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/sharer.php?u=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-instagram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Instagram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://line.me/R/msg/text/?https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #00B900;">
+                                <i class="bi bi-line text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Line</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #0077b5;">
+                                <i class="bi bi-linkedin text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">LinkedIn</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.messenger.com/t/yourusername" target="_blank" rel="noopener" style="color: #0084ff;">
+                                <i class="fa-brands fa-facebook-messenger text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Messenger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://news.google.com/share?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #4285F4;">
+                                <i class="bi bi-google text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">News Google</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://getpocket.com/save?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #EF4056;">
+                                <i class="fa-brands fa-get-pocket text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pocket</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://pinterest.com/pin/create/button/?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #E60023;">
+                                <i class="bi bi-pinterest text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pinterest</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.reddit.com/submit?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #FF4500;">
+                                <i class="bi bi-reddit text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Reddit</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.snapchat.com/add/yourusername" target="_blank" rel="noopener" style="color: #FFFC00;">
+                                <i class="bi bi-snapchat text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Snapchat</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://stackoverflow.com/share?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #f48024;">
+                                <i class="bi bi-stack-overflow text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Stack Overflow</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://t.me/share/url?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #0088cc;">
+                                <i class="bi bi-telegram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Telegram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #35465C;">
+                                <i class="fa-brands fa-tumblr text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Tumblr</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://x.com/intent/tweet?url=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #000000;">
+                                <i class="fa-brands fa-x-twitter text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Twitter</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html&business=1" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp Business</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="shareLink" type="text" class="form-control flex-grow rounded-lg border-gray-300 shadow-sm focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50" value="https://codingindo.vercel.app/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html" readonly>
+                        <button class="btn btn-success ml-2 flex items-center gap-2 px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition-colors" onclick="copyURL()">
+                            <i class="bi bi-clipboard"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toastNotification" class="toast align-items-center text-white bg-primary border-0 hidden fixed bottom-5 left-5" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="uil uil-check-circle me-2"></i>
+                <span>The code has been copied to the clipboard!</span>
+            </div>
+        </div>
+        <div class="progress h-1 bg-gray-300">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 0%;"></div>
+        </div>
+    </div>
+    <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-6 py-3 rounded-full shadow-2xl hidden" style="z-index: 1000; margin-bottom: 20px;">
+        <i id="snackbar-icon" class="ml-2"></i>
+        <span id="snackbar-message" class="font-semibold"></span>
+    </div>
+    <footer class="text-black text-center text-lg-start mt-5" style="background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); border-radius: 10px;">
+        <div class="container p-6">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <div class="mb-2 d-flex" style="gap: 10px;">
+                        <img src="/en/src/assets/images/logo.png" alt="logo" class="w-12 h-12 ml-2.5 rounded-lg">
+                        <span class="text-4xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                    </div>
+                    <p style="color: gray">
+                        I am a passionate web developer with experience in HTML, CSS, JavaScript, NextJS, ReactJS, TailwindCSS, Vite and various other web technologies. I love creating upcoming projects and learning new things every day.
+                    </p>
+                    <ul class="list-unstyled mt-2">
+                        <li class="mb-2" style="color: #228B22;">
+                            <i class="bi bi-telephone me-2"></i>
+                            <span>Call me: +62 123-456-7890</span>
+                        </li>
+                        <li class="mb-2" style="color: #1E90FF;">
+                            <i class="bi bi-envelope me-2"></i>
+                            <span>Email: deviswisley27@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <h5 id="footer-map-title" class="text-uppercase font-bold mb-2">Our Location</h5>
+                        <p class="text-gray-500 mb-2">
+                            Find us on the map below. We are located in Pakkat, Indonesia. Feel free to visit us!
+                        </p>
+                        <div style="border: 2px solid #0d6efd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0030778924197!2d98.47166767406898!3d2.1525066978283447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302fcad06f3bdce9%3A0x8cd4949e6d4e2130!2sSalak%20monument%20Pakkat!5e0!3m2!1sen!2sid!4v1725379323570!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Link</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codingindo.vercel.app/" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-house me-2"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://cek-khodam-online-peach.vercel.app/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-search me-2"></i>
+                                <span>Check Khodam Online</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-briefcase me-2"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="text-uppercase font-bold text-center mt-4 mb-2">Donation</h5>
+                    <p class="text-gray-500 mb-4">
+                        If you would like to support our work, you can donate through the link below. Thank you for your support!
+                    </p>
+                    <a href="https://ko-fi.com/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/ko-fi.png" alt="Ko-fi" style="width: 20px; height: 20px;">
+                        <span>Donate with Ko-fi</span>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/deviswisley" target="_blank" rel="noopener" class="buy-me-coffee-button btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/buymeacoffee.png" alt="Buy Me A Coffee" style="width: 20px; height: 20px;">
+                        <span>Donate with Buy Me a Coffee</span>
+                    </a>
+                    <a href="https://www.paypal.com/paypalme/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #003087; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="bi bi-paypal" style="font-size: 20px; margin-right: 8px;"></i>
+                        <span>Donate with PayPal</span>
+                    </a>
+                    <a href="https://lynk.id/payme/codingindo" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #2ab57d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/lynk.png" alt="Lynk" style="width: 23px; height: 23px;">
+                        <span>Donate with Lynk</span>
+                    </a>
+                    <a href="https://trakteer.id/devis_wisley_situmorang" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center" style="background-color: #be1e2d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/trakteer.png" alt="Trakteer" style="width: 23px; height: 23px;">
+                        <span>Donate with Trakteer</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="CodePen">
+                                <i class="fa-brands fa-codepen me-2"></i> CodePen
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Facebook">
+                                <i class="bi bi-facebook me-2"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Instagram">
+                                <i class="bi bi-instagram me-2"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="GitHub">
+                                <i class="bi bi-github me-2"></i> GitHub
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Gmail">
+                                <i class="bi bi-envelope me-2"></i> Gmail
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://t.me/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Telegram">
+                                <i class="bi bi-telegram me-2"></i> Telegram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.threads.net/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Threads">
+                                <i class="fa-brands fa-threads me-2"></i> Threads
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #010101, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="TikTok">
+                                <i class="bi bi-tiktok me-2"></i> TikTok
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="WhatsApp">
+                                <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-black d-flex flex-column flex-md-row justify-content-between align-items-center p-4" style="background-color: #f1f1f1; border-top: 1px solid #e0e0e0;">
+            <p class="mb-2 mb-md-0 text-center text-md-start">
+                © Copyright 2024 CodingIndo. All Rights Reserved.
+            </p>
+            <div class="text-center text-md-end d-flex flex-column flex-md-row align-items-center">
+                <a href="/en/src/pages/about.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">About</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/faq.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">FAQ</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/privacy-policy.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Privacy Policy</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/terms-of-service.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <i id="scrollTopBtn" class="bi bi-arrow-up-circle-fill btn btn-primary shadow-lg px-2 py-1 rounded-full bg-blue-700 hover:bg-blue-800" style="cursor: pointer; font-size: 40px;"></i>
+    <script src="/en/src/assets/js/featured post/pages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-json.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="deviswisley" data-description="Support me on Buy me a coffee!" data-message="Like my content? Support with a coffee!" data-color="#FFDD00" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

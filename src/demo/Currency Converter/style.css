@@ -1,0 +1,36 @@
+/* Sets the font for the body element */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sets the background and border radius for elements with class card */
+.card {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+}
+
+/* Set the background, border, and transition for elements with the form-control and form-select classes */
+.form-control,
+.form-select {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sets the border and box-shadow when an element with the class form-control and form-select is in focus */
+.form-control:focus,
+.form-select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+/* Sets the font size for elements with class btn */
+.btn {
+    font-size: 1.125rem;
+}
+
+/* Sets the maximum width and margin for the element with the id converter-form */
+#converter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}

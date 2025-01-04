@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Make a Button Ripple Effect with Background Gradient in HTML, CSS & JavaScript",
+        "summary": "Sunday, September 01, 2024",
+        "imageUrl": "/en/src/assets/images/recent posts/image2.png",
+        "link": "/en/src/pages/recent posts/Make-a-Button-Ripple-Effect-with-Background-Gradient-in-HTML-CSS-JavaScript.html"
+    },
+    {
+        "id": 2,
+        "title": "Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect",
+        "summary": "Saturday, August 31, 2024",
+        "imageUrl": "/en/src/assets/images/recent posts/image1.png",
+        "link": "/en/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion Effect.html"
+    },
+    {
+        "id": 3,
+        "title": "Heatmap Color in HTML, CSS & JavaScript",
+        "summary": "Thursday, August 29, 2024",
+        "imageUrl": "/en/src/assets/images/hero/image4.png",
+        "link": "/en/src/pages/hero/Heatmap-Color-in-HTML-CSS-JavaScript.html"
+    }
+]

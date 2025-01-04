@@ -1,0 +1,159 @@
+/* Sets styles for the body element */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sets styles for container elements */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Sets the style for the h1 element */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Sets the style for the tools element */
+.tools {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sets the style for the tool element */
+.tool {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Sets styles for key-container elements */
+.key-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+/* Sets the style for a text input element */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Sets the style for a text input element when focused */
+input[type="text"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Sets the style for a textarea element */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Sets the style for a textarea element when it is focused */
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Sets the style for the button element */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Sets the style for a button element on hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sets the style for the button element when active */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Sets the style for the button element with id swap-btn */
+#swap-btn {
+    background-color: #28a745;
+}
+
+/* Sets the style for the button element with id swap-btn on hover */
+#swap-btn:hover {
+    background-color: #218838;
+}
+
+/* Sets the style for the button-group element */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Sets the style for the button elements inside the button-group */
+.button-group button {
+    width: 100%;
+}
+
+/* Sets styles for elements in media queries with a minimum width of 768px */
+@media (min-width: 768px) {
+    /* Sets styles for key-container elements */
+    .key-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Sets the style for a text input element */
+    input[type="text"] {
+        width: calc(100% - 150px);
+    }
+
+    /* Sets the style for the button-group element */
+    .button-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Sets the style for the button elements inside the button-group */
+    .button-group button {
+        width: auto;
+    }
+}

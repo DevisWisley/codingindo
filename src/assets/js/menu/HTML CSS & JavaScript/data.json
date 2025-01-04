@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Membuat Ripple Effect Tombol dengan Gradien Latar Belakang dalam HTML, CSS & JavaScript",
+        "summary": "Minggu, 01 September 2024",
+        "imageUrl": "/src/assets/images/recent posts/image2.png",
+        "link": "/src/pages/recent posts/Make-a-Button-Ripple-Effect-with-Background-Gradient-in-HTML-CSS-JavaScript.html"
+    },
+    {
+        "id": 2,
+        "title": "Buat Blok Animasi 3D menggunakan HTML, CSS, JavaScript & Motion Effect",
+        "summary": "Sabtu, 31 Agustus 2024",
+        "imageUrl": "/src/assets/images/recent posts/image1.png",
+        "link": "/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion Effect.html"
+    },
+    {
+        "id": 3,
+        "title": "Heatmap Color dalam HTML, CSS & JavaScript",
+        "summary": "Kamis, 29 Agustus 2024",
+        "imageUrl": "/src/assets/images/hero/image4.png",
+        "link": "/src/pages/hero/Heatmap-Color-in-HTML-CSS-JavaScript.html"
+    }
+]

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</title>
+    <meta name="author" content="CodingIndo">
+    <meta name="copyright" content="2024 CodingIndo">
+    <meta name="description" content="Tutorial on how to create 3D animated blocks using HTML, CSS, JavaScript and motion effects.">
+    <meta name="keywords" content="3D animation blocks, HTML, CSS, JavaScript, motion effects, tutorial">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="How to create 3D animated blocks using HTML, CSS, JavaScript & motion effects">
+    <meta property="og:description" content="Tutorial on how to create 3D animated blocks using HTML, CSS, JavaScript and motion effects.">
+    <meta property="og:url" content="https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html">
+    <link rel="stylesheet" href="/src/assets/css/recent posts/pages1.css">
+    <link rel="icon" href="/src/assets/images/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-prism.min.css" rel="stylesheet" id="theme-link">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="container navbar navbar-expand-lg navbar-light fixed-top text-primary" style="border-bottom: 2px solid; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.8);">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <button id="drawerToggle" class="lg:hidden text-gray-700 focus:outline-none transition-transform duration-300 mr-4">
+                    <i id="toggleIcon" class="fas fa-bars text-2xl"></i> 
+                </button>
+                <a class="navbar-brand d-flex align-items-center ml-4" href="https://codingindo.vercel.app/">
+                    <img src="/src/assets/images/logo.png" alt="logo" class="w-10 h-10 mr-2.5 rounded-lg">
+                    <span class="text-2xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://codingindo.vercel.app/">Home</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://cek-khodam-online-peach.vercel.app/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-spa" style="font-size: 20px; margin-right: 10px;"></i> Check Khodam Online
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/tools/encoder%20decoder%20tools/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-code" style="font-size: 20px; margin-right: 10px;"></i> Encoder Decoder Tools
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/tools/text%20repeater/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="bi bi-body-text" style="font-size: 20px; margin-right: 10px;"></i> Text Repeater
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/tools/text%20editor/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-pen-to-square" style="font-size: 20px; margin-right: 10px;"></i> Text Editor
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/tools/converter/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-exchange-alt" style="font-size: 20px; margin-right: 10px;"></i> Converter
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><hr class="dropdown-divider d-none d-md-flex"></li>
+                    <li class="nav-item d-none d-md-flex">
+                        <a class="nav-link" href="/src/components/extension/">Extension</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://deviswisley.github.io/" target="_blank" rel="noopener">Portfolio</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/about.html">About</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row flex-wrap justify-content-center">
+                    <li class="nav-item dropdown d-none d-md-block" style="margin-right: 5px;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="uil uil-share-alt"></i> Social Media
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="CodePen" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-codepen" style="font-size: 20px; margin-right: 10px;"></i> CodePen
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Facebook" onmouseover="this.style.background='linear-gradient(to right, #4b70ba, #5c7fca)'" onmouseout="this.style.background='linear-gradient(to right, #3b5998, #4b70ba)'">
+                                    <i class="bi bi-facebook" style="font-size: 20px; margin-right: 10px;"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Instagram" onmouseover="this.style.background='linear-gradient(to right, #f06292, #ff7f8f)'" onmouseout="this.style.background='linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)'">
+                                    <i class="bi bi-instagram" style="font-size: 20px; margin-right: 10px;"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="GitHub" onmouseover="this.style.background='linear-gradient(to right, #8b949e, #a3acf2)'" onmouseout="this.style.background='linear-gradient(to right, #6B7280, #8b949e)'">
+                                    <i class="bi bi-github" style="font-size: 20px; margin-right: 10px;"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Gmail" onmouseover="this.style.background='linear-gradient(to right, #e57373, #f8b3b3)'" onmouseout="this.style.background='linear-gradient(to right, #D44638, #e57373)'">
+                                    <i class="bi bi-envelope" style="font-size: 20px; margin-right: 10px;"></i> Gmail
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://t.me/deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Telegram" onmouseover="this.style.background='linear-gradient(to right, #33aaff, #66ccff)'" onmouseout="this.style.background='linear-gradient(to right, #0088cc, #33aaff)'">
+                                    <i class="bi bi-telegram" style="font-size: 20px; margin-right: 10px;"></i> Telegram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Threads" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-threads" style="font-size: 20px; margin-right: 10px;"></i> Threads
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="background: linear-gradient(to right, #010101, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="TikTok" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #010101, #333333)'">
+                                    <i class="bi bi-tiktok" style="font-size: 20px; margin-right: 10px;"></i> TikTok
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="WhatsApp" onmouseover="this.style.background='linear-gradient(to right, #4caf50, #66d37e)'" onmouseout="this.style.background='linear-gradient(to right, #25D366, #4caf50)'">
+                                    <i class="bi bi-whatsapp" style="font-size: 20px; margin-right: 10px;"></i> WhatsApp
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="loading-bar" id="loadingBar"></div>
+        <div id="scrollBar">
+            <div></div>
+        </div>
+    </nav>
+    <div id="drawer" class="lg:hidden drawer-blur fixed inset-y-0 left-0 w-65 shadow-lg transform -translate-x-full drawer-transition z-40 flex flex-col justify-between">
+        <div class="mt-16">
+            <div class="p-6 flex flex-col items-center">
+                <img src="/src/assets/images/logo.png" alt="Drawer Image" class="h-24 w-24 rounded-lg">
+                <h2 class="text-2xl font-bold text-gray-800 brand-gradient text-center">CodingIndo</h2>
+                <p class="text-sm text-gray-600 text-center">Dibuat Oleh Devis Wisley</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://codingindo.vercel.app/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-home mr-2"></i> Beranda
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <div class="relative">
+                        <button id="dropdownToggle" class="w-full text-left px-4 py-2 text-gray-700 transition duration-300 flex items-center justify-between hover-gradient">
+                            <span>
+                                <i class="fas fa-tools mr-2"></i> Peralatan
+                            </span>
+                            <i id="dropdownIcon" class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <ul id="dropdownMenu" class="hidden pl-6">
+                            <li>
+                                <a href="https://cek-khodam-online-peach.vercel.app/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-spa mr-2"></i> Cek Khodam Online
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/tools/encoder%20decoder%20tools/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-code mr-2"></i> Alat Enkoder Dekoder
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/tools/text%20repeater/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="bi bi-body-text mr-2"></i> Teks Repeater
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/tools/text%20editor/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-pen-to-square mr-2"></i> Editor Teks
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/tools/converter/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-exchange-alt mr-2"></i> Konverter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-briefcase mr-2"></i> Portofolio
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/contact-us.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-envelope mr-2"></i> Kontak Kami
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/about.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-info-circle mr-2"></i> Tentang
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex justify-center space-x-4 flex-wrap">
+                <a href="https://codepen.io" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-codepen text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-facebook text-xl" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-instagram text-xl instagram-gradient"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-github text-xl" style="color: #181717;"></i>
+                </a>
+                <a href="https://gmail.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="bi bi-envelope text-xl" style="color: #EA4335;"></i>
+                </a>
+                <a href="https://telegram.org" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-telegram text-xl" style="color: #26A5E4;"></i>
+                </a>
+                <a href="https://threads.net" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-threads text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-tiktok text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-whatsapp text-xl" style="color: #25D366;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden z-30"></div>
+    <div class="social-sidebar" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 0 10px 10px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="color: #000000;" title="CodePen">
+                    <i class="fa-brands fa-codepen" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="color: #3b5998;" title="Facebook">
+                    <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex;" title="Instagram">
+                    <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="color: #6B7280;" title="GitHub">
+                    <i class="bi bi-github" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="color: #D44638;" title="Gmail">
+                    <i class="bi bi-envelope" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://t.me/deviswisley" target="_blank" rel="noopener" style="color: #0088cc;" title="Telegram">
+                    <i class="bi bi-telegram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="color: #000000;" title="Threads">
+                    <i class="fa-brands fa-threads" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="color: #010101;" title="TikTok">
+                    <i class="bi bi-tiktok" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="color: #25D366;" title="WhatsApp">
+                    <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="editor-sidebar" style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 10px 0 0 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" data-bs-toggle="modal" data-bs-target="#themeModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-palette text-black cursor-pointer" style="font-size: 24px;" title="Theme Editor"></i>
+            </li>
+            <li class="mb-2 d-md-none" data-bs-toggle="modal" data-bs-target="#shareModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-share text-black cursor-pointer" style="font-size: 24px;" title="Share"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="container mt-14 bg-light p-4 rounded">
+        <div class="container mx-auto px-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white p-3 shadow-sm rounded flex flex-wrap">
+                            <li class="breadcrumb-item"><a href="https://codingindo.vercel.app/" class="text-indigo-500">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/src/menu/HTML CSS & JavaScript/index.html" class="text-indigo-500">HTML CSS & JavaScript</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">3D Animated Blocks</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-2">Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</h1>
+                            <p class="mb-4" style="font-size: 12px;">Saturday, August 31, 2024</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-10 d-none d-md-flex">
+                            <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#shareModal" style="font-size: 15px; color: white; border-radius: 10px; padding: 10px 20px;">
+                                <i class="bi bi-share me-2" style="color: white;"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="img-preview" class="mr-10" style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 10px; cursor: pointer;" onclick="showImageReview()">
+                        <img src="/src/assets/images/recent posts/image1.png" alt="Currency Converter Preview" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                    </div>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Creating a <a href="/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" class="text-blue-500 underline">3D Animated Blocks</a> is an interesting way to add dynamic and interactive visual effects to a website. This project involves HTML for the element structure, CSS for styling and animation effects, and JavaScript for mouse-based interactivity.
+                        <br><br>
+                        In this blog post, I will walk you through creating an interactive 3D animated block using HTML, CSS, and JavaScript. We will replicate dynamic 3D visual effects, including auto-rotation, mouseover interaction, and responsive design. This block will have smooth animations and can be used to add interactive elements to your website. We will also add a motion effect feature that allows users to move the 3D cube with cursor control, creating a more lively and engaging experience.
+                        <br><br>
+                        As you work on this project, you’ll learn how to structure and style websites effectively to ensure they look great on all devices.
+                    </p>
+                    <h2 class="text-3xl font-bold mb-4">Key Features:</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li><b>Dynamic 3D Animation:</b> 3D cube rotating with smooth animation, giving an attractive visual effect.</li>
+                        <li><b>Mouse Movement Interaction:</b> The cube can interact with mouse movements, giving the user full control to rotate the cube.</li>
+                        <li><b>Responsive Design:</b> 3D cube layout automatically adjusts to different screen sizes for a consistent experience on any device.</li>
+                        <li><b>Multiple Color Themes:</b> Each side of the cube has a different color to enhance the 3D visual effect.</li>
+                        <li><b>Continuous Animation:</b> Continuous auto-rotation gives a dynamic feel, even when there is no user interaction.</li>
+                    </ol>
+                    <p class="text-lg text-gray-700 mb-4">
+                        With these features, your 3D animation blocks will have complete functionality and an attractive design, making them not only useful but also fun to use.
+                    </p>
+                    <h2 class="text-3xl font-bold mb-4">Why Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect?</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            By building this 3D animated block project using HTML, CSS, and JavaScript, you can gain the following skills:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>3D Transforms:</b> Learn how to use CSS transform properties like <b style="background-color: #ececec;">rotate</b>, <b style="background-color: #ececec;">translate</b>, and <b style="background-color: #ececec;">perspective</b> to create realistic 3D effects.</li>
+                            <li><b>CSS Animation:</b> Understand how to create smooth and interactive animations using <b style="background-color: #ececec;">@keyframes</b> and other CSS animation properties.</li>
+                            <li><b>Interactivity with JavaScript:</b> Learn how to connect user interactions, such as mouse movements, with visual transformations.</li>
+                            <li><b>Responsive Design:</b> Learn how to adjust 3D elements to look optimal on different screen sizes using responsive techniques.</li>
+                            <li><b>Motion Effects:</b> Leverage motion effects to create a more dynamic and engaging experience on a web page.</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 mb-4">
+                            This project will provide a solid foundation in responsive web design and front-end development, paving the way for more complex web projects in the future. Good luck and may the skills you gain be useful in developing future projects!
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Steps to create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            Here are the steps to create a 3D Animated Block that moves with animation effects using HTML, CSS, and JavaScript.
+                        </p>
+                        <h2 class="text-2xl font-bold mb-4">1. Basic HTML Structure</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Start by creating a basic HTML structure. Here we will create a container <b style="background-color: #ececec;">div</b> to manage the scene (block view) and cube elements (3D blocks) with some faces.
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-html5 fa-2x mr-2"></i> index.html</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;!-- Coding By CodingIndo - https://codingindo.vercel.app/ --&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;!-- Meta tag for character encoding --&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;!-- Meta tag to make the viewport responsive on mobile devices --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;!-- Page title --&gt;
+    &lt;title&gt;3D Animated Block&lt;/title&gt;
+    &lt;!-- Link to CSS file for styling --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Container for 3D scenes --&gt;
+    &lt;div class="scene"&gt;
+    &lt;!-- Container for 3D cube --&gt;
+        &lt;div class="cube"&gt;
+            &lt;!-- Front side of the cube --&gt;
+            &lt;div class="face front"&gt;&lt;/div&gt;
+            &lt;!-- Back side of the cube --&gt;
+            &lt;div class="face back"&gt;&lt;/div&gt;
+            &lt;!-- Left side of the cube --&gt;
+            &lt;div class="face left"&gt;&lt;/div&gt;
+            &lt;!-- Right side of the cube --&gt;
+            &lt;div class="face right"&gt;&lt;/div&gt;
+            &lt;!-- Top side of the cube --&gt;
+            &lt;div class="face top"&gt;&lt;/div&gt;
+            &lt;!-- Bottom side of the cube --&gt;
+            &lt;div class="face bottom"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Link to JavaScript file for functionality --&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-html-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">2. Adding CSS (style.css)</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Next, add a CSS file to style and animate the 3D effects. Set the size of the cube and its faces, and add animation for rotation.
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-css3-alt fa-2x mr-2"></i> style.css</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-css">
+/* Each element is rearranged to ensure no margins, padding, or border-boxes affect the layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The body of the page is set to display the content centered and has a height of 100% of the viewport */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f9fc;
+    font-family: Arial, sans-serif;
+}
+
+/* The scene (view block) is set to 250px x 250px and has a 3D perspective */
+.scene {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+/* Cube is set to 100% of the scene and has a 3D rotation effect */
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg);
+    animation: rotateCube 15s infinite linear;
+}
+
+/* Each side of the cube is set with a different background color */
+.face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 150, 255, 0.8);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Each side of the cube is set with a different 3D transformation */
+.front  { transform: translateZ(125px); background: #1e90ff; }
+.back   { transform: rotateY(180deg) translateZ(125px); background: #ff6347; }
+.left   { transform: rotateY(-90deg) translateZ(125px); background: #32cd32; }
+.right  { transform: rotateY(90deg) translateZ(125px); background: #ff4500; }
+.top    { transform: rotateX(90deg) translateZ(125px); background: #ffd700; }
+.bottom { transform: rotateX(-90deg) translateZ(125px); background: #dcdcdc; }
+
+/* Continuously rotating cube animation */
+@keyframes rotateCube {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Responsiveness of cube and its sides for screens with width less than 600px */
+@media (max-width: 600px) {
+    .scene {
+        width: 200px;
+        height: 200px;
+    }
+    .face {
+        width: 200px;
+        height: 200px;
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-css-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">3. Interactivity with JavaScript (script.js)</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Add JavaScript to provide interactive effects when the user moves the mouse. The mouse movement will rotate the cube based on the mouse position.
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-js fa-2x mr-2"></i> script.js</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-js">
+// Add event listener to detect mouse movement on elements with class 'scene'
+document.querySelector('.scene').addEventListener('mousemove', function(e) {
+    // Calculate the x and y position relative to the browser window
+    const x = e.clientX / window.innerWidth - 0.5;
+    const y = e.clientY / window.innerHeight - 0.5;
+    // Sets the 3D transform for elements with class 'cube' based on mouse position.
+    document.querySelector('.cube').style.transform = `rotateX(${y * 45}deg) rotateY(${x * 45}deg)`;
+});
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-js-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">4. Run Your Project</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            The 3D blocks will rotate automatically, and when the mouse is moved within the scene, the cube will follow the mouse movement, adding an interactive effect.
+                            <br><br>
+                            Those are the steps to create an interactive 3D Animated Block using HTML, CSS, and JavaScript.
+                        </p>
+                    </ul>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">Additional Notes</h2>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li><b>Performance Optimization:</b> Ensure animations run smoothly across devices by minimizing resource usage, especially on low-spec devices.</li>
+                            <li><b>Accessibility:</b> Consider using visual alternatives for users with visual impairments, such as text descriptions or controls accessible via keyboard.</li>
+                            <li><b>Responsive Design:</b> Test 3D layouts across multiple screen sizes to ensure optimal viewing on mobile, tablet, and desktop devices.</li>
+                            <li><b>Interactive Effects:</b> Adjust the sensitivity level of mouse movements to make interactive effects more controllable and enjoyable for users.</li>
+                            <li><b>Color and Style Customization:</b> You can add customization options, such as dark or light themes, or customizable colors to make the project more personal and appealing to users.</li>
+                        </ol>
+                        <p class="text-lg text-gray-700 mb-4">
+                            By paying attention to these additional points, you can improve the quality and usability of your 3D animation blocks, ensuring that they are not only functionally effective but also user-friendly and accessible.
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Conclusion and final words</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Creating a 3D Animated Block using HTML, CSS, and JavaScript is a creative way to add interactive and dynamic elements to a website. Through this project, we learn important concepts such as:
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>HTML structure:</b> for building 3D elements.</li>
+                            <li><b>CSS transforms and animations:</b> to organize layout, 3D perspective, and auto-rotate the cube.</li>
+                            <li><b>JavaScript:</b> to capture user interactions and update the display in real-time based on mouse movements.</li>
+                        </ul>
+                        By using <b style="background-color: #ececec;">perspective</b>, <b style="background-color: #ececec;">transform-style</b>, and <b style="background-color: #ececec;">rotate</b> elements in CSS, coupled with JavaScript to capture mousemove events, we can create very interesting visual effects. These effects not only provide a modern aesthetic look, but also enhance the user experience through interactivity.
+                        <br><br>
+                        Creating 3D animations and interactive elements using web technologies like this opens up a lot of opportunities for further experimentation. You can expand on this project by changing shapes, adding textures, or even using 3D elements for other web design needs. Stay explorative, and don’t be afraid to try new things with code!
+                        <br><br>
+                        If you have any difficulties in creating a 3D animation block using HTML, CSS, JavaScript, and motion effects, you can download the source code file of this project for free by clicking the “Download” button. You can also view a live demo of this 3D animation block by clicking the “View Live” button to see how the design and animation work in practice.
+                        <br><br>
+                        By accessing the source code file and live demo, you can more easily understand the code implementation and customize the project to your needs. Feel free to explore the code, experiment with animations, and modify effects to improve your skills in HTML, CSS, and JavaScript.
+                        <br><br>
+                        This is a great opportunity to learn more about how to create 3D interactions, integrate motion effects, and deepen your understanding of animation and interactive web design. Happy learning and experimenting!
+                    </p>
+                    <div class="flex items-center justify-center p-4 mt-4">
+                        <a href="/src/demo/3D Animated Blocks/index.html" class="btn btn-success mr-2 d-flex align-items-center">
+                            <i class="bi bi-play-circle me-2"></i>
+                            <span>View Live Demo</span>
+                        </a>
+                        <button id="openDownloadDialog" class="btn btn-info d-flex align-items-center">
+                            <i class="bi bi-download me-2"></i>
+                            <span>Download Code Files</span>
+                        </button>
+                    </div>
+                    <div class="related-articles mt-4 mb-4">
+                        <div class="section-header">Related Articles</div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <a href="/src/pages/hero/How-to-make-a-currency-converter-using-HTML-Bootstrap-TailwindCSS-CSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/src/assets/images/hero/image1.png" class="card-img-top" alt="Article 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">How to make a currency converter using HTML, Bootstrap, TailwindCSS, CSS & JavaScript</h5>
+                                            <p class="card-text">Sunday, August 11, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/src/assets/images/hero/image2.png" class="card-img-top" alt="Article 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Responsive calculator using Bootstrap, TailwindCSS & JavaScript</h5>
+                                            <p class="card-text">Tuesday, August 13, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/src/pages/hero/Building-a-AES-Encoder-Decoder-using-HTML-CSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/src/assets/images/hero/image3.png" class="card-img-top" alt="Article 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Building a AES Encoder Decoder using HTML, CSS & JavaScript</h5>
+                                            <p class="card-text">Saturday, August 24, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment mt-4 mb-4">
+                        <div id="commentTitle" class="section-header">Comment</div>
+                        <div class="divider"></div>
+                        <div id="commentsList" class="mt-2">
+                            <div id="commentsContainer" class="space-y-4"></div>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2">LEAVE A REPLY</h2>
+                        <div class="bg-white p-4 shadow-md rounded-lg">
+                            <form id="commentForm">
+                                <div class="mb-3">
+                                    <textarea id="comment" rows="3" class="form-control" placeholder="Comment:" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="username" class="form-control" placeholder="Name:*" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" id="email" class="form-control" placeholder="Email:*" required>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" id="saveInfo" class="form-check-input">
+                                    <label for="saveInfo" class="form-check-label">Save my name and email in this browser for the next time I comment.</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block-header">
+                        <div class="block-title">Recent Posts</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="list-group mb-4">
+                            <a href="/src/pages/recent posts/How-to-create-Bar-Chart-in-Bootstrap-TailwindCSS-JavaScript.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/src/assets/images/recent posts/image3.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">How to create Bar Chart in Bootstrap, TailwindCSS & JavaScript</h6>
+                                    <p class="card-text">Thursday, October 17, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/src/pages/recent posts/Make-a-Ripple-Effect-on-a-Button-with-a-Gradient-Background-in-HTML-CSS-JavaScript.html" class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/src/assets/images/recent posts/image2.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Make a Ripple Effect on a Button with a Gradient Background in HTML, CSS & JavaScript</h6>
+                                    <p class="card-text">Sunday, September 01, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/src/assets/images/recent posts/image1.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</h6>
+                                    <p class="card-text">Saturday, August 31, 2024</p>
+                                </div>
+                            </a>
+                        </div>
+                    </</div>
+                </div>
+                <div class="col-md-30">
+                    <div class="block-header">
+                        <div class="block-title">Featured Post</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <a href="/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html">
+                        <div class="card mb-4" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                            <img src="/src/assets/images/featured post/image.png" alt="..." class="featured-post-img">
+                            <div class="p-3">
+                                <h5 class="card-title text-lg font-bold">How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</h5>
+                                <p class="card-text">Sunday, September 08, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="block-header">
+                        <div class="block-title">Categories</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <ul class="category-list">
+                        <a href="/src/menu/HTML CSS & JavaScript/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <span>HTML CSS & JavaScript</span>
+                                <span>3</span>
+                            </li>
+                        </a>
+                        <a href="/src/menu/Bootstrap & TailwindCSS/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Bootstrap, TailwindCSS</span>
+                                <span>4</span>
+                            </li>
+                        </a>
+                        <a href="/src/menu/Encoder Decoder Tools/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <span>Encoder Decoder Tools</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Linktree</span>
+                            <span>1</span>
+                        </li>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Timeline</span>
+                            <span>1</span>
+                        </li>
+                        <a href="/src/menu/Chart/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Chart</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </</section>
+    <div class="modal fade" id="themeModal" tabindex="-1" aria-labelledby="themeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl" id="themeModalLabel">Select a code theme</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('prism')">Default</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('dark')">Dark</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('funky')">Funky</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('okaidia')">Okaidia</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('twilight')">Twilight</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('coy')">Coy</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('solarizedlight')">Solarized Light</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('tomorrownight')">Tomorrow Night</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-labelledby="imagePreviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="/src/assets/images/recent posts/image1.png" alt="Image Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-blue-500">
+                    <h5 class="modal-title text-white" id="downloadModalLabel">
+                        <i class="fas fa-file-download"></i> Download Code Files
+                    </h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to download the source code files for this project?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" id="confirmDownload">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-green-500">
+                    <h5 class="modal-title text-white" id="progressModalLabel">
+                        <i class="fas fa-spinner"></i> Downloading...
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-3 text-center" id="progressText">0% completed</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelDownload">
+                        <i class="fas fa-times"></i> Cancel Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="completedModal" tabindex="-1" aria-labelledby="completedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title text-white" id="completedModalLabel">
+                        <i class="fas fa-check-circle"></i> Download Completed!
+                    </h5>
+                    <button type="button" class="btn-close text-white closeCompleted" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Your file has been successfully downloaded.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success closeCompleted">
+                        <i class="fas fa-check"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-white shadow-lg rounded-lg fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">
+                        <i class="fas fa-hourglass-start modal-icon"></i>
+                        Coming Soon
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="font-bold">We're working hard to bring this feature to you!</h6>
+                    <p class="text-gray-600 mt-2">
+                        Our team is currently working on this exciting feature, and we can’t wait for you to try it out. Stay tuned for updates and get ready to explore what’s coming next!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-4 shadow-lg">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl font-semibold" id="shareModalLabel">Share this blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid grid-cols-5 gap-4 text-center mb-4">
+                        <div class="social-icon">
+                            <a href="https://www.blogger.com/blog-this.g?u=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #f57d00;">
+                                <i class="fa-brands fa-blogger-b text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Blogger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://discord.com/share?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #7289da;">
+                                <i class="fa-brands fa-discord text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Discord</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="mailto:?subject=Check%20this%20out&body=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #d93025;">
+                                <i class="fa fa-envelope text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Email</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #3b5998;">
+                                <i class="bi bi-facebook text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Facebook</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://share.flipboard.com/bookmarklet/popout?v=2&url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #E12828;">
+                                <i class="fa-brands fa-flipboard text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Flipboard</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/sharer.php?u=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-instagram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Instagram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://line.me/R/msg/text/?https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #00B900;">
+                                <i class="bi bi-line text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Line</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #0077b5;">
+                                <i class="bi bi-linkedin text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">LinkedIn</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.messenger.com/t/yourusername" target="_blank" rel="noopener" style="color: #0084ff;">
+                                <i class="fa-brands fa-facebook-messenger text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Messenger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://news.google.com/share?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #4285F4;">
+                                <i class="bi bi-google text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">News Google</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://getpocket.com/save?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #EF4056;">
+                                <i class="fa-brands fa-get-pocket text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pocket</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://pinterest.com/pin/create/button/?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #E60023;">
+                                <i class="bi bi-pinterest text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pinterest</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.reddit.com/submit?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #FF4500;">
+                                <i class="bi bi-reddit text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Reddit</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.snapchat.com/add/yourusername" target="_blank" rel="noopener" style="color: #FFFC00;">
+                                <i class="bi bi-snapchat text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Snapchat</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://stackoverflow.com/share?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #f48024;">
+                                <i class="bi bi-stack-overflow text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Stack Overflow</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://t.me/share/url?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #0088cc;">
+                                <i class="bi bi-telegram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Telegram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #35465C;">
+                                <i class="fa-brands fa-tumblr text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Tumblr</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://x.com/intent/tweet?url=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #000000;">
+                                <i class="fa-brands fa-x-twitter text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Twitter</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html&business=1" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp Business</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="shareLink" type="text" class="form-control flex-grow rounded-lg border-gray-300 shadow-sm focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50" value="https://codingindo.vercel.app/src/pages/recent%20posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html" readonly>
+                        <button class="btn btn-success ml-2 flex items-center gap-2 px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition-colors" onclick="copyURL()">
+                            <i class="bi bi-clipboard"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toastNotification" class="toast align-items-center text-white bg-primary border-0 hidden fixed bottom-5 left-5" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="uil uil-check-circle me-2"></i>
+                <span>The code has been copied to the clipboard!</span>
+            </div>
+        </div>
+        <div class="progress h-1 bg-gray-300">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 0%;"></div>
+        </div>
+    </div>
+    <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-6 py-3 rounded-full shadow-2xl hidden" style="z-index: 1000; margin-bottom: 20px;">
+        <i id="snackbar-icon" class="ml-2"></i>
+        <span id="snackbar-message" class="font-semibold"></span>
+    </div>
+    <footer class="text-black text-center text-lg-start mt-5" style="background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); border-radius: 10px;">
+        <div class="container p-6">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <div class="mb-2 d-flex" style="gap: 10px;">
+                        <img src="/src/assets/images/logo.png" alt="logo" class="w-12 h-12 ml-2.5 rounded-lg">
+                        <span class="text-4xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                    </div>
+                    <p style="color: gray">
+                        I am a passionate web developer with experience in HTML, CSS, JavaScript, NextJS, ReactJS, TailwindCSS, Vite and various other web technologies. I love creating upcoming projects and learning new things every day.
+                    </p>
+                    <ul class="list-unstyled mt-2">
+                        <li class="mb-2" style="color: #228B22;">
+                            <i class="bi bi-telephone me-2"></i>
+                            <span>Call me: +62 123-456-7890</span>
+                        </li>
+                        <li class="mb-2" style="color: #1E90FF;">
+                            <i class="bi bi-envelope me-2"></i>
+                            <span>Email: deviswisley27@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <h5 id="footer-map-title" class="text-uppercase font-bold mb-2">Our Location</h5>
+                        <p class="text-gray-500 mb-2">
+                            Find us on the map below. We are located in Pakkat, Indonesia. Feel free to visit us!
+                        </p>
+                        <div style="border: 2px solid #0d6efd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0030778924197!2d98.47166767406898!3d2.1525066978283447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302fcad06f3bdce9%3A0x8cd4949e6d4e2130!2sSalak%20monument%20Pakkat!5e0!3m2!1sen!2sid!4v1725379323570!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Link</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codingindo.vercel.app/" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-house me-2"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://cek-khodam-online-peach.vercel.app/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-search me-2"></i>
+                                <span>Check Khodam Online</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-briefcase me-2"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="text-uppercase font-bold text-center mt-4 mb-2">Donation</h5>
+                    <p class="text-gray-500 mb-4">
+                        If you would like to support our work, you can donate through the link below. Thank you for your support!
+                    </p>
+                    <a href="https://ko-fi.com/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/src/assets/images/others/ko-fi.png" alt="Ko-fi" style="width: 20px; height: 20px;">
+                        <span>Donate with Ko-fi</span>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/deviswisley" target="_blank" rel="noopener" class="buy-me-coffee-button btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/src/assets/images/others/buymeacoffee.png" alt="Buy Me A Coffee" style="width: 20px; height: 20px;">
+                        <span>Donate with Buy Me a Coffee</span>
+                    </a>
+                    <a href="https://www.paypal.com/paypalme/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #003087; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="bi bi-paypal" style="font-size: 20px; margin-right: 8px;"></i>
+                        <span>Donate with PayPal</span>
+                    </a>
+                    <a href="https://lynk.id/payme/codingindo" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #2ab57d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/src/assets/images/others/lynk.png" alt="Lynk" style="width: 23px; height: 23px;">
+                        <span>Donate with Lynk</span>
+                    </a>
+                    <a href="https://trakteer.id/devis_wisley_situmorang" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center" style="background-color: #be1e2d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/src/assets/images/others/trakteer.png" alt="Trakteer" style="width: 23px; height: 23px;">
+                        <span>Donate with Trakteer</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="CodePen">
+                                <i class="fa-brands fa-codepen me-2"></i> CodePen
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Facebook">
+                                <i class="bi bi-facebook me-2"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Instagram">
+                                <i class="bi bi-instagram me-2"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="GitHub">
+                                <i class="bi bi-github me-2"></i> GitHub
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Gmail">
+                                <i class="bi bi-envelope me-2"></i> Gmail
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://t.me/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Telegram">
+                                <i class="bi bi-telegram me-2"></i> Telegram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.threads.net/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Threads">
+                                <i class="fa-brands fa-threads me-2"></i> Threads
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #010101, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="TikTok">
+                                <i class="bi bi-tiktok me-2"></i> TikTok
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="WhatsApp">
+                                <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-black d-flex flex-column flex-md-row justify-content-between align-items-center p-4" style="background-color: #f1f1f1; border-top: 1px solid #e0e0e0;">
+            <p class="mb-2 mb-md-0 text-center text-md-start">
+                © Copyright 2024 CodingIndo. All Rights Reserved.
+            </p>
+            <div class="text-center text-md-end d-flex flex-column flex-md-row align-items-center">
+                <a href="/src/pages/about.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">About</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/src/pages/faq.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">FAQ</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/src/pages/privacy-policy.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Privacy Policy</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/src/pages/terms-of-service.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <i id="scrollTopBtn" class="bi bi-arrow-up-circle-fill btn btn-primary shadow-lg px-2 py-1 rounded-full bg-blue-700 hover:bg-blue-800" style="cursor: pointer; font-size: 40px;"></i>
+    <script src="/src/assets/js/recent posts/pages1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="deviswisley" data-description="Support me on Buy me a coffee!" data-message="Like my content? Support with a coffee!" data-color="#FFDD00" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

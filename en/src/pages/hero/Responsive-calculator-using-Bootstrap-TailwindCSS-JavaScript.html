@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive calculator using Bootstrap, TailwindCSS & JavaScript</title>
+    <meta name="author" content="CodingIndo">
+    <meta name="copyright" content="2024 CodingIndo">
+    <meta name="description" content="Responsive calculator uses Bootstrap, TailwindCSS and JavaScript to perform basic and advanced math calculations.">
+    <meta name="keywords" content="responsive calculator, Bootstrap, TailwindCSS, JavaScript, math calculations">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Responsive Calculator using Bootstrap, TailwindCSS & JavaScript">
+    <meta property="og:description" content="Responsive calculator uses Bootstrap, TailwindCSS and JavaScript to perform basic and advanced math calculations.">
+    <meta property="og:url" content="https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html">
+    <link rel="stylesheet" href="/en/src/assets/css/hero/pages2.css">
+    <link rel="icon" href="/en/src/assets/images/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-prism.min.css" rel="stylesheet" id="theme-link">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="container navbar navbar-expand-lg navbar-light fixed-top text-primary" style="border-bottom: 2px solid; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.8);">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <button id="drawerToggle" class="lg:hidden text-gray-700 focus:outline-none transition-transform duration-300 mr-4">
+                    <i id="toggleIcon" class="fas fa-bars text-2xl"></i> 
+                </button>
+                <a class="navbar-brand d-flex align-items-center ml-4" href="https://codingindo.vercel.app/">
+                    <img src="/en/src/assets/images/logo.png" alt="logo" class="w-10 h-10 mr-2.5 rounded-lg">
+                    <span class="text-2xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://codingindo.vercel.app/">Home</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://cek-khodam-online-peach.vercel.app/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-spa" style="font-size: 20px; margin-right: 10px;"></i> Check Khodam Online
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/encoder%20decoder%20tools/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-code" style="font-size: 20px; margin-right: 10px;"></i> Encoder Decoder Tools
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/text%20repeater/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="bi bi-body-text" style="font-size: 20px; margin-right: 10px;"></i> Text Repeater
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="/en/tools/text%20editor/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-pen-to-square" style="font-size: 20px; margin-right: 10px;"></i> Text Editor
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/en/tools/converter/" style="background-color: #f8f9fa; color: black; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" onmouseover="this.style.backgroundColor='#e2e6ea'" onmouseout="this.style.backgroundColor='#f8f9fa'">
+                                    <i class="fas fa-exchange-alt" style="font-size: 20px; margin-right: 10px;"></i> Converter
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><hr class="dropdown-divider d-none d-md-flex"></li>
+                    <li class="nav-item d-none d-md-flex">
+                        <a class="nav-link" href="/en/src/components/extension/">Extension</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://deviswisley.github.io/" target="_blank" rel="noopener">Portfolio</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/src/pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/src/pages/about.html">About</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row flex-wrap justify-content-center">
+                    <li class="nav-item dropdown d-none d-md-block" style="margin-right: 5px;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="uil uil-share-alt"></i> Social Media
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="CodePen" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-codepen" style="font-size: 20px; margin-right: 10px;"></i> CodePen
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Facebook" onmouseover="this.style.background='linear-gradient(to right, #4b70ba, #5c7fca)'" onmouseout="this.style.background='linear-gradient(to right, #3b5998, #4b70ba)'">
+                                    <i class="bi bi-facebook" style="font-size: 20px; margin-right: 10px;"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Instagram" onmouseover="this.style.background='linear-gradient(to right, #f06292, #ff7f8f)'" onmouseout="this.style.background='linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)'">
+                                    <i class="bi bi-instagram" style="font-size: 20px; margin-right: 10px;"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="GitHub" onmouseover="this.style.background='linear-gradient(to right, #8b949e, #a3acf2)'" onmouseout="this.style.background='linear-gradient(to right, #6B7280, #8b949e)'">
+                                    <i class="bi bi-github" style="font-size: 20px; margin-right: 10px;"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Gmail" onmouseover="this.style.background='linear-gradient(to right, #e57373, #f8b3b3)'" onmouseout="this.style.background='linear-gradient(to right, #D44638, #e57373)'">
+                                    <i class="bi bi-envelope" style="font-size: 20px; margin-right: 10px;"></i> Gmail
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://t.me/deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Telegram" onmouseover="this.style.background='linear-gradient(to right, #33aaff, #66ccff)'" onmouseout="this.style.background='linear-gradient(to right, #0088cc, #33aaff)'">
+                                    <i class="bi bi-telegram" style="font-size: 20px; margin-right: 10px;"></i> Telegram
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="background: linear-gradient(to right, #000000, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="Threads" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #000000, #333333)'">
+                                    <i class="fa-brands fa-threads" style="font-size: 20px; margin-right: 10px;"></i> Threads
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="background: linear-gradient(to right, #010101, #333333); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="TikTok" onmouseover="this.style.background='linear-gradient(to right, #333333, #555555)'" onmouseout="this.style.background='linear-gradient(to right, #010101, #333333)'">
+                                    <i class="bi bi-tiktok" style="font-size: 20px; margin-right: 10px;"></i> TikTok
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border: none; padding: 10px 15px; border-radius: 20px; transition: all 0.3s ease; display: flex; align-items: center;" title="WhatsApp" onmouseover="this.style.background='linear-gradient(to right, #4caf50, #66d37e)'" onmouseout="this.style.background='linear-gradient(to right, #25D366, #4caf50)'">
+                                    <i class="bi bi-whatsapp" style="font-size: 20px; margin-right: 10px;"></i> WhatsApp
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="loading-bar" id="loadingBar"></div>
+        <div id="scrollBar">
+            <div></div>
+        </div>
+    </nav>
+    <div id="drawer" class="lg:hidden drawer-blur fixed inset-y-0 left-0 w-65 shadow-lg transform -translate-x-full drawer-transition z-40 flex flex-col justify-between">
+        <div class="mt-16">
+            <div class="p-6 flex flex-col items-center">
+                <img src="/en/src/assets/images/logo.png" alt="Drawer Image" class="h-24 w-24 rounded-lg">
+                <h2 class="text-2xl font-bold text-gray-800 brand-gradient text-center">CodingIndo</h2>
+                <p class="text-sm text-gray-600 text-center">Created By Devis Wisley</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://codingindo.vercel.app/en/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <div class="relative">
+                        <button id="dropdownToggle" class="w-full text-left px-4 py-2 text-gray-700 transition duration-300 flex items-center justify-between hover-gradient">
+                            <span>
+                                <i class="fas fa-tools mr-2"></i> Tools
+                            </span>
+                            <i id="dropdownIcon" class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <ul id="dropdownMenu" class="hidden pl-6">
+                            <li>
+                                <a href="https://cek-khodam-online-peach.vercel.app/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-spa mr-2"></i> Check Khodam Online
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/encoder%20decoder%20tools/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-code mr-2"></i> Encoder Decoder Tools
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/text%20repeater/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="bi bi-body-text mr-2"></i> Text Repeater
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/text%20editor/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-pen-to-square mr-2"></i> Text Editor
+                                </a>
+                            </li>
+                            <hr class="my-2 border-gray-200">
+                            <li>
+                                <a href="/en/tools/converter/" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                                    <i class="fas fa-exchange-alt mr-2"></i> Converter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-briefcase mr-2"></i> Portfolio
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/contact-us.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-envelope mr-2"></i> Contact Us
+                    </a>
+                </li>
+                <hr class="my-2 border-gray-200">
+                <li>
+                    <a href="/src/pages/about.html" class="block px-4 py-2 text-gray-700 transition duration-300 hover-gradient">
+                        <i class="fas fa-info-circle mr-2"></i> About
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex justify-center space-x-4 flex-wrap">
+                <a href="https://codepen.io" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-codepen text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-facebook text-xl" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-instagram text-xl instagram-gradient"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-github text-xl" style="color: #181717;"></i>
+                </a>
+                <a href="https://gmail.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="bi bi-envelope text-xl" style="color: #EA4335;"></i>
+                </a>
+                <a href="https://telegram.org" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-telegram text-xl" style="color: #26A5E4;"></i>
+                </a>
+                <a href="https://threads.net" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-threads text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-tiktok text-xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" class="hover:opacity-80 transition duration-300">
+                    <i class="fab fa-whatsapp text-xl" style="color: #25D366;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden z-30"></div>
+    <div class="social-sidebar" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 0 10px 10px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" style="color: #000000;" title="CodePen">
+                    <i class="fa-brands fa-codepen" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" style="color: #3b5998;" title="Facebook">
+                    <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex;" title="Instagram">
+                    <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" style="color: #6B7280;" title="GitHub">
+                    <i class="bi bi-github" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" style="color: #D44638;" title="Gmail">
+                    <i class="bi bi-envelope" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://t.me/deviswisley" target="_blank" rel="noopener" style="color: #0088cc;" title="Telegram">
+                    <i class="bi bi-telegram" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.threads.net/@deviswisley" target="_blank" rel="noopener" style="color: #000000;" title="Threads">
+                    <i class="fa-brands fa-threads" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" style="color: #010101;" title="TikTok">
+                    <i class="bi bi-tiktok" style="font-size: 24px;"></i>
+                </a>
+            </li>
+            <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" style="color: #25D366;" title="WhatsApp">
+                    <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="editor-sidebar" style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); background-color: #f8f9fa; padding: 10px; border-radius: 10px 0 0 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <ul class="list-unstyled mb-0">
+            <li class="mb-2" data-bs-toggle="modal" data-bs-target="#themeModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-palette text-black cursor-pointer" style="font-size: 24px;" title="Theme Editor"></i>
+            </li>
+            <li class="mb-2 d-md-none" data-bs-toggle="modal" data-bs-target="#shareModal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="bi bi-share text-black cursor-pointer" style="font-size: 24px;" title="Share"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="container mt-14 bg-light p-4 rounded">
+        <div class="container mx-auto px-3">
+            <div class="row">
+                <main class="col-md-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white p-3 shadow-sm rounded flex flex-wrap">
+                            <li class="breadcrumb-item"><a href="https://codingindo.vercel.app/" class="text-indigo-500">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/en/src/menu/Bootstrap & TailwindCSS/index.html" class="text-indigo-500">Bootstrap, TailwindCSS</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Responsive Calculator</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-2">Responsive calculator using Bootstrap, TailwindCSS & JavaScript</h1>
+                            <p class="mb-4" style="font-size: 12px;">Tuesday, August 13, 2024</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-10 d-none d-md-flex">
+                            <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#shareModal" style="font-size: 15px; color: white; border-radius: 10px; padding: 10px 20px;">
+                                <i class="bi bi-share me-2" style="color: white;"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="img-preview" class="mr-10" style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 10px; cursor: pointer;" onclick="showImageReview()">
+                        <img src="/en/src/assets/images/hero/image2.png" alt="Currency Converter Preview" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                    </div>
+                    <p class="text-lg text-gray-700 mb-4">
+                        This <a href="/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" class="text-blue-500 underline">Responsive Calculator</a> is a calculator web application designed to provide an optimal user experience across devices, from desktops to smartphones. Using modern technologies like Bootstrap and TailwindCSS, as well as JavaScript for interactive logic, this calculator offers a clean, functional and responsive interface.
+                        <br><br>
+                        In this blog post, I’ll walk you through creating a modern and functional responsive calculator using HTML, CSS, and JavaScript. We’ll replicate the calculator’s key features, including its clean and intuitive design, by leveraging:
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>Bootstrap:</b> for responsive grid system and ready-to-use UI elements.</li>
+                            <li><b>TailwindCSS:</b> for additional styling and design adjustments to make it look more attractive.</li>
+                            <li><b>JavaScript:</b> to handle the calculator logic, including mathematical calculations and user interactions.</li>
+                        </ul>
+                        We will build a calculator interface that includes a display bar for calculation results, buttons for numbers and mathematical operations, and additional functions such as calculator memory and calculation history. Using these technologies, you will gain a deeper understanding of how to combine CSS frameworks with JavaScript to create responsive and easy-to-use web applications.
+                        <br><br>
+                        As you work on this project, you’ll learn how to structure and style websites effectively to ensure they look great on all devices.
+                    </p>
+                    <h2 class="text-3xl font-bold mt-4 mb-4">Key Features:</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li><b>Responsive Design:</b> Using Bootstrap and TailwindCSS to ensure the calculator displays and functions well on a variety of screen sizes, from mobile to desktop.</li>
+                        <li><b>Display Bar:</b> Displays the calculation results in large and clear font sizes, making them easy to read.</li>
+                        <li><b>Calculator Buttons:</b></li>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><b>Number Keys:</b> Keys for numbers 0-9, including decimal key, to enter numbers.</li>
+                            <li><b>Operator Keys:</b> Keys for basic mathematical operations such as addition (+), subtraction (-), multiplication (*), division (/), as well as additional operations such as percentage (%) and exponent (^).</li>
+                            <li><b>Functional Keys:</b> Keys to clear input (C), delete the last character (⌫), and calculate results (=).</li>
+                        </ul>
+                        <li><b>Memory Function:</b></li>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><b>MC (Memory Clear):</b> Clears the values ​​stored in the calculator's memory.</li>
+                            <li><b>MR (Memory Recall):</b> Retrieves a value stored in the calculator's memory.</li>
+                            <li><b>M+ (Memory Add):</b> Adds the current display value to memory.</li>
+                            <li><b>M- (Memory Subtract):</b> Subtracts the current display value from memory.</li>
+                        </ul>
+                        <li><b>Additional Functions:</b></li>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><b>Square Root (√):</b> Calculates the square root of the displayed value.</li>
+                            <li><b>Power (x², x³, ^):</b> Calculates the square, cube, or other power of a displayed value.</li>
+                        </ul>
+                        <li><b>Calculation History:</b> Saves and displays calculation history for user reference.</li>
+                        <li><b>Clean and Modern Layout:</b> Uses a minimalist design with organized and easily accessible elements for an optimal user experience.</li>
+                    </ol>
+                    <p class="text-lg text-gray-700 mb-4">
+                        With these features, your currency converter will have complete functionality and an attractive design, making it not only useful but also enjoyable to use.
+                    </p>
+                    <h2 class="text-3xl font-bold mb-4">Why Responsive calculator using HTML, Bootstrap, CSS & JavaScript?</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            By building this responsive calculator project using Bootstrap, TailwindCSS, and JavaScript, you can gain the following skills:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>HTML:</b> You will learn how to leverage Bootstrap's grid system and UI components to create responsive and engaging layouts. This includes using Bootstrap's grid classes and utilities to ensure the calculator works well across a variety of screen sizes.</li>
+                            <li><b>Bootstrap:</b> You will hone your skills in using TailwindCSS to customize and enhance the appearance of the calculator. This includes implementing Tailwind utilities for padding, margins, colors, and hover effects to create a clean and modern design.</li>
+                            <li><b>JavaScript:</b> You will develop skills in using JavaScript to handle the logic of a calculator application. This includes handling user input, mathematical calculations, and DOM manipulation to dynamically update the calculator display.</li>
+                            <li><b>Integrating CSS Frameworks with JavaScript:</b> You will learn how to integrate CSS frameworks like Bootstrap and Tailwind with JavaScript to create web applications that are not only functional but also aesthetic.</li>
+                            <li><b>Responsive Testing and Customization:</b> You will understand how to test and customize so that the calculator displays and functions well across a variety of devices, ensuring a consistent and enjoyable user experience.</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 mb-4">
+                            This project will provide a solid foundation in responsive web design and front-end development, paving the way for more complex web projects in the future. Good luck and may the skills you gain be useful in developing future projects!
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Steps to responsive calculator using Bootstrap, TailwindCSS & JavaScript</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <p class="text-lg text-gray-700 mb-4">
+                            Here are the steps to create a responsive calculator using Bootstrap, TailwindCSS, and JavaScript. We will break this process down into several parts:
+                        </p>
+                        <h2 class="text-2xl font-bold mb-4">1. Project Setup</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Create Folder Structure
+                        </p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li><b>Create Project Folder:</b> Create a new folder for the calculator project.</li>
+                            <li><b>Inside Project Folder:</b>
+                            <ul class="list-disc pl-5 mt-2">
+                                <li><b style="background-color: #ececec;">index.html</b> The main HTML file.</li>
+                                <li><b style="background-color: #ececec;">script.js</b> JavaScript for calculator logic.</li>
+                            </ul>
+                        </ol>
+                        <h2 class="text-2xl font-bold mb-4">2. HTML Structure for Calculator</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Add the following HTML inside the <b style="background-color: #ececec;">&lt;body&gt</b> tag to create the calculator. We are using Bootstrap’s grid layout to arrange the calculator buttons and Tailwind CSS for additional styling.</li>
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-html5 fa-2x mr-2"></i> index.html</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;!-- Coding By CodingIndo - https://codingindo.vercel.app/ --&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;!-- Meta tag for character encoding --&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;!-- Meta tag for setting the viewport to be responsive on mobile devices --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;!-- Page title --&gt;
+    &lt;title&gt;Calculator&lt;/title&gt;
+    &lt;!-- Connecting Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;!-- Connecting TailwindCSS --&gt;
+    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+    &lt;style&gt;
+        /* Sets the body background color */
+        body {
+            background-color: #00c7f9;
+        }
+
+        /* Set the main container */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Set the calculator display */
+        .calculator {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Set the calculator screen display */
+        .display {
+            height: 80px;
+            background: #e9ecef;
+            text-align: right;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        /* Set the appearance of the calculator buttons */
+        .btn-custom {
+            height: 60px;
+            font-size: 24px;
+            border-radius: 15px;
+            margin: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Effect when button is pressed */
+        .btn-custom:active {
+            transform: scale(0.95);
+        }
+
+        /* Set the appearance of the number keys */
+        .btn-number {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        /* Hover effect on number keys */
+        .btn-number:hover {
+            background-color: #c0c0c0;
+        }
+
+        /* Set the display of operator buttons */
+        .btn-operator {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* Hover effect on operator buttons */
+        .btn-operator:hover {
+            background-color: #e67e22;
+        }
+
+        /* Sets the button appearance to be the same as */
+        .btn-equal {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        /* Hover effect on button is same as */
+        .btn-equal:hover {
+            background-color: #218838;
+        }
+
+        /* Set the appearance of the clear button */
+        .btn-clear {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        /* Hover effect on clear button */
+        .btn-clear:hover {
+            background-color: #c82333;
+        }
+
+        /* Set the memory button display */
+        .btn-memory {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Hover effect on memory button */
+        .btn-memory:hover {
+            background-color: #0069d9;
+        }
+
+        /* Set the appearance of the delete button */
+        .btn-delete {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        /* Hover effect on delete button */
+        .btn-delete:hover {
+            background-color: #5a6268;
+        }
+
+        /* Sets the appearance of the percent button */
+        .btn-percentage {
+            background-color: #17a2b8;
+            color: #fff;
+        }
+
+        /* Hover effect on percent button */
+        .btn-percentage:hover {
+            background-color: #138496;
+        }
+
+        /* Set the container history display */
+        .history-container {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 100%;
+            min-width: 300px;
+        }
+
+        /* Set history display */
+        .history {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 10px;
+            font-size: 14px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Set the display of history items */
+        .history-item {
+            margin-bottom: 5px;
+        }
+
+        /* Set the appearance of the clear history button */
+        .btn-clear-history {
+            background-color: #dc3545;
+            color: #fff;
+            border-radius: 15px;
+            height: 40px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+
+        /* Hover effect on clear history button */
+        .btn-clear-history:hover {
+            background-color: #c82333;
+        }
+
+        /* Set responsive display for small screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="calculator"&gt;
+            &lt;!-- Calculator screen --&gt;
+            &lt;div id="display" class="display mb-4"&gt;0&lt;/div&gt;
+            &lt;!-- Memory button --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-memory flex-grow-1" onclick="memoryClear()"&gt;MC&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-memory flex-grow-1" onclick="memoryRecall()"&gt;MR&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-memory flex-grow-1" onclick="memoryAdd()"&gt;M+&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-memory flex-grow-1" onclick="memorySubtract()"&gt;M-&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Clear, delete, percent, and divide buttons --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-clear flex-grow-1" onclick="clearDisplay()"&gt;C&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-delete flex-grow-1" onclick="deleteLast()"&gt;⌫&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-percentage flex-grow-1" onclick="appendOperator('%')"&gt;%&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-operator flex-grow-1" onclick="appendOperator('/')"&gt;/&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Number keys 7, 8, 9, and times --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('7')"&gt;7&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('8')"&gt;8&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('9')"&gt;9&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-operator flex-grow-1" onclick="appendOperator('*')"&gt;x&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Number keys 4, 5, 6, and less --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('4')"&gt;4&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('5')"&gt;5&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('6')"&gt;6&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-operator flex-grow-1" onclick="appendOperator('-')"&gt;-&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Number keys 1, 2, 3, and plus --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('1')"&gt;1&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('2')"&gt;2&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('3')"&gt;3&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-operator flex-grow-1" onclick="appendOperator('+')"&gt;+&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Number keys 0, period, root, and equals --&gt;
+            &lt;div class="d-flex flex-wrap"&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('0')"&gt;0&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendNumber('.')"&gt;.&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="calculateSquareRoot()"&gt;√&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-equal flex-grow-1" onclick="calculateResult()"&gt;=&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Rank button 2, Rank button 3, and Rank n buttons --&gt;
+            &lt;div class="d-flex flex-wrap mt-2"&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendOperator('**')"&gt;x²&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendOperator('**3')"&gt;x³&lt;/button&gt;
+                &lt;button class="btn btn-custom btn-number flex-grow-1" onclick="appendOperator('**')"&gt;^&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="history-container"&gt;
+            &lt;div class="d-flex justify-between align-items-center mb-2"&gt;
+                &lt;!-- Title history --&gt;
+                &lt;h5&gt;History&lt;/h5&gt;
+                &lt;!-- Clear history button --&gt;
+                &lt;button class="btn btn-clear-history" onclick="clearHistory()"&gt;Clear History&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Container to display history --&gt;
+            &lt;div id="history" class="history"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Links a custom JavaScript file for this page --&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-html-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-4 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">3. Add JavaScript to Calculator Function</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Create a <b style="background-color: #ececec;">"script.js"</b> to handle the calculator logic. This includes functions for displaying numbers, operators, and results, as well as functions for memory manipulation:
+                        </p>
+                    </ul>
+                    <div class="code-snippet-container mb-6 shadow-lg rounded-lg overflow-hidden">
+                        <div class="code-snippet-header flex items-center justify-between bg-blue-600 p-4 rounded-t-lg">
+                            <span class="font-bold text-white flex items-center justify-center"><i class="fa-brands fa-js fa-2x mr-2"></i> script.js</span>
+                            <div class="buttons flex space-x-2">
+                                <button class="btn btn-sm btn-light raw-btn hover:bg-gray-200"><i class="bi bi-file-earmark-text"></i> Raw</button>
+                                <button class="btn btn-sm btn-light copy-btn hover:bg-gray-200"><i class="bi bi-clipboard"></i> Copy Code</button>
+                                <button class="btn btn-sm btn-light extern-btn hover:bg-gray-200"><i class="bi bi-box-arrow-up-right"></i> Extern</button>
+                            </div>
+                        </div>
+                        <pre class="code-block bg-gray-900 text-white p-4 rounded-b-lg overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <code class="language-js">
+// Get display and history elements from DOM
+let display = document.getElementById('display');
+let history = document.getElementById('history');
+let memory = 0; // Inisialisasi variabel memory
+
+// Function to clear display contents
+function clearDisplay() {
+    display.innerText = '0';
+}
+
+// Function to delete the last character on the display
+function deleteLast() {
+    display.innerText = display.innerText.slice(0, -1) || '0';
+}
+
+// Function to add numbers to the display
+function appendNumber(number) {
+    if (display.innerText === '0') {
+        display.innerText = number;
+    } else {
+        display.innerText += number;
+    }
+}
+
+// Function to add operators to the display
+function appendOperator(operator) {
+    if (display.innerText !== '0') {
+        display.innerText += ` ${operator} `;
+    }
+}
+
+// Function to calculate the result of the expression on the display
+function calculateResult() {
+    try {
+        let result = eval(display.innerText.replace('^', '**'));
+        display.innerText = result;
+        addToHistory(display.innerText); // Add results to history
+    } catch {
+        display.innerText = 'Error';
+    }
+}
+
+// Function to calculate the square root of the value in display
+function calculateSquareRoot() {
+    try {
+        let result = Math.sqrt(eval(display.innerText));
+        display.innerText = result;
+        addToHistory(display.innerText); // Add results to history
+    } catch {
+        display.innerText = 'Error';
+    }
+}
+
+// Function to delete values ​​in memory
+function memoryClear() {
+    memory = 0;
+}
+
+// Function to display the value in memory to the display
+function memoryRecall() {
+    display.innerText = memory;
+}
+
+// Function to add the value in the display to memory
+function memoryAdd() {
+    memory += parseFloat(display.innerText) || 0;
+}
+
+// Function to subtract the value on display from memory
+function memorySubtract() {
+    memory -= parseFloat(display.innerText) || 0;
+}
+
+// Function to add an entry to history
+function addToHistory(entry) {
+    const historyItem = document.createElement('div');
+    historyItem.className = 'history-item';
+    historyItem.innerText = entry;
+    history.prepend(historyItem);
+}
+
+// Function to delete all entries in history
+function clearHistory() {
+    history.innerHTML = '';
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Explanation</h2>
+                        <div class="table-responsive overflow-y-auto" style="scrollbar-color: #0d6efc #f1f3f4;">
+                            <table class="table table-striped table-bordered shadow-sm rounded-lg overflow-hidden">
+                                <thead class="bg-blue-600 text-white text-center">
+                                    <tr>
+                                        <th class="py-3 px-4 text-lg font-semibold">Number</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Line of Code</th>
+                                        <th class="py-3 px-4 text-lg font-semibold">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="code-js-explanation-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-4 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">4. Run Your Project</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Open your <b style="background-color: #ececec;">"index.html"</b> file in a web browser, and you should see a fully functional and responsive calculator similar to the one in the image.
+                        </p>
+                    </ul>
+                    <ul class="list-disc pl-5 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">Additional Notes</h2>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li><b>Cross-Browser Compatibility:</b> Ensure that the calculator functions correctly across different browsers, such as Chrome, Firefox, Safari, and Edge. Test thoroughly to identify and fix any browser-specific issues.</li>
+                            <li><b>Accessibility Considerations:</b> Implement accessibility features such as keyboard navigation and screen reader support to make the calculator usable by individuals with disabilities. For example, ensure that all buttons are accessible via keyboard shortcuts and that appropriate ARIA (Accessible Rich Internet Applications) labels are used.</li>
+                            <li><b>Performance Optimization:</b> Optimize the performance of the calculator by minimizing the use of heavy JavaScript operations. Ensure that the application runs smoothly even on lower-end devices.</li>
+                            <li><b>Error Handling:</b> Implement robust error handling in the JavaScript code to manage invalid inputs or mathematical errors gracefully. Provide user-friendly messages or fallback options to handle edge cases.</li>
+                            <li><b>Security Considerations:</b> Be cautious with the use of <b style="background-color: #ececec;">eval</b> for calculations as it can pose security risks if not handled properly. Consider using a safe mathematical expression parser instead.</li>
+                            <li><b>Responsive Testing:</b> Conduct testing on various screen sizes and orientations to ensure that the calculator layout adapts appropriately. Use browser developer tools to simulate different devices and screen resolutions.</li>
+                            <li><b>Code Organization:</b> Maintain clean and organized code for easier maintenance and updates. Use comments to describe complex sections of code and follow best practices for code formatting.</li>
+                            <li><b>User Feedback:</b> Incorporate user feedback to enhance the calculator’s features and usability. Consider adding functionalities based on user suggestions, such as additional mathematical operations or customization options.</li>
+                            <li><b>Documentation:</b> Provide clear documentation for the code and features of the calculator. This will help others understand the implementation and make it easier for future updates or modifications.</li>
+                            <li><b>Future Enhancements:</b> Plan for potential future enhancements such as additional mathematical functions, a history feature with edit capabilities, or integration with other applications.</li>
+                        </ol>
+                        <p class="text-lg text-gray-700 mb-4">
+                            By keeping these additional notes in mind, you can ensure that your responsive calculator is not only functional but also user-friendly, accessible, and secure.
+                        </p>
+                    </ul>
+                    <h2 class="text-3xl font-bold mb-4">Conclusion and final words</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        By following the steps outlined, you can create a responsive web calculator that not only functions well but also has a modern and attractive appearance. This project utilizes a variety of the latest web technologies, including:
+                        <ul class="list-disc pl-5 mb-4">
+                            <li><b>Bootstrap:</b> For responsive grid systems and UI components.</li>
+                            <li><b>TailwindCSS:</b> For additional styling and design customization.</li>
+                            <li><b>JavaScript:</b> To handle calculator logic and user interaction.</li>
+                        </ul>
+                        This project provides a better understanding of how to combine CSS frameworks like Bootstrap and Tailwind with JavaScript to create dynamic and responsive user interfaces. In addition, this experience also shows how to design web applications that are aesthetically pleasing and easy to use across devices.
+                        <br><br>
+                        It’s important to always perform thorough testing across multiple devices and browsers to ensure that the calculator functions properly and the appearance remains consistent. Don’t hesitate to adjust the styling and add additional features according to user needs or design preferences. With these skills, you’ll be better prepared to tackle more complex web projects in the future.
+                        <br><br>
+                        Keep learning and experimenting with web technologies, because the world of web development is always evolving and full of new opportunities. Hopefully this responsive calculator will be a useful stepping stone in your web development journey. Good luck and success! 🚀
+                        <br><br>
+                        If you are having trouble creating a responsive calculator using Bootstrap, TailwindCSS, and JavaScript, you can download the source code files for this project for free by clicking the “Download” button. You can also view a live demo of this calculator by clicking the “View Live” button to see how the calculator’s design and functionality work in practice.
+                        <br><br>
+                        With access to the source code files and live demo, you can easily understand the code implementation and customize the project to suit your needs. Feel free to explore the code, experiment with styles, and modify features to improve your skills in HTML, CSS, and JavaScript.
+                        <br><br>
+                        This is a great opportunity to learn more about integrating CSS frameworks with JavaScript and to deepen your understanding of responsive web design. Happy learning and experimenting!
+                    </p>
+                    <div class="flex items-center justify-center p-4 mt-4">
+                        <a href="/en/src/demo/Calculator/index.html" class="btn btn-success mr-2 d-flex align-items-center">
+                            <i class="bi bi-play-circle me-2"></i>
+                            <span>View Live Demo</span>
+                        </a>
+                        <button id="openDownloadDialog" class="btn btn-info d-flex align-items-center">
+                            <i class="bi bi-download me-2"></i>
+                            <span>Download Code Files</span>
+                        </button>
+                    </div>
+                    <div class="related-articles mt-4 mb-4">
+                        <div class="section-header">Related Articles</div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/How-to-make-a-currency-converter-using-Bootstrap-TailwindCSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image1.png" class="card-img-top" alt="Article 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">How to make a currency converter using Bootstrap, TailwindCSS & JavaScript</h5>
+                                            <p class="card-text">Sunday, August 11, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image2.png" class="card-img-top" alt="Article 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Responsive calculator using Bootstrap, TailwindCSS & JavaScript</h5>
+                                            <p class="card-text">Tuesday, August 13, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="/en/src/pages/hero/Building-a-AES-Encoder-Decoder-using-HTML-CSS-JavaScript.html">
+                                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                        <img src="/en/src/assets/images/hero/image3.png" class="card-img-top" alt="Article 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-lg font-bold">Building a AES Encoder Decoder using HTML, CSS & JavaScript</h5>
+                                            <p class="card-text">Saturday, August 24, 2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment mt-4 mb-4">
+                        <div id="commentTitle" class="section-header">Comment</div>
+                        <div class="divider"></div>
+                        <div id="commentsList" class="mt-2">
+                            <div id="commentsContainer" class="space-y-4"></div>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2">LEAVE A REPLY</h2>
+                        <div class="bg-white p-4 shadow-md rounded-lg">
+                            <form id="commentForm">
+                                <div class="mb-3">
+                                    <textarea id="comment" rows="3" class="form-control" placeholder="Comment:" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="username" class="form-control" placeholder="Name:*" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" id="email" class="form-control" placeholder="Email:*" required>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" id="saveInfo" class="form-check-input">
+                                    <label for="saveInfo" class="form-check-label">Save my name and email in this browser for the next time I comment.</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+                <aside class="col-md-4">
+                    <div class="block-header">
+                        <div class="block-title">Recent Posts</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="list-group mb-4">
+                            <a href="/en/src/pages/recent posts/How-to-create-Bar-Chart-in-Bootstrap-TailwindCSS-JavaScript.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image3.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">How to create Bar Chart in Bootstrap, TailwindCSS & JavaScript</h6>
+                                    <p class="card-text">Thursday, October 17, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/en/src/pages/recent posts/Make-a-Ripple-Effect-on-a-Button-with-a-Gradient-Background-in-HTML-CSS-JavaScript.html" class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image2.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Make a Ripple Effect on a Button with a Gradient Background in HTML, CSS & JavaScript</h6>
+                                    <p class="card-text">Sunday, September 01, 2024</p>
+                                </div>
+                            </a>
+                            <a href="/en/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html " class="list-group-item list-group-item-action flex items-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                                <img src="/en/src/assets/images/recent posts/image1.png" alt="..." class="me-3 w-16 h-16 rounded" style="width: 100px; height: 100px;">
+                                <div>
+                                    <h6 class="card-title text-lg font-bold">Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect</h6>
+                                    <p class="card-text">Saturday, August 31, 2024</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block-header">
+                        <div class="block-title">Featured Post</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <a href="/en/src/pages/featured%20post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html">
+                        <div class="card mb-4" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"">
+                            <img src="/en/src/assets/images/featured post/image.png" alt="..." class="featured-post-img">
+                            <div class="p-3">
+                                <h5 class="card-title text-lg font-bold">How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript</h5>
+                                <p class="card-text">Sunday, September 08, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="block-header">
+                        <div class="block-title">Categories</div>
+                        <div class="block-line"></div>
+                    </div>
+                    <ul class="category-list">
+                        <a href="/en/src/menu/HTML CSS & JavaScript/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>HTML CSS & JavaScript</span>
+                                <span>3</span>
+                            </li>
+                        </a>
+                        <a href="/en/src/menu/Bootstrap & TailwindCSS/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Bootstrap, TailwindCSS</span>
+                                <span>4</span>
+                            </li>
+                        </a>
+                        <a href="/en/src/menu/Encoder Decoder Tools/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Encoder Decoder Tools</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Linktree</span>
+                            <span>1</span>
+                        </li>
+                        <li class="category-item transition-transform ease-in-out duration-300 cursor-pointer" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'; this.style.color='blue';" onmouseout="this.style.transform='scale(1)'; this.style.color='black';">
+                            <span>Timeline</span>
+                            <span>1</span>
+                        </li>
+                        <a href="/en/src/menu/Chart/index.html">
+                            <li class="category-item transition-transform ease-in-out duration-300" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>Chart</span>
+                                <span>1</span>
+                            </li>
+                        </a>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="themeModal" tabindex="-1" aria-labelledby="themeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl" id="themeModalLabel">Select a code theme</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('prism')">Default</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('dark')">Dark</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('funky')">Funky</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('okaidia')">Okaidia</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('twilight')">Twilight</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('coy')">Coy</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('solarizedlight')">Solarized Light</div>
+                        <div class="theme-option p-2 me-2 mb-2" onclick="changeTheme('tomorrownight')">Tomorrow Night</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-labelledby="imagePreviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="/en/src/assets/images/hero/image2.png" alt="Image Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-blue-500">
+                    <h5 class="modal-title text-white" id="downloadModalLabel">
+                        <i class="fas fa-file-download"></i> Download Code Files
+                    </h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to download the source code files for this project?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" id="confirmDownload">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-green-500">
+                    <h5 class="modal-title text-white" id="progressModalLabel">
+                        <i class="fas fa-spinner"></i> Downloading...
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-3 text-center" id="progressText">0% completed</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelDownload">
+                        <i class="fas fa-times"></i> Cancel Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="completedModal" tabindex="-1" aria-labelledby="completedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fadeIn">
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title text-white" id="completedModalLabel">
+                        <i class="fas fa-check-circle"></i> Download Completed!
+                    </h5>
+                    <button type="button" class="btn-close text-white closeCompleted" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Your file has been successfully downloaded.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success closeCompleted">
+                        <i class="fas fa-check"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-white shadow-lg rounded-lg fadeIn">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl">
+                        <i class="fas fa-hourglass-start modal-icon"></i>
+                        Coming Soon
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="font-bold">We're working hard to bring this feature to you!</h6>
+                    <p class="text-gray-600 mt-2">
+                        Our team is currently working on this exciting feature, and we can’t wait for you to try it out. Stay tuned for updates and get ready to explore what’s coming next!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-4 shadow-lg">
+                <div class="modal-header">
+                    <h5 class="modal-title text-2xl font-semibold" id="shareModalLabel">Share this blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid grid-cols-5 gap-4 text-center mb-4">
+                        <div class="social-icon">
+                            <a href="https://www.blogger.com/blog-this.g?u=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #f57d00;">
+                                <i class="fa-brands fa-blogger-b text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Blogger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://discord.com/share?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #7289da;">
+                                <i class="fa-brands fa-discord text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Discord</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="mailto:?subject=Check%20this%20out&body=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #d93025;">
+                                <i class="fa fa-envelope text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Email</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #3b5998;">
+                                <i class="bi bi-facebook text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Facebook</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://share.flipboard.com/bookmarklet/popout?v=2&url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #E12828;">
+                                <i class="fa-brands fa-flipboard text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Flipboard</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/sharer.php?u=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; color: transparent; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-instagram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Instagram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://line.me/R/msg/text/?https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #00B900;">
+                                <i class="bi bi-line text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Line</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #0077b5;">
+                                <i class="bi bi-linkedin text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">LinkedIn</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.messenger.com/t/yourusername" target="_blank" rel="noopener" style="color: #0084ff;">
+                                <i class="fa-brands fa-facebook-messenger text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Messenger</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://news.google.com/share?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #4285F4;">
+                                <i class="bi bi-google text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">News Google</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://getpocket.com/save?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #EF4056;">
+                                <i class="fa-brands fa-get-pocket text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pocket</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://pinterest.com/pin/create/button/?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #E60023;">
+                                <i class="bi bi-pinterest text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Pinterest</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.reddit.com/submit?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #FF4500;">
+                                <i class="bi bi-reddit text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Reddit</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.snapchat.com/add/yourusername" target="_blank" rel="noopener" style="color: #FFFC00;">
+                                <i class="bi bi-snapchat text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Snapchat</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://stackoverflow.com/share?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #f48024;">
+                                <i class="bi bi-stack-overflow text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Stack Overflow</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://t.me/share/url?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #0088cc;">
+                                <i class="bi bi-telegram text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Telegram</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #35465C;">
+                                <i class="fa-brands fa-tumblr text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Tumblr</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://x.com/intent/tweet?url=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #000000;">
+                                <i class="fa-brands fa-x-twitter text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">Twitter</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp</p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/?text=https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html&business=1" target="_blank" rel="noopener" style="color: #25D366;">
+                                <i class="bi bi-whatsapp text-4xl"></i>
+                            </a>
+                            <p class="mt-2 text-sm">WhatsApp Business</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="shareLink" type="text" class="form-control flex-grow rounded-lg border-gray-300 shadow-sm focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50" value="https://codingindo.vercel.app/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html" readonly>
+                        <button class="btn btn-success ml-2 flex items-center gap-2 px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition-colors" onclick="copyURL()">
+                            <i class="bi bi-clipboard"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toastNotification" class="toast align-items-center text-white bg-primary border-0 hidden fixed bottom-5 left-5" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="uil uil-check-circle me-2"></i>
+                <span>The code has been copied to the clipboard!</span>
+            </div>
+        </div>
+        <div class="progress h-1 bg-gray-300">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 0%;"></div>
+        </div>
+    </div>
+    <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-6 py-3 rounded-full shadow-2xl hidden" style="z-index: 1000; margin-bottom: 20px;">
+        <i id="snackbar-icon" class="ml-2"></i>
+        <span id="snackbar-message" class="font-semibold"></span>
+    </div>
+    <footer class="text-black text-center text-lg-start mt-5" style="background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); border-radius: 10px;">
+        <div class="container p-6">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <div class="mb-2 d-flex" style="gap: 10px;">
+                        <img src="/en/src/assets/images/logo.png" alt="logo" class="w-12 h-12 ml-2.5 rounded-lg">
+                        <span class="text-4xl font-bold" style="background: linear-gradient(to right, #0d6efd, #ff0000); -webkit-background-clip: text; color: transparent;">CodingIndo</span>
+                    </div>
+                    <p style="color: gray">
+                        I am a passionate web developer with experience in HTML, CSS, JavaScript, NextJS, ReactJS, TailwindCSS, Vite and various other web technologies. I love creating upcoming projects and learning new things every day.
+                    </p>
+                    <ul class="list-unstyled mt-2">
+                        <li class="mb-2" style="color: #228B22;">
+                            <i class="bi bi-telephone me-2"></i>
+                            <span>Call me: +62 123-456-7890</span>
+                        </li>
+                        <li class="mb-2" style="color: #1E90FF;">
+                            <i class="bi bi-envelope me-2"></i>
+                            <span>Email: deviswisley27@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <h5 id="footer-map-title" class="text-uppercase font-bold mb-2">Our Location</h5>
+                        <p class="text-gray-500 mb-2">
+                            Find us on the map below. We are located in Pakkat, Indonesia. Feel free to visit us!
+                        </p>
+                        <div style="border: 2px solid #0d6efd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0030778924197!2d98.47166767406898!3d2.1525066978283447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302fcad06f3bdce9%3A0x8cd4949e6d4e2130!2sSalak%20monument%20Pakkat!5e0!3m2!1sen!2sid!4v1725379323570!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Link</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codingindo.vercel.app/" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-house me-2"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://cek-khodam-online-peach.vercel.app/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-search me-2"></i>
+                                <span>Check Khodam Online</span>
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://deviswisley.github.io/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background-color: #0d6efd; color: white; border-radius: 20px; transition: background-color 0.3s ease;">
+                                <i class="bi bi-briefcase me-2"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="text-uppercase font-bold text-center mt-4 mb-2">Donation</h5>
+                    <p class="text-gray-500 mb-4">
+                        If you would like to support our work, you can donate through the link below. Thank you for your support!
+                    </p>
+                    <a href="https://ko-fi.com/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/ko-fi.png" alt="Ko-fi" style="width: 20px; height: 20px;">
+                        <span>Donate with Ko-fi</span>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/deviswisley" target="_blank" rel="noopener" class="buy-me-coffee-button btn d-flex align-items-center justify-content-center mb-2" style="background-color: #FFDD00; color: black; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/buymeacoffee.png" alt="Buy Me A Coffee" style="width: 20px; height: 20px;">
+                        <span>Donate with Buy Me a Coffee</span>
+                    </a>
+                    <a href="https://www.paypal.com/paypalme/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #003087; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="bi bi-paypal" style="font-size: 20px; margin-right: 8px;"></i>
+                        <span>Donate with PayPal</span>
+                    </a>
+                    <a href="https://lynk.id/payme/codingindo" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center mb-2" style="background-color: #2ab57d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/lynk.png" alt="Lynk" style="width: 23px; height: 23px;">
+                        <span>Donate with Lynk</span>
+                    </a>
+                    <a href="https://trakteer.id/devis_wisley_situmorang" target="_blank" rel="noopener" class="btn d-flex align-items-center justify-content-center" style="background-color: #be1e2d; color: white; border-radius: 20px; transition: background-color 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <img class="me-2" src="/en/src/assets/images/others/trakteer.png" alt="Trakteer" style="width: 23px; height: 23px;">
+                        <span>Donate with Trakteer</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase font-bold text-center mb-4">Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://codepen.io/DevisWisley/pens/public" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="CodePen">
+                                <i class="fa-brands fa-codepen me-2"></i> CodePen
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.facebook.com/devis.wisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #3b5998, #4b70ba); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Facebook">
+                                <i class="bi bi-facebook me-2"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.instagram.com/deviswisley/" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Instagram">
+                                <i class="bi bi-instagram me-2"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://github.com/DevisWisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #6B7280, #8b949e); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="GitHub">
+                                <i class="bi bi-github me-2"></i> GitHub
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="mailto:deviswisley27@gmail.com" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #D44638, #e57373); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Gmail">
+                                <i class="bi bi-envelope me-2"></i> Gmail
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://t.me/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #0088cc, #33aaff); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Telegram">
+                                <i class="bi bi-telegram me-2"></i> Telegram
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.threads.net/deviswisley" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #000000, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="Threads">
+                                <i class="fa-brands fa-threads me-2"></i> Threads
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://www.tiktok.com/@deviswisleysitumorang" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #010101, #333333); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="TikTok">
+                                <i class="bi bi-tiktok me-2"></i> TikTok
+                            </a>
+                        </li>
+                        <li class="mb-2" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <a href="https://api.whatsapp.com/send?phone=6282274107967" target="_blank" rel="noopener" class="btn d-flex align-items-center" style="background: linear-gradient(to right, #25D366, #4caf50); color: white; border-radius: 20px; transition: background-color 0.3s ease;" title="WhatsApp">
+                                <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-black d-flex flex-column flex-md-row justify-content-between align-items-center p-4" style="background-color: #f1f1f1; border-top: 1px solid #e0e0e0;">
+            <p class="mb-2 mb-md-0 text-center text-md-start">
+                © Copyright 2024 CodingIndo. All Rights Reserved.
+            </p>
+            <div class="text-center text-md-end d-flex flex-column flex-md-row align-items-center">
+                <a href="/en/src/pages/about.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">About</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/faq.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">FAQ</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/privacy-policy.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Privacy Policy</a>
+                <div class="vr me-3 d-none d-md-block"></div>
+                <a href="/en/src/pages/terms-of-service.html" class="text-black hover:text-gray-400 me-3" style="cursor: pointer;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <i id="scrollTopBtn" class="bi bi-arrow-up-circle-fill btn btn-primary shadow-lg px-2 py-1 rounded-full bg-blue-700 hover:bg-blue-800" style="cursor: pointer; font-size: 40px;"></i>
+    <script src="/en/src/assets/js/hero/pages2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="deviswisley" data-description="Support me on Buy me a coffee!" data-message="Like my content? Support with a coffee!" data-color="#FFDD00" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

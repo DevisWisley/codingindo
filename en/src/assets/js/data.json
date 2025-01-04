@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "How to create Bar Chart in Bootstrap, TailwindCSS & JavaScript",
+        "summary": "Thursday, October 17, 2024",
+        "imageUrl": "/en/src/assets/images/recent posts/image3.png",
+        "link": "/en/src/pages/recent posts/How-to-create-Bar-Chart-in-Bootstrap-TailwindCSS-JavaScript.html"
+    },
+    {
+        "id": 2,
+        "title": "Make a Ripple Effect on a Button with a Gradient Background in HTML, CSS & JavaScript",
+        "summary": "Sunday, September 01, 2024",
+        "imageUrl": "/en/src/assets/images/recent posts/image2.png",
+        "link": "/en/src/pages/recent posts/Make-a-Ripple-Effect-on-a-Button-with-a-Gradient-Background-in-HTML-CSS-JavaScript.html"
+    },
+    {
+        "id": 3,
+        "title": "Create a 3D Animated Blocks using HTML, CSS, JavaScript & Motion Effect",
+        "summary": "Sunday, August 31, 2024",
+        "imageUrl": "/en/src/assets/images/recent posts/image1.png",
+        "link": "/en/src/pages/recent posts/Create-a-3D-Animated-Blocks-using-HTML-CSS-JavaScript-Motion-Effect.html"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Temperature Unit using Bootstrap, TailwindCSS & JavaScript",
+        "summary": "Monday, September 09, 2024",
+        "imageUrl": "/en/src/assets/images/most popular/image1.png",
+        "link": "/en/src/pages/most%20popular/Temperature-Unit-using-Bootstrap-TailwindCSS-JavaScript.html"
+    },
+    {
+        "id": 2,
+        "title": "How to Build a Text To Speech in Bootstrap, TailwindCSS, JSON & JavaScript",
+        "summary": "Sunday, September 08, 2024",
+        "imageUrl": "/en/src/assets/images/featured post/image.png",
+        "link": "/en/src/pages/featured post/How-to-Build-a-Text-To-Speech-in-Bootstrap-TailwindCSS-JSON-JavaScript.html"
+    },
+    {
+        "id": 3,
+        "title": "Responsive calculator using Bootstrap, TailwindCSS & JavaScript",
+        "summary": "Tuesday, August 13, 2024",
+        "imageUrl": "/en/src/assets/images/hero/image2.png",
+        "link": "/en/src/pages/hero/Responsive-calculator-using-Bootstrap-TailwindCSS-JavaScript.html"
+    },
+    {
+        "id": 4,
+        "title": "How to make a currency converter using Bootstrap, TailwindCSS & JavaScript",
+        "summary": "Sunday, August 11, 2024",
+        "imageUrl": "/en/src/assets/images/hero/image1.png",
+        "link": "/en/src/pages/hero/How-to-make-a-currency-converter-using-Bootstrap-TailwindCSS-JavaScript.html"
+    }
+]

@@ -1,0 +1,43 @@
+/* Sets styles for the body element */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sets styles for elements with the converter-card class */
+.converter-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Sets the style for the h2 element inside the converter-card */
+.converter-card h2 {
+    color: #764ba2;
+}
+
+/* Sets the style for elements with class btn-primary */
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Sets the style for elements with class btn-primary on hover */
+.btn-primary:hover {
+    background-color: #764ba2;
+    border-color: #764ba2;
+}
+
+/* Sets the style for the element with the id result */
+#result {
+    color: #764ba2;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
