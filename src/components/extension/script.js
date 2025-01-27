@@ -43,64 +43,57 @@ window.addEventListener('load', () => {
     }, 1200);
 });
 
-let currentItems = [];
 fetch('/src/components/extension/data.json')
     .then(response => response.json())
-    .then(data => {
-        allItems = data;
-        loadMoreItems();
-}).catch(error => console.error('Error loading items:', error));
-
-function renderGridView(filteredItems) {
-    const gridView = document.getElementById("gridView");
-    const noResults = document.getElementById("noResults");
-    gridView.innerHTML = "";
-    if (filteredItems.length === 0) {
-        noResults.classList.remove("hidden");
-    } else {
-        noResults.classList.add("hidden");
-        filteredItems.forEach(item => {
-            const card = `
-                <div class="col-md-2 mb-4">
-                    <div class="card border-0 shadow-lg rounded-lg">
-                        <img src="${item.image}" alt="${item.name}" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-lg font-semibold text-gray-800" title="${item.name}">${item.name}</h5>
-                            <p class="card-text text-gray-600" title="${item.description}">${item.description}</p>
-                            <a href="vscode:extension/${item.extensionId}" class="btn btn-success mt-3 px-6 py-2 rounded-lg shadow-md">Unduh</a>
+    .then(allItems => {
+        let currentItems = [];
+        function renderItems() {
+            allItems.forEach(item => {
+                const card = `
+                    <div class="col-md-2 mb-4">
+                        <div class="card border-0 shadow-lg rounded-lg">
+                            <img src="${item.image}" alt="${item.name}" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-lg font-semibold text-gray-800">${item.name}</h5>
+                                <p class="card-text text-gray-600">${item.description}</p>
+                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">Unduh</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
-            gridView.innerHTML += card;
-        });
-    }
-}
-
-function loadMoreItems() {
-    const loadMoreBtn = document.getElementById("loadMoreBtn");
-    const loading = document.getElementById("loading");
-    loading.classList.remove("hidden");
-    setTimeout(() => {
-        loading.classList.add("hidden");
-        const nextItems = allItems.slice(currentItems.length, currentItems.length + 6);
-        currentItems = [...currentItems, ...nextItems];
-        renderGridView(currentItems);
-        if (currentItems.length >= allItems.length) {
-            loadMoreBtn.classList.add("hidden");
+                `;
+                gridViewAll.innerHTML += card;
+            });
         }
-    }, 1000);
-}
-    
-document.getElementById("searchBar").addEventListener("input", (event) => {
-    const query = event.target.value.toLowerCase();
-    const filteredItems = currentItems.filter(item => 
-        item.name.toLowerCase().includes(query) || 
-        item.description.toLowerCase().includes(query)
-    );
-    renderGridView(filteredItems);
-});
-document.getElementById("loadMoreBtn").addEventListener("click", loadMoreItems);
+        renderItems();
+
+        document.getElementById("searchBar").addEventListener("input", (event) => {
+            const query = event.target.value.toLowerCase();
+            const filteredItems = allItems.filter(item => 
+                item.name.toLowerCase().includes(query) || 
+                item.description.toLowerCase().includes(query)
+            );
+            const gridViewAll = document.getElementById("gridViewAll");
+            gridViewAll.innerHTML = "";
+            
+            filteredItems.forEach(item => {
+                const card = `
+                    <div class="col-md-2 mb-4">
+                        <div class="card border-0 shadow-lg rounded-lg">
+                            <img src="${item.image}" alt="${item.name}" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-lg font-semibold text-gray-800">${item.name}</h5>
+                                <p class="card-text text-gray-600">${item.description}</p>
+                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">Unduh</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                gridViewAll.innerHTML += card;
+            });
+            document.getElementById("noResults").classList.toggle("hidden", filteredItems.length > 0);
+        });
+    })
+    .catch(error => console.error('Error loading data:', error));
 
 document.querySelector(".buy-me-coffee-button").addEventListener("click", (e) => {
         e.preventDefault();
