@@ -259,18 +259,10 @@
             </ol>
         </nav>
         <div class="mb-4">
-            <input type="text" id="searchBar" class="form-control border border-gray-300 rounded-lg shadow-sm p-3" placeholder="Search here..." />
+            <input type="text" id="searchBar" class="form-control border border-gray-300 rounded-lg shadow-sm p-3" placeholder="Cari di sini..." />
         </div>
-        <div class="row g-4" id="gridView"></div>
-        <div id="loading" class="text-center hidden">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-        <p id="noResults" class="text-center text-red-500 font-bold hidden">No results found!</p>
-        <div class="text-center mt-6">
-            <button id="loadMoreBtn" class="btn btn-primary px-6 py-3 rounded-lg shadow-lg">Load More</button>
-        </div>
+        <div class="row g-4" id="gridViewAll"></div>
+        <p id="noResults" class="text-center text-red-500 font-bold hidden">Tidak ada hasil ditemukan!</p>
     </section>
     <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-6 py-3 rounded-full shadow-2xl hidden" style="z-index: 1000; margin-bottom: 20px;">
         <i id="snackbar-icon" class="ml-2"></i>
