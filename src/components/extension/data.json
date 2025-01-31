@@ -2130,24 +2130,24 @@
     },
     {
         "id": 268,
-        "name": "VSCode Neovim",
-        "description": "Alexey Svetliakov",
-        "image": "https://asvetliakov.gallerycdn.vsassets.io/extensions/asvetliakov/vscode-neovim/1.18.15/1737397256074/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "asvetliakov.vscode-neovim"
-    },
-    {
-        "id": 269,
         "name": "VSCode React Refactor",
         "description": "planbcoding",
         "image": "https://planbcoding.gallerycdn.vsassets.io/extensions/planbcoding/vscode-react-refactor/1.1.3/1613643426151/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "planbcoding.vscode-react-refactor"
     },
     {
-        "id": 270,
+        "id": 269,
         "name": "vscode-elixir",
         "description": "Mat McLoughlin",
         "image": "https://mjmcloug.gallerycdn.vsassets.io/extensions/mjmcloug/vscode-elixir/1.1.0/1509547033502/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "mjmcloug.vscode-elixir"
+    },
+    {
+        "id": 270,
+        "name": "vscode-icons",
+        "description": "VSCode Icons Team",
+        "image": "https://vscode-icons-team.gallerycdn.vsassets.io/extensions/vscode-icons-team/vscode-icons/12.10.0/1734217891528/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscode-icons-team.vscode-icons"
     },
 
 
@@ -2161,69 +2161,62 @@
 
     {
         "id": 271,
-        "name": "vscode-icons",
-        "description": "VSCode Icons Team",
-        "image": "https://vscode-icons-team.gallerycdn.vsassets.io/extensions/vscode-icons-team/vscode-icons/12.10.0/1734217891528/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "vscode-icons-team.vscode-icons"
-    },
-    {
-        "id": 272,
         "name": "vscode-icons-mac",
         "description": "Wayou Liu",
         "image": "https://wayou.gallerycdn.vsassets.io/extensions/wayou/vscode-icons-mac/7.25.3/1564717968649/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "wayou.vscode-icons-mac"
     },
     {
-        "id": 273,
+        "id": 272,
         "name": "vscode-pdf",
         "description": "tomoki1207",
         "image": "https://tomoki1207.gallerycdn.vsassets.io/extensions/tomoki1207/pdf/1.2.2/1736559861315/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "tomoki1207.pdf"
     },
     {
-        "id": 274,
+        "id": 273,
         "name": "vscode-pets",
         "description": "Anthony Shaw",
         "image": "https://tonybaloney.gallerycdn.vsassets.io/extensions/tonybaloney/vscode-pets/1.27.0/1718074060311/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "tonybaloney.vscode-pets"
     },
     {
-        "id": 275,
+        "id": 274,
         "name": "vscode-proto3",
         "description": "zxh404",
         "image": "https://zxh404.gallerycdn.vsassets.io/extensions/zxh404/vscode-proto3/0.5.5/1636202098665/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "zxh404.vscode-proto3"
     },
     {
-        "id": 276,
+        "id": 275,
         "name": "vscode-solution-explorer",
         "description": "Fernando Escolar",
         "image": "https://fernandoescolar.gallerycdn.vsassets.io/extensions/fernandoescolar/vscode-solution-explorer/0.8.8/1732540558703/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "fernandoescolar.vscode-solution-explorer"
     },
     {
-        "id": 277,
+        "id": 276,
         "name": "vscode-styled-components",
         "description": "Styled Components",
         "image": "https://styled-components.gallerycdn.vsassets.io/extensions/styled-components/vscode-styled-components/1.7.8/1680721633849/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "styled-components.vscode-styled-components"
     },
     {
-        "id": 278,
+        "id": 277,
         "name": "WSL",
         "description": "Microsoft",
         "image": "https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/remote-wsl/0.88.5/1730297837494/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "ms-vscode-remote.remote-wsl"
     },
     {
-        "id": 279,
+        "id": 278,
         "name": "YAML",
         "description": "Red Hat",
         "image": "https://redhat.gallerycdn.vsassets.io/extensions/redhat/vscode-yaml/1.15.0/1717739942488/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "redhat.vscode-yaml"
     },
     {
-        "id": 280,
+        "id": 279,
         "name": "Zoom Bar",
         "description": "wraith13",
         "image": "https://wraith13.gallerycdn.vsassets.io/extensions/wraith13/zoombar-vscode/1.4.4/1676706795357/Microsoft.VisualStudio.Services.Icons.Default",
