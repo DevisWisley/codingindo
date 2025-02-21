@@ -78,6 +78,12 @@
         "extensionId": "1tontech.angular-material"
     },
     {
+        "name": "Angular Snippets (Version 18)",
+        "description": "John Papa",
+        "image": "https://johnpapa.gallerycdn.vsassets.io/extensions/johnpapa/angular2/18.0.2/1721073446931/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "johnpapa.Angular2"
+    },
+    {
         "name": "Apache Conf",
         "description": "mrmlnc",
         "image": "https://mrmlnc.gallerycdn.vsassets.io/extensions/mrmlnc/vscode-apache/1.2.0/1546867810778/Microsoft.VisualStudio.Services.Icons.Default",
@@ -629,485 +635,365 @@
         "image": "https://editorconfig.gallerycdn.vsassets.io/extensions/editorconfig/editorconfig/0.16.4/1607315835386/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "EditorConfig.EditorConfig"
     },
-
-
-
-
-
-
-
-
-
-
     {
-        "id": 101, 
-        "name": "EJS language support", 
-        "description": "DigitalBrainstem", 
-        "image": "https://digitalbrainstem.gallerycdn.vsassets.io/extensions/digitalbrainstem/javascript-ejs-support/1.3.3/1675866258942/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "DigitalBrainstem.javascript-ejs-support" 
+        "name": "EJS language support",
+        "description": "DigitalBrainstem",
+        "image": "https://digitalbrainstem.gallerycdn.vsassets.io/extensions/digitalbrainstem/javascript-ejs-support/1.3.3/1675866258942/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "DigitalBrainstem.javascript-ejs-support"
     },
     {
-        "id": 102, 
-        "name": "Emmet Keybindings", 
-        "description": "Andrés Gutiérrez", 
-        "image": "https://agutierrezr.gallerycdn.vsassets.io/extensions/agutierrezr/emmet-keybindings/1.2.1/1636557537614/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "agutierrezr.emmet-keybindings" 
+        "name": "Emmet Keybindings",
+        "description": "Andrés Gutiérrez",
+        "image": "https://agutierrezr.gallerycdn.vsassets.io/extensions/agutierrezr/emmet-keybindings/1.2.1/1636557537614/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "agutierrezr.emmet-keybindings"
     },
     {
-        "id": 103, 
-        "name": "Emoji Log", 
-        "description": "Ahmad Awais ⚡", 
-        "image": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/emoji-log-vscode/1.3.0/1676443927544/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ahmadawais.emoji-log-vscode" 
+        "name": "Emoji Log",
+        "description": "Ahmad Awais ⚡",
+        "image": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/emoji-log-vscode/1.3.0/1676443927544/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ahmadawais.emoji-log-vscode"
     },
     {
-        "id": 104, 
-        "name": "Enhanced Status Bar", 
-        "description": "Shellomo", 
-        "image": "https://shellomo.gallerycdn.vsassets.io/extensions/shellomo/statusbar-notes/1.0.3/1732227115308/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Shellomo.statusbar-notes" 
+        "name": "Enhanced Status Bar",
+        "description": "Shellomo",
+        "image": "https://shellomo.gallerycdn.vsassets.io/extensions/shellomo/statusbar-notes/1.0.3/1732227115308/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Shellomo.statusbar-notes"
     },
     {
-        "id": 105, 
-        "name": "Error Lens", 
-        "description": "Alexander", 
-        "image": "https://usernamehw.gallerycdn.vsassets.io/extensions/usernamehw/errorlens/3.22.0/1734686649548/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "usernamehw.errorlens" 
+        "name": "Error Lens",
+        "description": "Alexander",
+        "image": "https://usernamehw.gallerycdn.vsassets.io/extensions/usernamehw/errorlens/3.22.0/1734686649548/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "usernamehw.errorlens"
     },
     {
-        "id": 106, 
-        "name": "es6-string-html", 
-        "description": "Tobermory", 
-        "image": "https://tobermory.gallerycdn.vsassets.io/extensions/tobermory/es6-string-html/2.17.0/1733307395603/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Tobermory.es6-string-html" 
+        "name": "es6-string-html",
+        "description": "Tobermory",
+        "image": "https://tobermory.gallerycdn.vsassets.io/extensions/tobermory/es6-string-html/2.17.0/1733307395603/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Tobermory.es6-string-html"
     },
     {
-        "id": 107, 
-        "name": "ES7 React/Redux/GraphQL/React-Native snippets", 
-        "description": "rodrigovallades", 
-        "image": "https://rodrigovallades.gallerycdn.vsassets.io/extensions/rodrigovallades/es7-react-js-snippets/1.9.3/1544731524156/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "rodrigovallades.es7-react-js-snippets" 
+        "name": "ES7 React/Redux/GraphQL/React-Native snippets",
+        "description": "rodrigovallades",
+        "image": "https://rodrigovallades.gallerycdn.vsassets.io/extensions/rodrigovallades/es7-react-js-snippets/1.9.3/1544731524156/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "rodrigovallades.es7-react-js-snippets"
     },
     {
-        "id": 108, 
-        "name": "ES7+ React/Redux/React-Native snippets", 
-        "description": "dsznajder", 
-        "image": "https://dsznajder.gallerycdn.vsassets.io/extensions/dsznajder/es7-react-js-snippets/4.4.3/1645189962576/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "dsznajder.es7-react-js-snippets" 
+        "name": "ES7+ React/Redux/React-Native snippets",
+        "description": "dsznajder",
+        "image": "https://dsznajder.gallerycdn.vsassets.io/extensions/dsznajder/es7-react-js-snippets/4.4.3/1645189962576/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "dsznajder.es7-react-js-snippets"
     },
     {
-        "id": 109, 
-        "name": "ESLint", 
-        "description": "Microsoft", 
-        "image": "https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/3.0.13/1723549114106/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "dbaeumer.vscode-eslint" 
+        "name": "ESLint",
+        "description": "Microsoft",
+        "image": "https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/3.0.13/1723549114106/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "dbaeumer.vscode-eslint"
     },
     {
-        "id": 110, 
-        "name": "Even Better TOML", 
-        "description": "tamasfe", 
-        "image": "https://tamasfe.gallerycdn.vsassets.io/extensions/tamasfe/even-better-toml/0.21.2/1734716634992/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "tamasfe.even-better-toml" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 111, 
-        "name": "Excel Viewer", 
-        "description": "MESCIUS", 
-        "image": "https://grapecity.gallerycdn.vsassets.io/extensions/grapecity/gc-excelviewer/4.2.62/1724856331929/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GrapeCity.gc-excelviewer" 
+        "name": "Even Better TOML",
+        "description": "tamasfe",
+        "image": "https://tamasfe.gallerycdn.vsassets.io/extensions/tamasfe/even-better-toml/0.21.2/1734716634992/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "tamasfe.even-better-toml"
     },
     {
-        "id": 112, 
-        "name": "Extension Pack for Java", 
-        "description": "Microsoft", 
-        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-java-pack/0.29.2024091906/1726729234947/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "vscjava.vscode-java-pack" 
+        "name": "Excel Viewer",
+        "description": "MESCIUS",
+        "image": "https://grapecity.gallerycdn.vsassets.io/extensions/grapecity/gc-excelviewer/4.2.62/1724856331929/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GrapeCity.gc-excelviewer"
     },
     {
-        "id": 113, 
-        "name": "Figma for VS Code", 
-        "description": "Figma", 
-        "image": "https://figma.gallerycdn.vsassets.io/extensions/figma/figma-vscode-extension/0.4.0/1729854750419/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "figma.figma-vscode-extension" 
+        "name": "Extension Pack for Java",
+        "description": "Microsoft",
+        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-java-pack/0.29.2024091906/1726729234947/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscjava.vscode-java-pack"
     },
     {
-        "id": 114, 
-        "name": "File Browser", 
-        "description": "Bodil Stokke", 
-        "image": "https://bodil.gallerycdn.vsassets.io/extensions/bodil/file-browser/0.2.11/1668854930123/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "bodil.file-browser" 
+        "name": "Figma for VS Code",
+        "description": "Figma",
+        "image": "https://figma.gallerycdn.vsassets.io/extensions/figma/figma-vscode-extension/0.4.0/1729854750419/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "figma.figma-vscode-extension"
     },
     {
-        "id": 115, 
-        "name": "File Utils", 
-        "description": "Steffen Leistner", 
-        "image": "https://sleistner.gallerycdn.vsassets.io/extensions/sleistner/vscode-fileutils/3.10.3/1690034496024/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "sleistner.vscode-fileutils" 
+        "name": "File Browser",
+        "description": "Bodil Stokke",
+        "image": "https://bodil.gallerycdn.vsassets.io/extensions/bodil/file-browser/0.2.11/1668854930123/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "bodil.file-browser"
     },
     {
-        "id": 116, 
-        "name": "file-icons", 
-        "description": "file-icons", 
-        "image": "https://file-icons.gallerycdn.vsassets.io/extensions/file-icons/file-icons/1.1.0/1688483454970/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "file-icons.file-icons" 
+        "name": "File Utils",
+        "description": "Steffen Leistner",
+        "image": "https://sleistner.gallerycdn.vsassets.io/extensions/sleistner/vscode-fileutils/3.10.3/1690034496024/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sleistner.vscode-fileutils"
     },
     {
-        "id": 117, 
-        "name": "file-tree-generator", 
-        "description": "Shinotatwu-DS", 
-        "image": "https://shinotatwu-ds.gallerycdn.vsassets.io/extensions/shinotatwu-ds/file-tree-generator/1.1.1/1547277016258/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Shinotatwu-DS.file-tree-generator" 
+        "name": "file-icons",
+        "description": "file-icons",
+        "image": "https://file-icons.gallerycdn.vsassets.io/extensions/file-icons/file-icons/1.1.0/1688483454970/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "file-icons.file-icons"
     },
     {
-        "id": 118, 
-        "name": "filesize", 
-        "description": "Matheus Kautzmann", 
-        "image": "https://mkxml.gallerycdn.vsassets.io/extensions/mkxml/vscode-filesize/3.2.2/1731348170188/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "mkxml.vscode-filesize" 
+        "name": "file-tree-generator",
+        "description": "Shinotatwu-DS",
+        "image": "https://shinotatwu-ds.gallerycdn.vsassets.io/extensions/shinotatwu-ds/file-tree-generator/1.1.1/1547277016258/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Shinotatwu-DS.file-tree-generator"
     },
     {
-        "id": 119, 
-        "name": "Flexbox Picker", 
-        "description": "Rax Team", 
-        "image": "https://rax.gallerycdn.vsassets.io/extensions/rax/vscode-flexbox-picker/0.0.1/1580303378705/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Rax.vscode-flexbox-picker" 
+        "name": "filesize",
+        "description": "Matheus Kautzmann",
+        "image": "https://mkxml.gallerycdn.vsassets.io/extensions/mkxml/vscode-filesize/3.2.2/1731348170188/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mkxml.vscode-filesize"
     },
     {
-        "id": 120, 
-        "name": "Fluent Icons", 
-        "description": "Miguel Solorio", 
-        "image": "https://miguelsolorio.gallerycdn.vsassets.io/extensions/miguelsolorio/fluent-icons/0.0.19/1729895481238/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "miguelsolorio.fluent-icons" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 121, 
-        "name": "Flutter", 
-        "description": "Dart Code", 
-        "image": "https://dart-code.gallerycdn.vsassets.io/extensions/dart-code/flutter/3.103.20241202/1733140604804/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Dart-Code.flutter" 
+        "name": "Flexbox Picker",
+        "description": "Rax Team",
+        "image": "https://rax.gallerycdn.vsassets.io/extensions/rax/vscode-flexbox-picker/0.0.1/1580303378705/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Rax.vscode-flexbox-picker"
     },
     {
-        "id": 122, 
-        "name": "Flutter Tree", 
-        "description": "Marcelo Velasquez", 
-        "image": "https://marcelovelasquez.gallerycdn.vsassets.io/extensions/marcelovelasquez/flutter-tree/1.0.0/1568312973201/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "marcelovelasquez.flutter-tree" 
+        "name": "Fluent Icons",
+        "description": "Miguel Solorio",
+        "image": "https://miguelsolorio.gallerycdn.vsassets.io/extensions/miguelsolorio/fluent-icons/0.0.19/1729895481238/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "miguelsolorio.fluent-icons"
     },
     {
-        "id": 123, 
-        "name": "Format in context menus", 
-        "description": "lacroixdavid1", 
-        "image": "https://lacroixdavid1.gallerycdn.vsassets.io/extensions/lacroixdavid1/vscode-format-context-menu/1.0.4/1536267432462/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "lacroixdavid1.vscode-format-context-menu" 
+        "name": "Flutter",
+        "description": "Dart Code",
+        "image": "https://dart-code.gallerycdn.vsassets.io/extensions/dart-code/flutter/3.103.20241202/1733140604804/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Dart-Code.flutter"
     },
     {
-        "id": 124, 
-        "name": "Fresh Material", 
-        "description": "Rich Hamburg", 
-        "image": "https://2ndshift.gallerycdn.vsassets.io/extensions/2ndshift/fresh-material/2.3.10/1621301652797/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "2ndshift.fresh-material" 
+        "name": "Flutter Tree",
+        "description": "Marcelo Velasquez",
+        "image": "https://marcelovelasquez.gallerycdn.vsassets.io/extensions/marcelovelasquez/flutter-tree/1.0.0/1568312973201/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "marcelovelasquez.flutter-tree"
     },
     {
-        "id": 125, 
-        "name": "GetX Snippets", 
-        "description": "Kauê Murakami", 
-        "image": "https://get-snippets.gallerycdn.vsassets.io/extensions/get-snippets/get-snippets/4.3.0/1640550504795/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "get-snippets.get-snippets" 
+        "name": "Format in context menus",
+        "description": "lacroixdavid1",
+        "image": "https://lacroixdavid1.gallerycdn.vsassets.io/extensions/lacroixdavid1/vscode-format-context-menu/1.0.4/1536267432462/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lacroixdavid1.vscode-format-context-menu"
     },
     {
-        "id": 126, 
-        "name": "GistPad", 
-        "description": "Jonathan Carter", 
-        "image": "https://vsls-contrib.gallerycdn.vsassets.io/extensions/vsls-contrib/gistfs/0.6.0/1700428919268/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "vsls-contrib.gistfs" 
+        "name": "Fresh Material",
+        "description": "Rich Hamburg",
+        "image": "https://2ndshift.gallerycdn.vsassets.io/extensions/2ndshift/fresh-material/2.3.10/1621301652797/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "2ndshift.fresh-material"
     },
     {
-        "id": 127, 
-        "name": "Git Blame", 
-        "description": "Wade Anderson", 
-        "image": "https://waderyan.gallerycdn.vsassets.io/extensions/waderyan/gitblame/11.1.2/1739565073475/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "waderyan.gitblame" 
+        "name": "GetX Snippets",
+        "description": "Kauê Murakami",
+        "image": "https://get-snippets.gallerycdn.vsassets.io/extensions/get-snippets/get-snippets/4.3.0/1640550504795/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "get-snippets.get-snippets"
     },
     {
-        "id": 128, 
-        "name": "Git Emoji Commit", 
-        "description": "文玉杰", 
-        "image": "https://maixiaojie.gallerycdn.vsassets.io/extensions/maixiaojie/git-emoji/1.0.6/1573533169324/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "maixiaojie.git-emoji" 
+        "name": "GistPad",
+        "description": "Jonathan Carter",
+        "image": "https://vsls-contrib.gallerycdn.vsassets.io/extensions/vsls-contrib/gistfs/0.6.0/1700428919268/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vsls-contrib.gistfs"
     },
     {
-        "id": 129, 
-        "name": "Git Extension Pack", 
-        "description": "Don Jayamanne", 
-        "image": "https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/git-extension-pack/0.1.3/1502005480329/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "donjayamanne.git-extension-pack" 
+        "name": "Git Blame",
+        "description": "Wade Anderson",
+        "image": "https://waderyan.gallerycdn.vsassets.io/extensions/waderyan/gitblame/11.1.2/1739565073475/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "waderyan.gitblame"
     },
     {
-        "id": 130, 
-        "name": "Git File History", 
-        "description": "Rodrigo Pombo", 
-        "image": "https://pomber.gallerycdn.vsassets.io/extensions/pomber/git-file-history/1.0.1/1553011498262/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "pomber.git-file-history" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 131, 
-        "name": "Git Graph", 
-        "description": "mhutchie", 
-        "image": "https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.30.0/1617594001998/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "mhutchie.git-graph" 
+        "name": "Git Emoji Commit",
+        "description": "文玉杰",
+        "image": "https://maixiaojie.gallerycdn.vsassets.io/extensions/maixiaojie/git-emoji/1.0.6/1573533169324/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "maixiaojie.git-emoji"
     },
     {
-        "id": 132, 
-        "name": "Git History", 
-        "description": "Don Jayamanne", 
-        "image": "https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/githistory/0.6.20/1678008598739/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "donjayamanne.githistory" 
+        "name": "Git Extension Pack",
+        "description": "Don Jayamanne",
+        "image": "https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/git-extension-pack/0.1.3/1502005480329/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "donjayamanne.git-extension-pack"
     },
     {
-        "id": 133, 
-        "name": "Git Project Manager", 
-        "description": "Felipe Caputo", 
-        "image": "https://felipecaputo.gallerycdn.vsassets.io/extensions/felipecaputo/git-project-manager/1.8.2/1637930150309/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "felipecaputo.git-project-manager" 
+        "name": "Git File History",
+        "description": "Rodrigo Pombo",
+        "image": "https://pomber.gallerycdn.vsassets.io/extensions/pomber/git-file-history/1.0.1/1553011498262/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "pomber.git-file-history"
     },
     {
-        "id": 134, 
-        "name": "GitHub Actions", 
-        "description": "Jun Han", 
-        "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/github-actions/0.0.1/1545836919388/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "formulahendry.github-actions" 
+        "name": "Git Graph",
+        "description": "mhutchie",
+        "image": "https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.30.0/1617594001998/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mhutchie.git-graph"
     },
     {
-        "id": 135, 
-        "name": "GitHub Actions", 
-        "description": "GitHub", 
-        "image": "https://github.gallerycdn.vsassets.io/extensions/github/vscode-github-actions/0.27.0/1727202375538/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GitHub.vscode-github-actions" 
+        "name": "Git History",
+        "description": "Don Jayamanne",
+        "image": "https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/githistory/0.6.20/1678008598739/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "donjayamanne.githistory"
     },
     {
-        "id": 136, 
-        "name": "GitHub Actions", 
-        "description": "Mathieu Dutour", 
-        "image": "https://me-dutour-mathieu.gallerycdn.vsassets.io/extensions/me-dutour-mathieu/vscode-github-actions/3.0.1/1596182639279/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "me-dutour-mathieu.vscode-github-actions" 
+        "name": "Git Project Manager",
+        "description": "Felipe Caputo",
+        "image": "https://felipecaputo.gallerycdn.vsassets.io/extensions/felipecaputo/git-project-manager/1.8.2/1637930150309/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "felipecaputo.git-project-manager"
     },
     {
-        "id": 137, 
-        "name": "GitHub Actions", 
-        "description": "OmarTawfik", 
-        "image": "https://omartawfik.gallerycdn.vsassets.io/extensions/omartawfik/github-actions-vscode/2.7.0/1556694528514/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "OmarTawfik.github-actions-vscode" 
+        "name": "GitHub Actions",
+        "description": "Jun Han",
+        "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/github-actions/0.0.1/1545836919388/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "formulahendry.github-actions"
     },
     {
-        "id": 138, 
-        "name": "GitHub Codespaces", 
-        "description": "GitHub", 
-        "image": "https://github.gallerycdn.vsassets.io/extensions/github/codespaces/1.17.3/1726066722785/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GitHub.codespaces" 
+        "name": "GitHub Actions",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/vscode-github-actions/0.27.0/1727202375538/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.vscode-github-actions"
     },
     {
-        "id": 139, 
-        "name": "GitHub Pull Requests", 
-        "description": "GitHub", 
-        "image": "https://github.gallerycdn.vsassets.io/extensions/github/vscode-pull-request-github/0.103.2024121904/1734582273259/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GitHub.vscode-pull-request-github" 
+        "name": "GitHub Actions",
+        "description": "Mathieu Dutour",
+        "image": "https://me-dutour-mathieu.gallerycdn.vsassets.io/extensions/me-dutour-mathieu/vscode-github-actions/3.0.1/1596182639279/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "me-dutour-mathieu.vscode-github-actions"
     },
     {
-        "id": 140, 
-        "name": "GitHub Repositories", 
-        "description": "GitHub", 
-        "image": "https://github.gallerycdn.vsassets.io/extensions/github/remotehub/0.65.2024112101/1732180779988/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GitHub.remotehub" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 141, 
-        "name": "GitHub Theme", 
-        "description": "GitHub", 
-        "image": "https://github.gallerycdn.vsassets.io/extensions/github/github-vscode-theme/6.3.5/1727933603062/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GitHub.github-vscode-theme" 
+        "name": "GitHub Actions",
+        "description": "OmarTawfik",
+        "image": "https://omartawfik.gallerycdn.vsassets.io/extensions/omartawfik/github-actions-vscode/2.7.0/1556694528514/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "OmarTawfik.github-actions-vscode"
     },
     {
-        "id": 142, 
-        "name": "gitignore", 
-        "description": "CodeZombie", 
-        "image": "https://codezombiech.gallerycdn.vsassets.io/extensions/codezombiech/gitignore/0.9.0/1658773731427/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "codezombiech.gitignore" 
+        "name": "GitHub Codespaces",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/codespaces/1.17.3/1726066722785/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.codespaces"
     },
     {
-        "id": 143, 
-        "name": "GitLens — Git supercharged", 
-        "description": "GitKraken", 
-        "image": "https://eamodio.gallerycdn.vsassets.io/extensions/eamodio/gitlens/2024.12.2404/1735031340469/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "eamodio.gitlens" 
+        "name": "GitHub Pull Requests",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/vscode-pull-request-github/0.103.2024121904/1734582273259/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.vscode-pull-request-github"
     },
     {
-        "id": 144, 
-        "name": "Go", 
-        "description": "Go Team at Google", 
-        "image": "https://golang.gallerycdn.vsassets.io/extensions/golang/go/0.45.0/1734445593656/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "golang.Go" 
+        "name": "GitHub Repositories",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/remotehub/0.65.2024112101/1732180779988/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.remotehub"
     },
     {
-        "id": 145, 
-        "name": "Gradle for Java", 
-        "description": "Microsoft", 
-        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-gradle/3.16.2024111106/1731312208820/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "vscjava.vscode-gradle" 
+        "name": "GitHub Theme",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/github-vscode-theme/6.3.5/1727933603062/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.github-vscode-theme"
     },
     {
-        "id": 146, 
-        "name": "Gradle Language Support", 
-        "description": "Naco Siren", 
-        "image": "https://naco-siren.gallerycdn.vsassets.io/extensions/naco-siren/gradle-language/0.2.3/1516735427824/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "naco-siren.gradle-language" 
+        "name": "gitignore",
+        "description": "CodeZombie",
+        "image": "https://codezombiech.gallerycdn.vsassets.io/extensions/codezombiech/gitignore/0.9.0/1658773731427/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "codezombiech.gitignore"
     },
     {
-        "id": 147, 
-        "name": "GrannePack CSS", 
-        "description": "granneman", 
-        "image": "https://granneman.gallerycdn.vsassets.io/extensions/granneman/grannepack-css/0.6.0/1670530141481/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "granneman.grannepack-css" 
+        "name": "GitLens — Git supercharged",
+        "description": "GitKraken",
+        "image": "https://eamodio.gallerycdn.vsassets.io/extensions/eamodio/gitlens/2024.12.2404/1735031340469/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "eamodio.gitlens"
     },
     {
-        "id": 148, 
-        "name": "GraphQL for VSCode", 
-        "description": "Kumar Harsh", 
-        "image": "https://kumar-harsh.gallerycdn.vsassets.io/extensions/kumar-harsh/graphql-for-vscode/1.15.3/1572519942746/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "kumar-harsh.graphql-for-vscode" 
+        "name": "Go",
+        "description": "Go Team at Google",
+        "image": "https://golang.gallerycdn.vsassets.io/extensions/golang/go/0.45.0/1734445593656/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "golang.Go"
     },
     {
-        "id": 149, 
-        "name": "GraphQL: Language Feature Support", 
-        "description": "GraphQL Foundation", 
-        "image": "https://graphql.gallerycdn.vsassets.io/extensions/graphql/vscode-graphql/0.12.1/1730555969355/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GraphQL.vscode-graphql" 
+        "name": "Gradle for Java",
+        "description": "Microsoft",
+        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-gradle/3.16.2024111106/1731312208820/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscjava.vscode-gradle"
     },
     {
-        "id": 150, 
-        "name": "GraphQL: Syntax Highlighting", 
-        "description": "GraphQL Foundation", 
-        "image": "https://graphql.gallerycdn.vsassets.io/extensions/graphql/vscode-graphql-syntax/1.3.8/1730556957755/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "GraphQL.vscode-graphql-syntax" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 151, 
-        "name": "Gremlins tracker for Visual Studio Code", 
-        "description": "Nicolas Hoizey", 
-        "image": "https://nhoizey.gallerycdn.vsassets.io/extensions/nhoizey/gremlins/0.26.0/1604614252253/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "nhoizey.gremlins" 
+        "name": "Gradle Language Support",
+        "description": "Naco Siren",
+        "image": "https://naco-siren.gallerycdn.vsassets.io/extensions/naco-siren/gradle-language/0.2.3/1516735427824/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "naco-siren.gradle-language"
     },
     {
-        "id": 152, 
-        "name": "Gruvbox Material", 
-        "description": "sainnhe", 
-        "image": "https://sainnhe.gallerycdn.vsassets.io/extensions/sainnhe/gruvbox-material/6.5.2/1670921713172/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "sainnhe.gruvbox-material" 
+        "name": "GrannePack CSS",
+        "description": "granneman",
+        "image": "https://granneman.gallerycdn.vsassets.io/extensions/granneman/grannepack-css/0.6.0/1670530141481/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "granneman.grannepack-css"
     },
     {
-        "id": 153, 
-        "name": "Headwind", 
-        "description": "Ryan Heybourn", 
-        "image": "https://heybourn.gallerycdn.vsassets.io/extensions/heybourn/headwind/1.7.0/1595154492943/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "heybourn.headwind" 
+        "name": "GraphQL for VSCode",
+        "description": "Kumar Harsh",
+        "image": "https://kumar-harsh.gallerycdn.vsassets.io/extensions/kumar-harsh/graphql-for-vscode/1.15.3/1572519942746/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kumar-harsh.graphql-for-vscode"
     },
     {
-        "id": 154, 
-        "name": "Helium Icon Theme", 
-        "description": "Helgard Richard Ferreira", 
-        "image": "https://helgardrichard.gallerycdn.vsassets.io/extensions/helgardrichard/helium-icon-theme/1.0.0/1570388137956/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "helgardrichard.helium-icon-theme" 
+        "name": "GraphQL: Language Feature Support",
+        "description": "GraphQL Foundation",
+        "image": "https://graphql.gallerycdn.vsassets.io/extensions/graphql/vscode-graphql/0.12.1/1730555969355/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GraphQL.vscode-graphql"
     },
     {
-        "id": 155, 
-        "name": "Hex Editor", 
-        "description": "Microsoft", 
-        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/hexeditor/1.11.1/1730650070908/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ms-vscode.hexeditor" 
+        "name": "GraphQL: Syntax Highlighting",
+        "description": "GraphQL Foundation",
+        "image": "https://graphql.gallerycdn.vsassets.io/extensions/graphql/vscode-graphql-syntax/1.3.8/1730556957755/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GraphQL.vscode-graphql-syntax"
     },
     {
-        "id": 156, 
-        "name": "Highlight Matching Tag", 
-        "description": "vincaslt", 
-        "image": "https://vincaslt.gallerycdn.vsassets.io/extensions/vincaslt/highlight-matching-tag/0.11.0/1678358667427/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "vincaslt.highlight-matching-tag" 
+        "name": "Gremlins tracker for Visual Studio Code",
+        "description": "Nicolas Hoizey",
+        "image": "https://nhoizey.gallerycdn.vsassets.io/extensions/nhoizey/gremlins/0.26.0/1604614252253/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "nhoizey.gremlins"
     },
     {
-        "id": 157, 
-        "name": "Highlight on Copy", 
-        "description": "Marc Güell Segarra", 
-        "image": "https://mguellsegarra.gallerycdn.vsassets.io/extensions/mguellsegarra/highlight-on-copy/1.1.4/1714731307595/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "mguellsegarra.highlight-on-copy" 
+        "name": "Gruvbox Material",
+        "description": "sainnhe",
+        "image": "https://sainnhe.gallerycdn.vsassets.io/extensions/sainnhe/gruvbox-material/6.5.2/1670921713172/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sainnhe.gruvbox-material"
     },
     {
-        "id": 158, 
-        "name": "HTML Checker", 
-        "description": "Narlotl", 
-        "image": "https://narlotl.gallerycdn.vsassets.io/extensions/narlotl/html-validator/2.0.2/1706899791532/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Narlotl.html-validator" 
+        "name": "Headwind",
+        "description": "Ryan Heybourn",
+        "image": "https://heybourn.gallerycdn.vsassets.io/extensions/heybourn/headwind/1.7.0/1595154492943/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "heybourn.headwind"
     },
     {
-        "id": 159, 
-        "name": "HTML CSS Support", 
-        "description": "ecmel", 
-        "image": "https://ecmel.gallerycdn.vsassets.io/extensions/ecmel/vscode-html-css/2.0.11/1730921970372/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ecmel.vscode-html-css" 
+        "name": "Helium Icon Theme",
+        "description": "Helgard Richard Ferreira",
+        "image": "https://helgardrichard.gallerycdn.vsassets.io/extensions/helgardrichard/helium-icon-theme/1.0.0/1570388137956/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "helgardrichard.helium-icon-theme"
     },
     {
-        "id": 160, 
-        "name": "HTML End Tag Labels", 
-        "description": "Ante Primorac", 
-        "image": "https://anteprimorac.gallerycdn.vsassets.io/extensions/anteprimorac/html-end-tag-labels/1.0.0/1687005963661/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "anteprimorac.html-end-tag-labels" 
+        "name": "Hex Editor",
+        "description": "Microsoft",
+        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/hexeditor/1.11.1/1730650070908/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-vscode.hexeditor"
+    },
+    {
+        "name": "Highlight Matching Tag",
+        "description": "vincaslt",
+        "image": "https://vincaslt.gallerycdn.vsassets.io/extensions/vincaslt/highlight-matching-tag/0.11.0/1678358667427/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vincaslt.highlight-matching-tag"
+    },
+    {
+        "name": "Highlight on Copy",
+        "description": "Marc Güell Segarra",
+        "image": "https://mguellsegarra.gallerycdn.vsassets.io/extensions/mguellsegarra/highlight-on-copy/1.1.4/1714731307595/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mguellsegarra.highlight-on-copy"
+    },
+    {
+        "name": "HTML Checker",
+        "description": "Narlotl",
+        "image": "https://narlotl.gallerycdn.vsassets.io/extensions/narlotl/html-validator/2.0.2/1706899791532/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Narlotl.html-validator"
+    },
+    {
+        "name": "HTML CSS Support",
+        "description": "ecmel",
+        "image": "https://ecmel.gallerycdn.vsassets.io/extensions/ecmel/vscode-html-css/2.0.11/1730921970372/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ecmel.vscode-html-css"
+    },
+    {
+        "name": "HTML End Tag Labels",
+        "description": "Ante Primorac",
+        "image": "https://anteprimorac.gallerycdn.vsassets.io/extensions/anteprimorac/html-end-tag-labels/1.0.0/1687005963661/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "anteprimorac.html-end-tag-labels"
     },
 
 
@@ -2625,6 +2511,32 @@
         "image": "https://jerrygoyal.gallerycdn.vsassets.io/extensions/jerrygoyal/shortcut-menu-bar/3.0.4/1648327463284/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "jerrygoyal.shortcut-menu-bar"
     },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Simple React Snippets",
+        "description": "Burke Holland",
+        "image": "https://burkeholland.gallerycdn.vsassets.io/extensions/burkeholland/simple-react-snippets/1.2.8/1712588315749/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "burkeholland.simple-react-snippets"
+    },
+
+
+
+
+
+
+
+
+
+
     {
         "id": 343,
         "name": "Snippet",
@@ -2632,6 +2544,32 @@
         "image": "https://vscode-snippet.gallerycdn.vsassets.io/extensions/vscode-snippet/snippet/1.2.0/1710705773741/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "vscode-snippet.Snippet"
     },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Snippets",
+        "description": "Taha BASRI",
+        "image": "https://tahabasri.gallerycdn.vsassets.io/extensions/tahabasri/snippets/3.1.0/1694694621128/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "tahabasri.snippets"
+    },
+
+
+
+
+
+
+
+
+
+
     {
         "id": 344,
         "name": "Sort JSON objects",
