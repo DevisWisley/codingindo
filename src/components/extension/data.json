@@ -112,6 +112,20 @@
         "category": "Programming Languages"
     },
     {
+        "name": "Amiga C/C++ Compile, Debug & Profile",
+        "description": "Bartman^Abyss",
+        "image": "https://bartmanabyss.gallerycdn.vsassets.io/extensions/bartmanabyss/amiga-debug/1.7.7/1707671103611/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "BartmanAbyss.amiga-debug",
+        "category": "Debuggers"
+    },
+    {
+        "name": "Amiga C/C++ Compile, Debug & Profile (fork with libs support)",
+        "description": "JOB",
+        "image": "https://job.gallerycdn.vsassets.io/extensions/job/amiga-debug-job/1.7.7/1723496651899/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "JOB.amiga-debug-job",
+        "category": "Debuggers"
+    },
+    {
         "name": "Android",
         "description": "adelphes",
         "image": "https://adelphes.gallerycdn.vsassets.io/extensions/adelphes/android-dev-ext/1.4.0/1704212179376/Microsoft.VisualStudio.Services.Icons.Default",
@@ -164,265 +178,400 @@
         "name": "Angular 17 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
         "description": "Mikael Morlund",
         "image": "https://mikael.gallerycdn.vsassets.io/extensions/mikael/angular-beastcode/17.0.4/1708159860968/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Mikael.Angular-BeastCode"
+        "extensionId": "Mikael.Angular-BeastCode",
+        "category": "Snippets"
     },
     {
         "name": "Angular File Changer (Supporting Touch Bar and NgRx)",
         "description": "john-crowson",
         "image": "https://john-crowson.gallerycdn.vsassets.io/extensions/john-crowson/angular-file-changer/0.0.4/1541545916354/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "john-crowson.angular-file-changer"
+        "extensionId": "john-crowson.angular-file-changer",
+        "category": "Keymaps"
     },
     {
         "name": "Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets",
         "description": "1Ton Technologies",
         "image": "https://1tontech.gallerycdn.vsassets.io/extensions/1tontech/angular-material/0.13.0/1508989143920/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "1tontech.angular-material"
+        "extensionId": "1tontech.angular-material",
+        "category": "Snippets"
     },
     {
         "name": "Angular Snippets (Version 18)",
         "description": "John Papa",
         "image": "https://johnpapa.gallerycdn.vsassets.io/extensions/johnpapa/angular2/18.0.2/1721073446931/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "johnpapa.Angular2"
+        "extensionId": "johnpapa.Angular2",
+        "category": "Snippets"
+    },
+    {
+        "name": "Angular UI Bootstrap Snippets",
+        "description": "HerrHerrmann",
+        "image": "https://herrherrmann.gallerycdn.vsassets.io/extensions/herrherrmann/angular-bootstrap/4.0.9/1512863564836/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "herrherrmann.angular-bootstrap",
+        "category": "Snippets"
     },
     {
         "name": "angular2-switcher",
         "description": "infinity1207",
         "image": "https://infinity1207.gallerycdn.vsassets.io/extensions/infinity1207/angular2-switcher/0.4.0/1652427535801/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "infinity1207.angular2-switcher"
+        "extensionId": "infinity1207.angular2-switcher",
+        "category": "Keymaps"
     },
     {
         "name": "Apache Conf",
         "description": "mrmlnc",
         "image": "https://mrmlnc.gallerycdn.vsassets.io/extensions/mrmlnc/vscode-apache/1.2.0/1546867810778/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "mrmlnc.vscode-apache"
+        "extensionId": "mrmlnc.vscode-apache",
+        "category": "Programming Languages"
     },
     {
         "name": "Apache Conf Snippets",
         "description": "hrdtbs",
         "image": "https://eiminsasete.gallerycdn.vsassets.io/extensions/eiminsasete/apacheconf-snippets/1.4.0/1721550778124/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "eiminsasete.apacheconf-snippets"
+        "extensionId": "eiminsasete.apacheconf-snippets",
+        "category": "Snippets"
     },
     {
         "name": "Apc Customize UI++",
         "description": "drcika",
         "image": "https://drcika.gallerycdn.vsassets.io/extensions/drcika/apc-extension/0.4.1/1722637621659/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "drcika.apc-extension"
+        "extensionId": "drcika.apc-extension",
+        "category": "Themes"
     },
     {
         "name": "ArifCode Theme - Exclusive",
         "description": "Arif Budiman Arrosyid",
         "image": "https://arifbudimanar.gallerycdn.vsassets.io/extensions/arifbudimanar/arifcode-theme-exclusive/0.0.4/1711660785168/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "arifbudimanar.arifcode-theme-exclusive"
+        "extensionId": "arifbudimanar.arifcode-theme-exclusive",
+        "category": "Themes"
     },
     {
         "name": "ArifCode Theme - Original",
         "description": "Arif Budiman Arrosyid",
         "image": "https://arifbudimanar.gallerycdn.vsassets.io/extensions/arifbudimanar/arifcode-theme/0.0.29/1711662400052/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "arifbudimanar.arifcode-theme"
+        "extensionId": "arifbudimanar.arifcode-theme",
+        "category": "Themes"
     },
     {
         "name": "ArifCode Theme - Windows",
         "description": "Arif Budiman Arrosyid",
         "image": "https://arifbudimanar.gallerycdn.vsassets.io/extensions/arifbudimanar/arifcode-theme-windows/0.0.11/1711662240062/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "arifbudimanar.arifcode-theme-windows"
+        "extensionId": "arifbudimanar.arifcode-theme-windows",
+        "category": "Themes"
     },
     {
         "name": "ASP.NET Core Switcher",
         "description": "Adrian Wilczyński",
         "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/asp-net-core-switcher/2.0.2/1577043327534/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "adrianwilczynski.asp-net-core-switcher"
+        "extensionId": "adrianwilczynski.asp-net-core-switcher",
+        "category": "Other"
     },
     {
         "name": "Atom Material Icons",
         "description": "Atom Material",
         "image": "https://atommaterial.gallerycdn.vsassets.io/extensions/atommaterial/a-file-icon-vscode/2.0.1/1732997632177/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "AtomMaterial.a-file-icon-vscode"
+        "extensionId": "AtomMaterial.a-file-icon-vscode",
+        "category": "Themes"
     },
     {
         "name": "Atom Material Theme",
         "description": "Tobias Althoff",
         "image": "https://tobiasalthoff.gallerycdn.vsassets.io/extensions/tobiasalthoff/atom-material-theme/1.10.9/1677353897681/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "tobiasalthoff.atom-material-theme"
+        "extensionId": "tobiasalthoff.atom-material-theme",
+        "category": "Themes"
     },
     {
         "name": "Atom One Dark Theme",
         "description": "Mahmoud Ali",
         "image": "https://akamud.gallerycdn.vsassets.io/extensions/akamud/vscode-theme-onedark/2.3.0/1665238240663/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "akamud.vscode-theme-onedark"
+        "extensionId": "akamud.vscode-theme-onedark",
+        "category": "Themes"
     },
     {
         "name": "Auto Close Tag",
         "description": "Jun Han",
         "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/auto-close-tag/0.5.15/1702959502562/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "formulahendry.auto-close-tag"
+        "extensionId": "formulahendry.auto-close-tag",
+        "category": "Programming Languages"
     },
     {
         "name": "Auto Complete Tag",
         "description": "Jun Han",
         "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/auto-complete-tag/0.1.0/1534496037438/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "formulahendry.auto-complete-tag"
+        "extensionId": "formulahendry.auto-complete-tag",
+        "category": "Programming Languages"
     },
     {
         "name": "Auto Import",
         "description": "steoates",
         "image": "https://steoates.gallerycdn.vsassets.io/extensions/steoates/autoimport/1.5.4/1618500754212/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "steoates.autoimport"
+        "extensionId": "steoates.autoimport",
+        "category": "Other"
     },
     {
         "name": "Auto Rename Tag",
         "description": "Jun Han",
         "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/auto-rename-tag/0.1.10/1644319230173/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "formulahendry.auto-rename-tag"
+        "extensionId": "formulahendry.auto-rename-tag",
+        "category": "Programming Languages"
     },
     {
         "name": "autoDocstring - Python Docstring Generator",
         "description": "Nils Werner",
         "image": "https://njpwerner.gallerycdn.vsassets.io/extensions/njpwerner/autodocstring/0.6.1/1644940808599/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "njpwerner.autodocstring"
+        "extensionId": "njpwerner.autodocstring",
+        "category": "Programming Languages"
     },
     {
         "name": "Awesome Flutter Snippets",
         "description": "Neevash Ramdial (Nash)",
         "image": "https://nash.gallerycdn.vsassets.io/extensions/nash/awesome-flutter-snippets/4.0.1/1659636002799/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Nash.awesome-flutter-snippets"
+        "extensionId": "Nash.awesome-flutter-snippets",
+        "category": "Snippets"
     },
     {
         "name": "Ayu",
         "description": "teabyii",
         "image": "https://teabyii.gallerycdn.vsassets.io/extensions/teabyii/ayu/1.0.5/1630928048471/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "teabyii.ayu"
+        "extensionId": "teabyii.ayu",
+        "category": "Themes"
     },
     {
         "name": "Ayu Monokai",
         "description": "Lakshit Somani",
         "image": "https://lakshits11.gallerycdn.vsassets.io/extensions/lakshits11/ayu-monokai/0.0.3/1713690036090/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "lakshits11.ayu-monokai"
+        "extensionId": "lakshits11.ayu-monokai",
+        "category": "Themes"
     },
     {
         "name": "Azure Repos",
         "description": "Microsoft",
         "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/azure-repos/0.41.2024112101/1732180794699/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ms-vscode.azure-repos"
+        "extensionId": "ms-vscode.azure-repos",
+        "category": "Other"
     },
     {
         "name": "Babel JavaScript",
         "description": "Michael McDermott",
         "image": "https://mgmcdermott.gallerycdn.vsassets.io/extensions/mgmcdermott/vscode-language-babel/0.0.40/1695654875151/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "mgmcdermott.vscode-language-babel"
+        "extensionId": "mgmcdermott.vscode-language-babel",
+        "category": "Programming Languages"
     },
     {
         "name": "Background",
         "description": "Katsute",
         "image": "https://katsute.gallerycdn.vsassets.io/extensions/katsute/code-background/3.1.0/1735332803341/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Katsute.code-background"
+        "extensionId": "Katsute.code-background",
+        "category": "Programming Languages"
     },
     {
         "name": "Batch Runner",
         "description": "Nils Soderman",
         "image": "https://nilssoderman.gallerycdn.vsassets.io/extensions/nilssoderman/batch-runner/1.3.2/1723902315400/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "NilsSoderman.batch-runner"
+        "extensionId": "NilsSoderman.batch-runner",
+        "category": "Debuggers"
     },
     {
         "name": "Best Themes Redefined 🚀",
         "description": "Lakshit Somani",
         "image": "https://lakshits11.gallerycdn.vsassets.io/extensions/lakshits11/best-themes-redefined/0.4.6/1713689920574/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "lakshits11.best-themes-redefined"
+        "extensionId": "lakshits11.best-themes-redefined",
+        "category": "Themes"
     },
     {
         "name": "Better Align",
         "description": "Chouzz",
         "image": "https://chouzz.gallerycdn.vsassets.io/extensions/chouzz/vscode-better-align/1.4.2/1680618981122/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Chouzz.vscode-better-align"
+        "extensionId": "Chouzz.vscode-better-align",
+        "category": "Formatters"
     },
     {
         "name": "Better C++ Syntax",
         "description": "Jeff Hykin",
         "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-cpp-syntax/1.27.1/1720820193197/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "jeff-hykin.better-cpp-syntax"
+        "extensionId": "jeff-hykin.better-cpp-syntax",
+        "category": "Programming Languages"
     },
     {
         "name": "Better Comments",
         "description": "Aaron Bond",
         "image": "https://aaron-bond.gallerycdn.vsassets.io/extensions/aaron-bond/better-comments/3.0.2/1659144495902/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "aaron-bond.better-comments"
+        "extensionId": "aaron-bond.better-comments",
+        "category": "Formatters"
     },
     {
         "name": "Better Objective-C++ Syntax",
         "description": "Jeff Hykin",
         "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-objcpp-syntax/0.2.0/1654794431826/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "jeff-hykin.better-objcpp-syntax"
+        "extensionId": "jeff-hykin.better-objcpp-syntax",
+        "category": "Programming Languages"
     },
     {
         "name": "Better Pest",
         "description": "Miguel Piedrafita",
         "image": "https://m1guelpf.gallerycdn.vsassets.io/extensions/m1guelpf/better-pest/0.1.0/1602371456196/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "m1guelpf.better-pest"
+        "extensionId": "m1guelpf.better-pest",
+        "category": "Other"
     },
     {
         "name": "BLACKBOXAI #1 Coding Agent +10 Million Developers",
         "description": "BLACKBOX AI",
         "image": "https://blackboxapp.gallerycdn.vsassets.io/extensions/blackboxapp/blackbox/1.4.87/1735313927838/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Blackboxapp.blackbox"
+        "extensionId": "Blackboxapp.blackbox",
+        "category": "Programming Languages"
     },
     {
         "name": "BLACKBOXAI Agent",
         "description": "BLACKBOX AI",
         "image": "https://blackboxapp.gallerycdn.vsassets.io/extensions/blackboxapp/blackboxagent/2.8.31/1737996059438/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Blackboxapp.blackboxagent"
+        "extensionId": "Blackboxapp.blackboxagent",
+        "category": "Programming Languages"
     },
     {
         "name": "Blazor Snippet Pack",
         "description": "Adrian Wilczyński",
         "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/blazor-snippet-pack/2.6.1/1583617498563/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Scadrianwilczynski.blazor-snippet-pack" 
+        "extensionId": "Scadrianwilczynski.blazor-snippet-pack",
+        "category": "Snippets"
     },
     {
         "name": "Blazor Snippets",
         "description": "Scott Sauber",
         "image": "https://scottsauber.gallerycdn.vsassets.io/extensions/scottsauber/blazorsnippets/1.5.1/1613105903602/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ScottSauber.blazorsnippets" 
+        "extensionId": "ScottSauber.blazorsnippets",
+        "category": "Snippets"
     },
     {
         "name": "bloc",
         "description": "Felix Angelov",
         "image": "https://felixangelov.gallerycdn.vsassets.io/extensions/felixangelov/bloc/6.7.0/1734215861129/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "FelixAngelov.bloc" 
+        "extensionId": "FelixAngelov.bloc",
+        "category": "Programming Languages"
     },
     {
         "name": "Bookmarks",
         "description": "Alessandro Fragnani",
         "image": "https://alefragnani.gallerycdn.vsassets.io/extensions/alefragnani/bookmarks/13.5.0/1712140597509/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "alefragnani.Bookmarks"
+        "extensionId": "alefragnani.Bookmarks",
+        "category": "Other"
+    },
+    {
+        "name": "Bootstrap 3 Snippets",
+        "description": "William Whitehead",
+        "image": "https://wcwhitehead.gallerycdn.vsassets.io/extensions/wcwhitehead/bootstrap-3-snippets/0.1.0/1499784815328/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "wcwhitehead.bootstrap-3-snippets",
+        "category": "Snippets"
+    },
+    {
+        "name": "Bootstrap 4 CDN Snippet",
+        "description": "Simen Daehlin",
+        "image": "https://eventyret.gallerycdn.vsassets.io/extensions/eventyret/bootstrap-4-cdn-snippet/1.13.0/1628494132492/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "eventyret.bootstrap-4-cdn-snippet",
+        "category": "Snippets"
     },
     {
         "name": "Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets",
         "description": "Ashok Koyi",
         "image": "https://thekalinga.gallerycdn.vsassets.io/extensions/thekalinga/bootstrap4-vscode/6.1.0/1552290631848/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "thekalinga.bootstrap4-vscode"
+        "extensionId": "thekalinga.bootstrap4-vscode",
+        "category": "Snippets"
+    },
+    {
+        "name": "Bootstrap 5 & Font Awesome Snippets",
+        "description": "HansUXdev",
+        "image": "https://hansuxdev.gallerycdn.vsassets.io/extensions/hansuxdev/bootstrap5-snippets/1.2.5/1599864655518/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "HansUXdev.bootstrap5-snippets",
+        "category": "Snippets"
+    },
+    {
+        "name": "Bootstrap 5 Quick Snippets",
+        "description": "Anbuselvan Rocky",
+        "image": "https://anbuselvanrocky.gallerycdn.vsassets.io/extensions/anbuselvanrocky/bootstrap5-vscode/0.4.4/1701806788503/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "AnbuselvanRocky.bootstrap5-vscode",
+        "category": "Snippets"
+    },
+    {
+        "name": "Bootstrap v4 Snippets",
+        "description": "Zaczero",
+        "image": "https://zaczero.gallerycdn.vsassets.io/extensions/zaczero/bootstrap-v4-snippets/1.1.3/1573843929623/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Zaczero.bootstrap-v4-snippets",
+        "category": "Snippets"
     },
     {
         "name": "Browse Lite",
         "description": "Anthony Fu",
         "image": "https://antfu.gallerycdn.vsassets.io/extensions/antfu/browse-lite/0.3.9/1711366192837/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "antfu.browse-lite"
+        "extensionId": "antfu.browse-lite",
+        "category": "Other"
     },
     {
         "name": "C/C++",
         "description": "Microsoft",
         "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.23.2/1733447281138/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ms-vscode.cpptools"
+        "extensionId": "ms-vscode.cpptools",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "C/C++ Advanced Lint",
+        "description": "Joseph Benden",
+        "image": "https://jbenden.gallerycdn.vsassets.io/extensions/jbenden/c-cpp-flylint/1.15.0/1717532363313/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jbenden.c-cpp-flylint",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "C/C++ Build Task",
+        "description": "kaysonwu",
+        "image": "https://kaysonwu.gallerycdn.vsassets.io/extensions/kaysonwu/cpptask/0.0.1/1598109634057/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kaysonwu.cpptask",
+        "category": "Debuggers"
+    },
+    {
+        "name": "C/C++ Compile Run",
+        "description": "danielpinto8zz6",
+        "image": "https://danielpinto8zz6.gallerycdn.vsassets.io/extensions/danielpinto8zz6/c-cpp-compile-run/1.0.60/1727186295733/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "danielpinto8zz6.c-cpp-compile-run",
+        "category": "Programming Languages"
     },
     {
         "name": "C/C++ Extension Pack",
         "description": "Microsoft",
         "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools-extension-pack/1.3.0/1662069439952/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ms-vscode.cpptools-extension-pack"
+        "extensionId": "ms-vscode.cpptools-extension-pack",
+        "category": "Extension Packs"
+    },
+    {
+        "name": "C/C++ GNU Global",
+        "description": "Lin Chieh",
+        "image": "https://jaycetyle.gallerycdn.vsassets.io/extensions/jaycetyle/vscode-gnu-global/0.3.5/1623486473852/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jaycetyle.vscode-gnu-global",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "C/C++ Project Generator",
+        "description": "danielpinto8zz6",
+        "image": "https://danielpinto8zz6.gallerycdn.vsassets.io/extensions/danielpinto8zz6/c-cpp-project-generator/1.2.13/1689851206962/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "danielpinto8zz6.c-cpp-project-generator",
+        "category": "Other"
+    },
+    {
+        "name": "C/C++ Runner",
+        "description": "franneck94",
+        "image": "https://franneck94.gallerycdn.vsassets.io/extensions/franneck94/c-cpp-runner/9.4.10/1739086200367/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "franneck94.c-cpp-runner",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "C/C++ Snippets",
+        "description": "Harsh",
+        "image": "https://hars.gallerycdn.vsassets.io/extensions/hars/cppsnippets/0.0.15/1607306245842/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "hars.CppSnippets",
+        "category": "Snippets"
     },
     {
         "name": "C/C++ Themes",
         "description": "Microsoft",
         "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools-themes/2.0.0/1666648137053/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ms-vscode.cpptools-themes"
+        "extensionId": "ms-vscode.cpptools-themes",
+        "category": "Themes"
     },
     {
         "name": "C#",
@@ -653,6 +802,12 @@
         "extensionId": "pranaygp.vscode-css-peek"
     },
     {
+        "name": "CSS Snippets",
+        "description": "joy-yu",
+        "image": "https://joy-yu.gallerycdn.vsassets.io/extensions/joy-yu/css-snippets/1.0.4/1656053079487/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "joy-yu.css-snippets"
+    },
+    {
         "name": "css-auto-prefix",
         "description": "sporiley",
         "image": "https://sporiley.gallerycdn.vsassets.io/extensions/sporiley/css-auto-prefix/0.1.7/1532268914151/Microsoft.VisualStudio.Services.Icons.Default",
@@ -783,6 +938,18 @@
         "description": "Henning Dieterichs",
         "image": "https://hediet.gallerycdn.vsassets.io/extensions/hediet/vscode-drawio/1.6.6/1674119919721/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "hediet.vscode-drawio"
+    },
+    {
+        "name": "Dreamweaver Web Theme",
+        "description": "Persephona",
+        "image": "https://persephona.gallerycdn.vsassets.io/extensions/persephona/theme-dreamweaverweb/1.6.2/1479335761530/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Persephona.theme-dreamweaverweb"
+    },
+    {
+        "name": "Duplicate action",
+        "description": "mrmlnc",
+        "image": "https://mrmlnc.gallerycdn.vsassets.io/extensions/mrmlnc/vscode-duplicate/1.2.1/1523104391343/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mrmlnc.vscode-duplicate"
     },
     {
         "name": "eCSStractor for VSCode",
@@ -947,6 +1114,12 @@
         "extensionId": "2ndshift.fresh-material"
     },
     {
+        "name": "Gemini Code Assist",
+        "description": "Google",
+        "image": "https://google.gallerycdn.vsassets.io/extensions/google/geminicodeassist/2.27.1/1740084387245/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Google.geminicodeassist"
+    },
+    {
         "name": "GetX Snippets",
         "description": "Kauê Murakami",
         "image": "https://get-snippets.gallerycdn.vsassets.io/extensions/get-snippets/get-snippets/4.3.0/1640550504795/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1097,6 +1270,36 @@
         "extensionId": "golang.Go"
     },
     {
+        "name": "Google Cloud Code",
+        "description": "Google Cloud",
+        "image": "https://googlecloudtools.gallerycdn.vsassets.io/extensions/googlecloudtools/cloudcode/2.27.0/1740033030647/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GoogleCloudTools.cloudcode"
+    },
+    {
+        "name": "Google Fonts",
+        "description": "Lior CHAMLA",
+        "image": "https://cdn.vsassets.io/v/M251_20250121.2/_content/Header/default_icon_128.png",
+        "extensionId": "lior-chamla.google-fonts"
+    },
+    {
+        "name": "Google Translate",
+        "description": "benshabatnoam",
+        "image": "https://benshabatnoam.gallerycdn.vsassets.io/extensions/benshabatnoam/google-translate-ext/2.2.2/1619552200417/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "benshabatnoam.google-translate-ext"
+    },
+    {
+        "name": "Google Translate",
+        "description": "Hancel.Lin",
+        "image": "https://hancel.gallerycdn.vsassets.io/extensions/hancel/google-translate/1.2.9/1710039867395/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "hancel.google-translate"
+    },
+    {
+        "name": "google-search",
+        "description": "Kamesh Kotwani",
+        "image": "https://kameshkotwani.gallerycdn.vsassets.io/extensions/kameshkotwani/google-search/0.0.1/1551944897725/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kameshkotwani.google-search"
+    },
+    {
         "name": "Gradle for Java",
         "description": "Microsoft",
         "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-gradle/3.16.2024111106/1731312208820/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1191,6 +1394,12 @@
         "description": "Ante Primorac",
         "image": "https://anteprimorac.gallerycdn.vsassets.io/extensions/anteprimorac/html-end-tag-labels/1.0.0/1687005963661/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "anteprimorac.html-end-tag-labels"
+    },
+    {
+        "name": "HTML/CSS/JavaScript Snippets",
+        "description": "Eno Yao",
+        "image": "https://wscats.gallerycdn.vsassets.io/extensions/wscats/html-snippets/1.0.6/1607691009387/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Wscats.html-snippets"
     },
     {
         "name": "HTMLHint",
@@ -1456,405 +1665,305 @@
         "image": "https://onecentlin.gallerycdn.vsassets.io/extensions/onecentlin/laravel-blade/1.36.1/1715782578761/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "onecentlin.laravel-blade"
     },
-
-
-
-
-
-
-
-
-
-
     {
-        "id": 201, 
-        "name": "Laravel Blade Spacer", 
-        "description": "Austen Cameron", 
-        "image": "https://austenc.gallerycdn.vsassets.io/extensions/austenc/laravel-blade-spacer/2.3.0/1708449335756/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "austenc.laravel-blade-spacer" 
+        "name": "Laravel Blade Spacer",
+        "description": "Austen Cameron",
+        "image": "https://austenc.gallerycdn.vsassets.io/extensions/austenc/laravel-blade-spacer/2.3.0/1708449335756/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "austenc.laravel-blade-spacer"
     },
     {
-        "id": 202, 
-        "name": "Laravel Blade Wrapper", 
-        "description": "IHunte", 
-        "image": "https://ihunte.gallerycdn.vsassets.io/extensions/ihunte/laravel-blade-wrapper/1.0.2/1724594536241/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "IHunte.laravel-blade-wrapper" 
+        "name": "Laravel Blade Wrapper",
+        "description": "IHunte",
+        "image": "https://ihunte.gallerycdn.vsassets.io/extensions/ihunte/laravel-blade-wrapper/1.0.2/1724594536241/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "IHunte.laravel-blade-wrapper"
     },
     {
-        "id": 203, 
-        "name": "Laravel Create View", 
-        "description": "glitchbl", 
+        "name": "Laravel Create View",
+        "description": "glitchbl",
         "image": "https://cdn.vsassets.io/v/M246_20241014.9/_content/Header/default_icon_128.png", 
-        "extensionId": "glitchbl.laravel-create-view" 
+        "extensionId": "glitchbl.laravel-create-view"
     },
     {
-        "id": 204, 
-        "name": "Laravel Extension Pack", 
-        "description": "Winnie Lin", 
-        "image": "https://onecentlin.gallerycdn.vsassets.io/extensions/onecentlin/laravel-extension-pack/1.3.0/1711645974866/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "onecentlin.laravel-extension-pack" 
+        "name": "Laravel Extension Pack",
+        "description": "Winnie Lin",
+        "image": "https://onecentlin.gallerycdn.vsassets.io/extensions/onecentlin/laravel-extension-pack/1.3.0/1711645974866/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "onecentlin.laravel-extension-pack"
     },
     {
-        "id": 205, 
-        "name": "Laravel Extra Intellisense", 
-        "description": "amir", 
-        "image": "https://amiralizadeh9480.gallerycdn.vsassets.io/extensions/amiralizadeh9480/laravel-extra-intellisense/0.7.0/1733000863490/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "amiralizadeh9480.laravel-extra-intellisense" 
+        "name": "Laravel Extra Intellisense",
+        "description": "amir",
+        "image": "https://amiralizadeh9480.gallerycdn.vsassets.io/extensions/amiralizadeh9480/laravel-extra-intellisense/0.7.0/1733000863490/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "amiralizadeh9480.laravel-extra-intellisense"
     },
     {
-        "id": 206, 
-        "name": "Laravel Got", 
-        "description": "Adrian", 
-        "image": "https://absszero.gallerycdn.vsassets.io/extensions/absszero/vscode-laravel-goto/4.32.0/1739794098228/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "absszero.vscode-laravel-goto" 
+        "name": "Laravel Got",
+        "description": "Adrian",
+        "image": "https://absszero.gallerycdn.vsassets.io/extensions/absszero/vscode-laravel-goto/4.32.0/1739794098228/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "absszero.vscode-laravel-goto"
     },
     {
-        "id": 207, 
-        "name": "Laravel Goto Components", 
-        "description": "MrChetan", 
-        "image": "https://mrchetan.gallerycdn.vsassets.io/extensions/mrchetan/goto-laravel-components/1.1.0/1722515867774/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "MrChetan.goto-laravel-components" 
+        "name": "Laravel Goto Components",
+        "description": "MrChetan",
+        "image": "https://mrchetan.gallerycdn.vsassets.io/extensions/mrchetan/goto-laravel-components/1.1.0/1722515867774/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "MrChetan.goto-laravel-components"
     },
     {
-        "id": 208, 
-        "name": "Laravel goto view", 
-        "description": "codingyu", 
-        "image": "https://codingyu.gallerycdn.vsassets.io/extensions/codingyu/laravel-goto-view/1.3.11/1697358283968/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "codingyu.laravel-goto-view" 
+        "name": "Laravel goto view",
+        "description": "codingyu",
+        "image": "https://codingyu.gallerycdn.vsassets.io/extensions/codingyu/laravel-goto-view/1.3.11/1697358283968/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "codingyu.laravel-goto-view"
     },
     {
-        "id": 209, 
-        "name": "Laravel Ide Helper", 
-        "description": "georgykurian", 
-        "image": "https://georgykurian.gallerycdn.vsassets.io/extensions/georgykurian/laravel-ide-helper/1.0.2/1666386005950/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "georgykurian.laravel-ide-helper" 
+        "name": "Laravel Ide Helper",
+        "description": "georgykurian",
+        "image": "https://georgykurian.gallerycdn.vsassets.io/extensions/georgykurian/laravel-ide-helper/1.0.2/1666386005950/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "georgykurian.laravel-ide-helper"
     },
     {
-        "id": 210, 
-        "name": "Laravel Intelephense", 
-        "description": "Porifa", 
-        "image": "https://porifa.gallerycdn.vsassets.io/extensions/porifa/laravel-intelephense/1.25.0/1703479036751/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Porifa.laravel-intelephense" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 211, 
-        "name": "Laravel Model Snippets", 
-        "description": "Andy Hinkle", 
-        "image": "https://ahinkle.gallerycdn.vsassets.io/extensions/ahinkle/laravel-model-snippets/2.0.0/1598911843267/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ahinkle.laravel-model-snippets" 
+        "name": "Laravel Intelephense",
+        "description": "Porifa",
+        "image": "https://porifa.gallerycdn.vsassets.io/extensions/porifa/laravel-intelephense/1.25.0/1703479036751/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Porifa.laravel-intelephense"
     },
     {
-        "id": 212, 
-        "name": "Laravel Pint", 
-        "description": "Open Southeners", 
-        "image": "https://open-southeners.gallerycdn.vsassets.io/extensions/open-southeners/laravel-pint/1.3.0/1737367396779/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "open-southeners.laravel-pint" 
+        "name": "Laravel Model Snippets",
+        "description": "Andy Hinkle",
+        "image": "https://ahinkle.gallerycdn.vsassets.io/extensions/ahinkle/laravel-model-snippets/2.0.0/1598911843267/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ahinkle.laravel-model-snippets"
     },
     {
-        "id": 213, 
-        "name": "Laravel Snippets", 
-        "description": "Winnie Lin", 
-        "image": "https://onecentlin.gallerycdn.vsassets.io/extensions/onecentlin/laravel5-snippets/1.18.0/1710409025279/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "onecentlin.laravel5-snippets" 
+        "name": "Laravel Pint",
+        "description": "Open Southeners",
+        "image": "https://open-southeners.gallerycdn.vsassets.io/extensions/open-southeners/laravel-pint/1.3.0/1737367396779/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "open-southeners.laravel-pint"
     },
     {
-        "id": 214, 
-        "name": "laravel-goto-components", 
-        "description": "naoray", 
-        "image": "https://naoray.gallerycdn.vsassets.io/extensions/naoray/laravel-goto-components/1.2.0/1635421420328/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "naoray.laravel-goto-components" 
+        "name": "Laravel Snippets",
+        "description": "Winnie Lin",
+        "image": "https://onecentlin.gallerycdn.vsassets.io/extensions/onecentlin/laravel5-snippets/1.18.0/1710409025279/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "onecentlin.laravel5-snippets"
     },
     {
-        "id": 215, 
-        "name": "laravel-jump-controller", 
-        "description": "pgl", 
-        "image": "https://pgl.gallerycdn.vsassets.io/extensions/pgl/laravel-jump-controller/0.0.33/1681960122487/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "pgl.laravel-jump-controller" 
+        "name": "laravel-goto-components",
+        "description": "naoray",
+        "image": "https://naoray.gallerycdn.vsassets.io/extensions/naoray/laravel-goto-components/1.2.0/1635421420328/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "naoray.laravel-goto-components"
     },
     {
-        "id": 216, 
-        "name": "Live Preview", 
-        "description": "Microsoft", 
-        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/live-server/0.5.2024091601/1726478288034/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ms-vscode.live-server" 
+        "name": "laravel-jump-controller",
+        "description": "pgl",
+        "image": "https://pgl.gallerycdn.vsassets.io/extensions/pgl/laravel-jump-controller/0.0.33/1681960122487/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "pgl.laravel-jump-controller"
     },
     {
-        "id": 217, 
-        "name": "Live Sass Compiler", 
-        "description": "Glenn Marks", 
-        "image": "https://glenn2223.gallerycdn.vsassets.io/extensions/glenn2223/live-sass/6.1.2/1700696840107/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "glenn2223.live-sass" 
+        "name": "Live Preview",
+        "description": "Microsoft",
+        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/live-server/0.5.2024091601/1726478288034/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-vscode.live-server"
     },
     {
-        "id": 218, 
-        "name": "Live Server", 
-        "description": "Ritwick Dey", 
-        "image": "https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ritwickdey.LiveServer" 
+        "name": "Live Sass Compiler",
+        "description": "Glenn Marks",
+        "image": "https://glenn2223.gallerycdn.vsassets.io/extensions/glenn2223/live-sass/6.1.2/1700696840107/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "glenn2223.live-sass"
     },
     {
-        "id": 219, 
-        "name": "Live Server (Five Server)", 
-        "description": "Yannick", 
-        "image": "https://yandeu.gallerycdn.vsassets.io/extensions/yandeu/five-server/0.3.2/1733831407650/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "yandeu.five-server" 
+        "name": "Live Server",
+        "description": "Ritwick Dey",
+        "image": "https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ritwickdey.LiveServer"
     },
     {
-        "id": 220,
-        "name": "Live Share", 
-        "description": "Microsoft", 
-        "image": "https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/1.0.5941/1727123987754/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "MS-vsliveshare.vsliveshare" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 221,
-        "name": "Live Share Whiteboard", 
-        "description": "Jonathan Carter", 
-        "image": "https://lostintangent.gallerycdn.vsassets.io/extensions/lostintangent/vsls-whiteboard/0.0.12/1607484097347/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "lostintangent.vsls-whiteboard" 
+        "name": "Live Server (Five Server)",
+        "description": "Yannick",
+        "image": "https://yandeu.gallerycdn.vsassets.io/extensions/yandeu/five-server/0.3.2/1733831407650/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "yandeu.five-server"
     },
     {
-        "id": 222,
-        "name": "LiveCode for python", 
-        "description": "xirider", 
-        "image": "https://xirider.gallerycdn.vsassets.io/extensions/xirider/livecode/1.3.10/1593204645007/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "xirider.livecode" 
+        "name": "Live Share",
+        "description": "Microsoft",
+        "image": "https://ms-vsliveshare.gallerycdn.vsassets.io/extensions/ms-vsliveshare/vsliveshare/1.0.5941/1727123987754/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "MS-vsliveshare.vsliveshare"
     },
     {
-        "id": 223,
-        "name": "Local History", 
-        "description": "xyz", 
-        "image": "https://xyz.gallerycdn.vsassets.io/extensions/xyz/local-history/1.8.1/1583352056596/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "xyz.local-history" 
+        "name": "Live Share Whiteboard",
+        "description": "Jonathan Carter",
+        "image": "https://lostintangent.gallerycdn.vsassets.io/extensions/lostintangent/vsls-whiteboard/0.0.12/1607484097347/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lostintangent.vsls-whiteboard"
     },
     {
-        "id": 224,
-        "name": "Lorem ipsum", 
-        "description": "Daniel Imms", 
-        "image": "https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/lorem-ipsum/1.3.1/1640026564395/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Tyriar.lorem-ipsum" 
+        "name": "LiveCode for python",
+        "description": "xirider",
+        "image": "https://xirider.gallerycdn.vsassets.io/extensions/xirider/livecode/1.3.10/1593204645007/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "xirider.livecode"
     },
     {
-        "id": 225,
-        "name": "LottieFiles for VSCode", 
-        "description": "LottieFiles", 
-        "image": "https://lottiefiles.gallerycdn.vsassets.io/extensions/lottiefiles/vscode-lottie/1.0.5/1644929862372/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "lottiefiles.vscode-lottie" 
+        "name": "Local History",
+        "description": "xyz",
+        "image": "https://xyz.gallerycdn.vsassets.io/extensions/xyz/local-history/1.8.1/1583352056596/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "xyz.local-history"
     },
     {
-        "id": 226, 
-        "name": "love-launcher", 
-        "description": "Jan Werder", 
-        "image": "https://janw.gallerycdn.vsassets.io/extensions/janw/love-launcher/1.1.0/1686324146332/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "JanW.love-launcher" 
+        "name": "Lorem ipsum",
+        "description": "Daniel Imms",
+        "image": "https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/lorem-ipsum/1.3.1/1640026564395/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Tyriar.lorem-ipsum"
     },
     {
-        "id": 227, 
-        "name": "Lua", 
-        "description": "sumneko", 
-        "image": "https://sumneko.gallerycdn.vsassets.io/extensions/sumneko/lua/3.13.5/1734665261151/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "sumneko.lua" 
+        "name": "LottieFiles for VSCode",
+        "description": "LottieFiles",
+        "image": "https://lottiefiles.gallerycdn.vsassets.io/extensions/lottiefiles/vscode-lottie/1.0.5/1644929862372/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lottiefiles.vscode-lottie"
     },
     {
-        "id": 228, 
-        "name": "Makefile Tools", 
-        "description": "Microsoft", 
-        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/makefile-tools/0.12.13/1734409158123/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ms-vscode.makefile-tools" 
+        "name": "love-launcher",
+        "description": "Jan Werder",
+        "image": "https://janw.gallerycdn.vsassets.io/extensions/janw/love-launcher/1.1.0/1686324146332/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "JanW.love-launcher"
     },
     {
-        "id": 229, 
-        "name": "Mark Sharp — Markdown Editor", 
-        "description": "Jonathan Yeung", 
-        "image": "https://jonathan-yeung.gallerycdn.vsassets.io/extensions/jonathan-yeung/mark-sharp/1.6.2/1733931213954/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "jonathan-yeung.mark-sharp" 
+        "name": "Lua",
+        "description": "sumneko",
+        "image": "https://sumneko.gallerycdn.vsassets.io/extensions/sumneko/lua/3.13.5/1734665261151/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sumneko.lua"
     },
     {
-        "id": 230, 
-        "name": "Markdown All in One", 
-        "description": "Yu Zhang", 
-        "image": "https://yzhang.gallerycdn.vsassets.io/extensions/yzhang/markdown-all-in-one/3.6.2/1705324444519/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "yzhang.markdown-all-in-one" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 231, 
-        "name": "Markdown Checkboxes", 
-        "description": "Matt Bierner", 
-        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-checkbox/0.4.0/1667513871796/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "bierner.markdown-checkbox" 
+        "name": "Makefile Tools",
+        "description": "Microsoft",
+        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/makefile-tools/0.12.13/1734409158123/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-vscode.makefile-tools"
     },
     {
-        "id": 232, 
-        "name": "Markdown Emoji", 
-        "description": "Matt Bierner", 
-        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-emoji/0.3.1/1734470638494/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "bierner.markdown-emoji" 
+        "name": "Mark Sharp — Markdown Editor",
+        "description": "Jonathan Yeung",
+        "image": "https://jonathan-yeung.gallerycdn.vsassets.io/extensions/jonathan-yeung/mark-sharp/1.6.2/1733931213954/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jonathan-yeung.mark-sharp"
     },
     {
-        "id": 233, 
-        "name": "Markdown Extended", 
-        "description": "jebbs", 
-        "image": "https://jebbs.gallerycdn.vsassets.io/extensions/jebbs/markdown-extended/1.1.4/1711591168762/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "jebbs.markdown-extended" 
+        "name": "Markdown All in One",
+        "description": "Yu Zhang",
+        "image": "https://yzhang.gallerycdn.vsassets.io/extensions/yzhang/markdown-all-in-one/3.6.2/1705324444519/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "yzhang.markdown-all-in-one"
     },
     {
-        "id": 234, 
-        "name": "Markdown PDF", 
-        "description": "yzane", 
-        "image": "https://yzane.gallerycdn.vsassets.io/extensions/yzane/markdown-pdf/1.5.0/1694185209938/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "yzane.markdown-pdf" 
+        "name": "Markdown Checkboxes",
+        "description": "Matt Bierner",
+        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-checkbox/0.4.0/1667513871796/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "bierner.markdown-checkbox"
     },
     {
-        "id": 235, 
-        "name": "Markdown Preview Enhanced", 
-        "description": "Yiyi Wang", 
-        "image": "https://shd101wyy.gallerycdn.vsassets.io/extensions/shd101wyy/markdown-preview-enhanced/0.8.15/1731042703264/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "shd101wyy.markdown-preview-enhanced" 
+        "name": "Markdown Emoji",
+        "description": "Matt Bierner",
+        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-emoji/0.3.1/1734470638494/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "bierner.markdown-emoji"
     },
     {
-        "id": 236, 
-        "name": "Markdown Preview Github Styling", 
-        "description": "Matt Bierner", 
-        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-preview-github-styles/2.1.0/1726589758235/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "bierner.markdown-preview-github-styles" 
+        "name": "Markdown Extended",
+        "description": "jebbs",
+        "image": "https://jebbs.gallerycdn.vsassets.io/extensions/jebbs/markdown-extended/1.1.4/1711591168762/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jebbs.markdown-extended"
     },
     {
-        "id": 237, 
-        "name": "Markdown Preview Mermaid Support", 
-        "description": "Matt Bierner", 
-        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-mermaid/1.27.0/1731976164380/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "bierner.markdown-mermaid" 
+        "name": "Markdown PDF",
+        "description": "yzane",
+        "image": "https://yzane.gallerycdn.vsassets.io/extensions/yzane/markdown-pdf/1.5.0/1694185209938/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "yzane.markdown-pdf"
     },
     {
-        "id": 238, 
-        "name": "Markdown Theme Kit", 
-        "description": "Microsoft", 
-        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/theme-markdownkit/0.1.4/1499504007109/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "ms-vscode.Theme-MarkdownKit" 
+        "name": "Markdown Preview Enhanced",
+        "description": "Yiyi Wang",
+        "image": "https://shd101wyy.gallerycdn.vsassets.io/extensions/shd101wyy/markdown-preview-enhanced/0.8.15/1731042703264/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "shd101wyy.markdown-preview-enhanced"
     },
     {
-        "id": 239, 
-        "name": "markdownlint", 
-        "description": "David Anson", 
-        "image": "https://davidanson.gallerycdn.vsassets.io/extensions/davidanson/vscode-markdownlint/0.58.2/1737246377021/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "DavidAnson.vscode-markdownlint" 
+        "name": "Markdown Preview Github Styling",
+        "description": "Matt Bierner",
+        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-preview-github-styles/2.1.0/1726589758235/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "bierner.markdown-preview-github-styles"
     },
     {
-        "id": 240, 
-        "name": "Mars", 
-        "description": "Eliver Lara", 
-        "image": "https://eliverlara.gallerycdn.vsassets.io/extensions/eliverlara/mars/1.0.0/1541707378398/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "EliverLara.mars" 
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "id": 241, 
-        "name": "Material Design Icons Intellisense", 
-        "description": "Lukas Troyer", 
-        "image": "https://lukas-tr.gallerycdn.vsassets.io/extensions/lukas-tr/materialdesignicons-intellisense/4.1.0/1655028295045/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "lukas-tr.materialdesignicons-intellisense" 
+        "name": "Markdown Preview Mermaid Support",
+        "description": "Matt Bierner",
+        "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/markdown-mermaid/1.27.0/1731976164380/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "bierner.markdown-mermaid"
     },
     {
-        "id": 242, 
-        "name": "Material Fresh Theme 🍰🧁", 
-        "description": "Lakshit Somani", 
-        "image": "https://lakshits11.gallerycdn.vsassets.io/extensions/lakshits11/fresh-material-theme/0.0.3/1709225157147/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "lakshits11.fresh-material-theme" 
+        "name": "Markdown Theme Kit",
+        "description": "Microsoft",
+        "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/theme-markdownkit/0.1.4/1499504007109/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-vscode.Theme-MarkdownKit"
     },
     {
-        "id": 243, 
-        "name": "Material Icon Picker for MUI", 
-        "description": "michioxd", 
-        "image": "https://michioxd.gallerycdn.vsassets.io/extensions/michioxd/vscode-mui-material-icon-picker/0.0.3/1721530342545/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "michioxd.vscode-mui-material-icon-picker" 
+        "name": "markdownlint",
+        "description": "David Anson",
+        "image": "https://davidanson.gallerycdn.vsassets.io/extensions/davidanson/vscode-markdownlint/0.58.2/1737246377021/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "DavidAnson.vscode-markdownlint"
     },
     {
-        "id": 244, 
-        "name": "Material Icon Theme", 
-        "description": "Philipp Kief", 
-        "image": "https://pkief.gallerycdn.vsassets.io/extensions/pkief/material-icon-theme/5.16.0/1734449103902/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "PKief.material-icon-theme" 
+        "name": "Mars",
+        "description": "Eliver Lara",
+        "image": "https://eliverlara.gallerycdn.vsassets.io/extensions/eliverlara/mars/1.0.0/1541707378398/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "EliverLara.mars"
     },
     {
-        "id": 245, 
-        "name": "Material Icons Library", 
-        "description": "Archety", 
-        "image": "https://archety.gallerycdn.vsassets.io/extensions/archety/material-icons/0.2.0/1532035422356/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Archety.material-icons" 
+        "name": "Material Design Icons Intellisense",
+        "description": "Lukas Troyer",
+        "image": "https://lukas-tr.gallerycdn.vsassets.io/extensions/lukas-tr/materialdesignicons-intellisense/4.1.0/1655028295045/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lukas-tr.materialdesignicons-intellisense"
     },
     {
-        "id": 246, 
-        "name": "Material Kivy", 
-        "description": "haddie bakrie", 
-        "image": "https://haddiebakrie.gallerycdn.vsassets.io/extensions/haddiebakrie/material-kv/1.0.0/1644713269439/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "haddiebakrie.material-kv" 
+        "name": "Material Fresh Theme 🍰🧁",
+        "description": "Lakshit Somani",
+        "image": "https://lakshits11.gallerycdn.vsassets.io/extensions/lakshits11/fresh-material-theme/0.0.3/1709225157147/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lakshits11.fresh-material-theme"
     },
     {
-        "id": 247, 
-        "name": "Material Product Icons", 
-        "description": "Philipp Kief", 
-        "image": "https://pkief.gallerycdn.vsassets.io/extensions/pkief/material-product-icons/1.7.1/1720860434568/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "PKief.material-product-icons" 
+        "name": "Material Icon Picker for MUI",
+        "description": "michioxd",
+        "image": "https://michioxd.gallerycdn.vsassets.io/extensions/michioxd/vscode-mui-material-icon-picker/0.0.3/1721530342545/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "michioxd.vscode-mui-material-icon-picker"
     },
     {
-        "id": 248, 
-        "name": "Material Theme Icons — Free", 
-        "description": "Equinusocio", 
-        "image": "https://equinusocio.gallerycdn.vsassets.io/extensions/equinusocio/vsc-material-theme-icons/3.8.10/1731100343339/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Equinusocio.vsc-material-theme-icons" 
+        "name": "Material Icon Theme",
+        "description": "Philipp Kief",
+        "image": "https://pkief.gallerycdn.vsassets.io/extensions/pkief/material-icon-theme/5.16.0/1734449103902/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "PKief.material-icon-theme"
     },
     {
-        "id": 249, 
-        "name": "Material ui Snippets", 
-        "description": "Arunagiri", 
-        "image": "https://arunagiritm.gallerycdn.vsassets.io/extensions/arunagiritm/material-ui/1.0.0/1536583484624/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "Arunagiritm.material-ui" 
+        "name": "Material Icons Library",
+        "description": "Archety",
+        "image": "https://archety.gallerycdn.vsassets.io/extensions/archety/material-icons/0.2.0/1532035422356/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Archety.material-icons"
     },
     {
-        "id": 250, 
-        "name": "Material-UI Snippets", 
-        "description": "vscodeshift", 
-        "image": "https://vscodeshift.gallerycdn.vsassets.io/extensions/vscodeshift/material-ui-snippets/3.3.8/1632893578939/Microsoft.VisualStudio.Services.Icons.Default", 
-        "extensionId": "vscodeshift.material-ui-snippets" 
+        "name": "Material Kivy",
+        "description": "haddie bakrie",
+        "image": "https://haddiebakrie.gallerycdn.vsassets.io/extensions/haddiebakrie/material-kv/1.0.0/1644713269439/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "haddiebakrie.material-kv"
+    },
+    {
+        "name": "Material Product Icons",
+        "description": "Philipp Kief",
+        "image": "https://pkief.gallerycdn.vsassets.io/extensions/pkief/material-product-icons/1.7.1/1720860434568/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "PKief.material-product-icons"
+    },
+    {
+        "name": "Material Theme Icons — Free",
+        "description": "Equinusocio",
+        "image": "https://equinusocio.gallerycdn.vsassets.io/extensions/equinusocio/vsc-material-theme-icons/3.8.10/1731100343339/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Equinusocio.vsc-material-theme-icons"
+    },
+    {
+        "name": "Material ui Snippets",
+        "description": "Arunagiri",
+        "image": "https://arunagiritm.gallerycdn.vsassets.io/extensions/arunagiritm/material-ui/1.0.0/1536583484624/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Arunagiritm.material-ui"
+    },
+    {
+        "name": "Material-UI Snippets",
+        "description": "vscodeshift",
+        "image": "https://vscodeshift.gallerycdn.vsassets.io/extensions/vscodeshift/material-ui-snippets/3.3.8/1632893578939/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscodeshift.material-ui-snippets"
     },
 
 
@@ -2462,6 +2571,32 @@
         "image": "https://jeroen-meijer.gallerycdn.vsassets.io/extensions/jeroen-meijer/pubspec-assist/2.3.2/1636026565578/Microsoft.VisualStudio.Services.Icons.Default", 
         "extensionId": "jeroen-meijer.pubspec-assist" 
     },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Pug/Jade Bootstrap, Font Awesome Snippets",
+        "description": "pack",
+        "image": "https://pack.gallerycdn.vsassets.io/extensions/pack/jade-bootstrap/0.2.7/1559356655266/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "pack.jade-bootstrap"
+    },
+
+
+
+
+
+
+
+
+
+
     {
         "id": 313, 
         "name": "Pylance", 
@@ -2517,6 +2652,23 @@
         "description": "Dayle Rees", 
         "image": "https://daylerees.gallerycdn.vsassets.io/extensions/daylerees/rainglow/1.5.2/1515370316626/Microsoft.VisualStudio.Services.Icons.Default", 
         "extensionId": "daylerees.rainglow" 
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "id": 271, 
+        "name": "Razor / Blazor CSS IntelliSense.", 
+        "description": "Kevin Chatham", 
+        "image": "https://kevin-chatham.gallerycdn.vsassets.io/extensions/kevin-chatham/aspnetcorerazor-html-css-class-completion/1.0.3/1612491686465/Microsoft.VisualStudio.Services.Icons.Default", 
+        "extensionId": "kevin-chatham.aspnetcorerazor-html-css-class-completion" 
     },
 
 
@@ -2998,6 +3150,32 @@
         "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-java-test/0.43.0/1731307479056/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "vscjava.vscode-java-test"
     },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "The Powerful Bootstrap",
+        "description": "Crozzo",
+        "image": "https://crozzo.gallerycdn.vsassets.io/extensions/crozzo/the-powerful-bootstrap/1.2.4/1564549436058/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Crozzo.the-powerful-bootstrap"
+    },
+
+
+
+
+
+
+
+
+
+
     {
         "id": 369,
         "name": "Theme",
