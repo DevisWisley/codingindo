@@ -56,7 +56,9 @@ fetch('/en/src/components/extension/data.json')
                             <div class="card-body text-center">
                                 <h5 class="card-title text-lg font-semibold text-gray-800">${item.name}</h5>
                                 <p class="card-text text-gray-600">${item.description}</p>
-                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">Unduh</a>
+                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +85,9 @@ fetch('/en/src/components/extension/data.json')
                             <div class="card-body text-center">
                                 <h5 class="card-title text-lg font-semibold text-gray-800">${item.name}</h5>
                                 <p class="card-text text-gray-600">${item.description}</p>
-                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">Unduh</a>
+                                <a href="vscode:extension/${item.extensionId}" class="btn btn-primary mt-3 px-6 py-2 rounded-lg shadow-md">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
                             </div>
                         </div>
                     </div>
