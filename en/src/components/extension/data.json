@@ -3,85 +3,174 @@
         "name": ":emojisense:",
         "description": "Matt Bierner",
         "image": "https://bierner.gallerycdn.vsassets.io/extensions/bierner/emojisense/0.10.0/1686035362121/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "bierner.emojisense"
+        "extensionId": "bierner.emojisense",
+        "category": "Other"
     },
     {
         "name": ".gitignore Generator",
         "description": "Piotr Palarz",
         "image": "https://piotrpalarz.gallerycdn.vsassets.io/extensions/piotrpalarz/vscode-gitignore-generator/1.0.3/1614759612343/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "piotrpalarz.vscode-gitignore-generator"
+        "extensionId": "piotrpalarz.vscode-gitignore-generator",
+        "category": "SCM Providers"
+    },
+    {
+        "name": ".NET Core Add Reference",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/add-reference/1.0.2/1555403997726/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adrianwilczynski.add-reference",
+        "category": "Other"
+    },
+    {
+        "name": ".NET Core EditorConfig Generator",
+        "description": "Will 保哥",
+        "image": "https://doggy8088.gallerycdn.vsassets.io/extensions/doggy8088/netcore-editorconfiggenerator/0.2.0/1691238497551/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "doggy8088.netcore-editorconfiggenerator",
+        "category": "Other"
+    },
+    {
+        "name": ".NET Core Test Explorer",
+        "description": "Jun Han",
+        "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/dotnet-test-explorer/0.7.8/1663946684868/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "formulahendry.dotnet-test-explorer",
+        "category": "Programming Languages"
+    },
+    {
+        "name": ".NET Core Tools",
+        "description": "Jun Han",
+        "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/dotnet/0.0.4/1522160012743/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "formulahendry.dotnet",
+        "category": "Programming Languages"
+    },
+    {
+        "name": ".NET Core User Secrets",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/user-secrets/2.0.1/1572602387341/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adrianwilczynski.user-secrets",
+        "category": "Other"
+    },
+    {
+        "name": ".NET Education Bundle SDK Install Tool",
+        "description": "Microsoft",
+        "image": "https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscode-dotnet-sdk/0.8.0/1632434321251/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-dotnettools.vscode-dotnet-sdk",
+        "category": "Other"
     },
     {
         "name": ".NET Install Tool",
         "description": "Microsoft",
         "image": "https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscode-dotnet-runtime/2.2.3/1731614873971/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ms-dotnettools.vscode-dotnet-runtime"
+        "extensionId": "ms-dotnettools.vscode-dotnet-runtime",
+        "category": "Other"
+    },
+    {
+        "name": ".NET MAUI",
+        "description": "Microsoft",
+        "image": "https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/dotnet-maui/1.9.15/1740094434291/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-dotnettools.dotnet-maui",
+        "category": "Programming Languages"
     },
     {
         "name": "🧠 Logical Properties",
         "description": "coderfin",
         "image": "https://coderfin.gallerycdn.vsassets.io/extensions/coderfin/logical-properties/0.1.16/1719628800128/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "coderfin.logical-properties"
+        "extensionId": "coderfin.logical-properties",
+        "category": "Programming Languages"
     },
     {
         "name": "3D Viewer for VSCode",
         "description": "slevesque",
         "image": "https://slevesque.gallerycdn.vsassets.io/extensions/slevesque/vscode-3dviewer/0.2.2/1600128015024/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "slevesque.vscode-3dviewer"
+        "extensionId": "slevesque.vscode-3dviewer",
+        "category": "Other"
     },
     {
         "name": "Activitus Bar",
         "description": "Gruntfuggly",
         "image": "https://gruntfuggly.gallerycdn.vsassets.io/extensions/gruntfuggly/activitusbar/0.0.47/1670616781820/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Gruntfuggly.activitusbar"
+        "extensionId": "Gruntfuggly.activitusbar",
+        "category": "Other"
     },
     {
         "name": "Alpine.js IntelliSense",
         "description": "Adrian Wilczyński",
         "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/alpine-js-intellisense/1.2.0/1585406253316/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "adrianwilczynski.alpine-js-intellisense"
+        "extensionId": "adrianwilczynski.alpine-js-intellisense",
+        "category": "Programming Languages"
     },
     {
         "name": "Alpine.js IntelliSense",
         "description": "P. Christopher Bowers",
         "image": "https://pcbowers.gallerycdn.vsassets.io/extensions/pcbowers/alpine-intellisense/1.0.2/1655321215983/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "pcbowers.alpine-intellisense"
+        "extensionId": "pcbowers.alpine-intellisense",
+        "category": "Programming Languages"
     },
     {
         "name": "Alpine.js Syntax Highlight",
         "description": "sperovita",
         "image": "https://sperovita.gallerycdn.vsassets.io/extensions/sperovita/alpinejs-syntax-highlight/1.0.1/1642647041367/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "sperovita.alpinejs-syntax-highlight"
+        "extensionId": "sperovita.alpinejs-syntax-highlight",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Android",
+        "description": "adelphes",
+        "image": "https://adelphes.gallerycdn.vsassets.io/extensions/adelphes/android-dev-ext/1.4.0/1704212179376/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adelphes.android-dev-ext",
+        "category": "Debuggers"
+    },
+    {
+        "name": "Android Emulator Launcher",
+        "description": "Dannark",
+        "image": "https://dannark.gallerycdn.vsassets.io/extensions/dannark/androidlauncher/0.0.7/1591557464309/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Dannark.AndroidLauncher",
+        "category": "Other"
     },
     {
         "name": "Android iOS Emulator",
         "description": "Diemas Michiels",
         "image": "https://diemasmichiels.gallerycdn.vsassets.io/extensions/diemasmichiels/emulate/1.7.1/1737402230976/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "DiemasMichiels.emulate"
+        "extensionId": "DiemasMichiels.emulate",
+        "category": "Debuggers"
     },
     {
         "name": "Android Manifest Snippets",
         "description": "Eugenio Buffo",
         "image": "https://eugeniobuffo.gallerycdn.vsassets.io/extensions/eugeniobuffo/android-manifest-snippets/1.1.1/1647289946553/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "EugenioBuffo.android-manifest-snippets"
+        "extensionId": "EugenioBuffo.android-manifest-snippets",
+        "category": "Snippets"
     },
     {
         "name": "Android Studio Default Themes",
         "description": "Shayan Ahmed Khan",
         "image": "https://shayanahmedkhan.gallerycdn.vsassets.io/extensions/shayanahmedkhan/android-studio-color-theme/1.4.3/1731224799499/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ShayanAhmedKhan.android-studio-color-theme"
+        "extensionId": "ShayanAhmedKhan.android-studio-color-theme",
+        "category": "Themes"
+    },
+    {
+        "name": "Android WebView Debugging",
+        "description": "Michael Potthoff",
+        "image": "https://mpotthoff.gallerycdn.vsassets.io/extensions/mpotthoff/vscode-android-webview-debug/1.2.3/1711659633979/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mpotthoff.vscode-android-webview-debug",
+        "category": "Debuggers"
     },
     {
         "name": "Andromeda",
         "description": "Eliver Lara",
         "image": "https://eliverlara.gallerycdn.vsassets.io/extensions/eliverlara/andromeda/1.8.2/1710293957977/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "EliverLara.andromeda"
+        "extensionId": "EliverLara.andromeda",
+        "category": "Themes"
     },
     {
         "name": "Angular 17 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
         "description": "Mikael Morlund",
         "image": "https://mikael.gallerycdn.vsassets.io/extensions/mikael/angular-beastcode/17.0.4/1708159860968/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "Mikael.Angular-BeastCode"
+    },
+    {
+        "name": "Angular File Changer (Supporting Touch Bar and NgRx)",
+        "description": "john-crowson",
+        "image": "https://john-crowson.gallerycdn.vsassets.io/extensions/john-crowson/angular-file-changer/0.0.4/1541545916354/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "john-crowson.angular-file-changer"
     },
     {
         "name": "Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets",
@@ -94,6 +183,12 @@
         "description": "John Papa",
         "image": "https://johnpapa.gallerycdn.vsassets.io/extensions/johnpapa/angular2/18.0.2/1721073446931/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "johnpapa.Angular2"
+    },
+    {
+        "name": "angular2-switcher",
+        "description": "infinity1207",
+        "image": "https://infinity1207.gallerycdn.vsassets.io/extensions/infinity1207/angular2-switcher/0.4.0/1652427535801/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "infinity1207.angular2-switcher"
     },
     {
         "name": "Apache Conf",
@@ -130,6 +225,12 @@
         "description": "Arif Budiman Arrosyid",
         "image": "https://arifbudimanar.gallerycdn.vsassets.io/extensions/arifbudimanar/arifcode-theme-windows/0.0.11/1711662240062/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "arifbudimanar.arifcode-theme-windows"
+    },
+    {
+        "name": "ASP.NET Core Switcher",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/asp-net-core-switcher/2.0.2/1577043327534/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adrianwilczynski.asp-net-core-switcher"
     },
     {
         "name": "Atom Material Icons",
@@ -270,6 +371,18 @@
         "extensionId": "Blackboxapp.blackboxagent"
     },
     {
+        "name": "Blazor Snippet Pack",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/blazor-snippet-pack/2.6.1/1583617498563/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Scadrianwilczynski.blazor-snippet-pack" 
+    },
+    {
+        "name": "Blazor Snippets",
+        "description": "Scott Sauber",
+        "image": "https://scottsauber.gallerycdn.vsassets.io/extensions/scottsauber/blazorsnippets/1.5.1/1613105903602/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ScottSauber.blazorsnippets" 
+    },
+    {
         "name": "bloc",
         "description": "Felix Angelov",
         "image": "https://felixangelov.gallerycdn.vsassets.io/extensions/felixangelov/bloc/6.7.0/1734215861129/Microsoft.VisualStudio.Services.Icons.Default",
@@ -322,6 +435,18 @@
         "description": "Microsoft",
         "image": "https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csdevkit/1.15.13/1733947972563/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "ms-dotnettools.csdevkit"
+    },
+    {
+        "name": "C# Extensions",
+        "description": "JosKreativ",
+        "image": "https://kreativ-software.gallerycdn.vsassets.io/extensions/kreativ-software/csharpextensions/1.7.3/1662752303210/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kreativ-software.csharpextensions"
+    },
+    {
+        "name": "C# to TypeScript",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/csharp-to-typescript/1.12.1/1583697006928/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adrianwilczynski.csharp-to-typescript"
     },
     {
         "name": "carbon-now-sh",
@@ -1908,6 +2033,56 @@
         "image": "https://christian-kohler.gallerycdn.vsassets.io/extensions/christian-kohler/npm-intellisense/1.4.5/1696702951497/Microsoft.VisualStudio.Services.Icons.Default", 
         "extensionId": "christian-kohler.npm-intellisense" 
     },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "NuGet Gallery",
+        "description": "pcislo",
+        "image": "https://patcx.gallerycdn.vsassets.io/extensions/patcx/vscode-nuget-gallery/1.2.3/1734549659897/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "patcx.vscode-nuget-gallery"
+    },
+    {
+        "name": "NuGet NuPkg Viewer",
+        "description": "Miguel Ángel Domínguez Coloma",
+        "image": "https://eridem.gallerycdn.vsassets.io/extensions/eridem/vscode-nupkg/1.0.1/1560588947702/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "eridem.vscode-nupkg"
+    },
+    {
+        "name": "NuGet Package Manager",
+        "description": "jmrog",
+        "image": "https://cdn.vsassets.io/v/M251_20250121.2/_content/Header/default_icon_128.png",
+        "extensionId": "jmrog.vscode-nuget-package-manager"
+    },
+    {
+        "name": "NuGet Package Manager GUI",
+        "description": "aliasadidev",
+        "image": "https://aliasadidev.gallerycdn.vsassets.io/extensions/aliasadidev/nugetpackagemanagergui/2.1.1/1724773507105/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "aliasadidev.nugetpackagemanagergui"
+    },
+    {
+        "name": "NuGet Reverse Package Search (\"Add Package\" support)",
+        "description": "Jess Chadwick",
+        "image": "https://cdn.vsassets.io/v/M251_20250121.2/_content/Header/default_icon_128.png",
+        "extensionId": "jesschadwick.nuget-reverse-package-search"
+    },
+
+
+
+
+
+
+
+
+
+
     {
         "id": 272, 
         "name": "Nvidia Status Bar", 
@@ -2740,6 +2915,22 @@
         "description": "Eliver Lara",
         "image": "https://eliverlara.gallerycdn.vsassets.io/extensions/eliverlara/sweet-vscode-icons/0.0.1/1583618678647/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "EliverLara.sweet-vscode-icons"
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Switcher",
+        "description": "Adrian Wilczyński",
+        "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/switcher/1.0.4/1558260297357/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "adrianwilczynski.switcher"
     },
 
 
