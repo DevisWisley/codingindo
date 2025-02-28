@@ -119,6 +119,13 @@
         "category": "Programming Languages"
     },
     {
+        "name": "👉 Emoji File Icons 👈",
+        "description": "mightbesimon",
+        "image": "https://mightbesimon.gallerycdn.vsassets.io/extensions/mightbesimon/emoji-icons/1.6.1/1693260597252/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mightbesimon.emoji-icons",
+        "category": "Themes"
+    },
+    {
         "name": "🧠 Logical Properties",
         "description": "coderfin",
         "image": "https://coderfin.gallerycdn.vsassets.io/extensions/coderfin/logical-properties/0.1.16/1719628800128/Microsoft.VisualStudio.Services.Icons.Default",
@@ -147,6 +154,20 @@
         "category": "Other"
     },
     {
+        "name": "Advanced New File",
+        "description": "Dominik Kundel",
+        "image": "https://dkundel.gallerycdn.vsassets.io/extensions/dkundel/vscode-new-file/4.0.2/1520851643050/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "dkundel.vscode-new-file",
+        "category": "Other"
+    },
+    {
+        "name": "advanced-new-file",
+        "description": "patbenatar",
+        "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
+        "extensionId": "patbenatar.advanced-new-file",
+        "category": "Other"
+    },
+    {
         "name": "Alpine.js IntelliSense",
         "description": "Adrian Wilczyński",
         "image": "https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/alpine-js-intellisense/1.2.0/1585406253316/Microsoft.VisualStudio.Services.Icons.Default",
@@ -166,6 +187,13 @@
         "image": "https://sperovita.gallerycdn.vsassets.io/extensions/sperovita/alpinejs-syntax-highlight/1.0.1/1642647041367/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "sperovita.alpinejs-syntax-highlight",
         "category": "Programming Languages"
+    },
+    {
+        "name": "Alternate File",
+        "description": "will-wow",
+        "image": "https://will-wow.gallerycdn.vsassets.io/extensions/will-wow/vscode-alternate-file/0.3.1/1552896916772/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "will-wow.vscode-alternate-file",
+        "category": "Other"
     },
     {
         "name": "Amiga C/C++ Compile, Debug & Profile",
@@ -264,6 +292,13 @@
         "image": "https://john-crowson.gallerycdn.vsassets.io/extensions/john-crowson/angular-file-changer/0.0.4/1541545916354/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "john-crowson.angular-file-changer",
         "category": "Keymaps"
+    },
+    {
+        "name": "Angular Files",
+        "description": "Alexander Ivanichev",
+        "image": "https://alexiv.gallerycdn.vsassets.io/extensions/alexiv/vscode-angular2-files/1.6.4/1596918640614/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "alexiv.vscode-angular2-files",
+        "category": "Programming Languages"
     },
     {
         "name": "Angular Language Service",
@@ -385,6 +420,13 @@
         "category": "Other"
     },
     {
+        "name": "Auto Barrel for VSCode",
+        "description": "Manuel Gil",
+        "image": "https://imgildev.gallerycdn.vsassets.io/extensions/imgildev/vscode-auto-barrel/1.18.0/1737156111022/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "imgildev.vscode-auto-barrel",
+        "category": "Other"
+    },
+    {
         "name": "Auto Close Tag",
         "description": "Jun Han",
         "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/auto-close-tag/0.5.15/1702959502562/Microsoft.VisualStudio.Services.Icons.Default",
@@ -410,6 +452,13 @@
         "description": "steoates",
         "image": "https://steoates.gallerycdn.vsassets.io/extensions/steoates/autoimport/1.5.4/1618500754212/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "steoates.autoimport",
+        "category": "Other"
+    },
+    {
+        "name": "Auto Import - ES6, TS, JSX, TSX",
+        "description": "Sergey Korenuk",
+        "image": "https://nucllear.gallerycdn.vsassets.io/extensions/nucllear/vscode-extension-auto-import/1.4.3/1531902127575/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "NuclleaR.vscode-extension-auto-import",
         "category": "Other"
     },
     {
@@ -462,6 +511,13 @@
         "category": "Azure"
     },
     {
+        "name": "Azure Databases",
+        "description": "Microsoft",
+        "image": "https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-cosmosdb/0.25.0/1740404863940/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ms-azuretools.vscode-cosmosdb",
+        "category": "Azure"
+    },
+    {
         "name": "Azure Repos",
         "description": "Microsoft",
         "image": "https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/azure-repos/0.41.2024112101/1732180794699/Microsoft.VisualStudio.Services.Icons.Default",
@@ -504,6 +560,20 @@
         "category": "Debuggers"
     },
     {
+        "name": "Beatify EJS",
+        "description": "oleksandr",
+        "image": "https://oleksandr.gallerycdn.vsassets.io/extensions/oleksandr/beatify-ejs/0.1.0/1684271086030/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "oleksandr.beatify-ejs",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Beautify css/sass/scss/less",
+        "description": "michelemelluso",
+        "image": "https://michelemelluso.gallerycdn.vsassets.io/extensions/michelemelluso/code-beautifier/2.3.3/1564069126232/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "michelemelluso.code-beautifier",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Best Themes Redefined 🚀",
         "description": "Lakshit Somani",
         "image": "https://lakshits11.gallerycdn.vsassets.io/extensions/lakshits11/best-themes-redefined/0.4.6/1713689920574/Microsoft.VisualStudio.Services.Icons.Default",
@@ -518,11 +588,25 @@
         "category": "Formatters"
     },
     {
+        "name": "Better C Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-c-syntax/1.13.2/1632162046899/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-c-syntax",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Better C++ Syntax",
         "description": "Jeff Hykin",
         "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-cpp-syntax/1.27.1/1720820193197/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "jeff-hykin.better-cpp-syntax",
         "category": "Programming Languages"
+    },
+    {
+        "name": "Better Comment",
+        "description": "Gruntfuggly",
+        "image": "https://gruntfuggly.gallerycdn.vsassets.io/extensions/gruntfuggly/bettercomment/0.0.15/1624025723788/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Gruntfuggly.bettercomment",
+        "category": "Other"
     },
     {
         "name": "Better Comments",
@@ -532,6 +616,13 @@
         "category": "Formatters"
     },
     {
+        "name": "Better DockerFile Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-dockerfile-syntax/1.0.2/1584921696369/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-dockerfile-syntax",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Better Folding",
         "description": "Mohammad Baqer",
         "image": "https://mohammadbaqer.gallerycdn.vsassets.io/extensions/mohammadbaqer/better-folding/0.5.1/1676502220495/Microsoft.VisualStudio.Services.Icons.Default",
@@ -539,10 +630,87 @@
         "category": "Other"
     },
     {
+        "name": "Better Fountain",
+        "description": "Piers Deseilligny",
+        "image": "https://piersdeseilligny.gallerycdn.vsassets.io/extensions/piersdeseilligny/betterfountain/1.14.1/1734981689257/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "piersdeseilligny.betterfountain",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Git Line Blame",
+        "description": "Mitchell Kember",
+        "image": "https://mk12.gallerycdn.vsassets.io/extensions/mk12/better-git-line-blame/0.2.14/1732678911630/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "mk12.better-git-line-blame",
+        "category": "SCM Providers"
+    },
+    {
+        "name": "Better Go Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-go-syntax/1.1.0/1599577343659/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-go-syntax",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Haml",
+        "description": "Karuna Murti",
+        "image": "https://karunamurti.gallerycdn.vsassets.io/extensions/karunamurti/haml/1.4.1/1656810281140/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "karunamurti.haml",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better JavaScript Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-js-syntax/1.4.0/1734279842994/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-js-syntax",
+        "category": "Other"
+    },
+    {
+        "name": "Better Jinja",
+        "description": "Samuel Colvin",
+        "image": "https://samuelcolvin.gallerycdn.vsassets.io/extensions/samuelcolvin/jinjahtml/0.20.0/1674478143852/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "samuelcolvin.jinjahtml",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better MIPS Support",
+        "description": "Radu Vasilescu",
+        "image": "https://vasilescur.gallerycdn.vsassets.io/extensions/vasilescur/better-mips/0.2.1/1549486460582/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vasilescur.better-mips",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Nunjucks",
+        "description": "Ed Heltzel",
+        "image": "https://ginfuru.gallerycdn.vsassets.io/extensions/ginfuru/better-nunjucks/0.3.1/1724097084685/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ginfuru.better-nunjucks",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Objective-C Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-objc-syntax/0.2.0/1654792298180/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-objc-syntax",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Better Objective-C++ Syntax",
         "description": "Jeff Hykin",
         "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-objcpp-syntax/0.2.0/1654794431826/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "jeff-hykin.better-objcpp-syntax",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Open Editors",
+        "description": "McSodbrenner",
+        "image": "https://mcsodbrenner.gallerycdn.vsassets.io/extensions/mcsodbrenner/better-open-editors/1.12.0/1737708324104/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "McSodbrenner.better-open-editors",
+        "category": "Other"
+    },
+    {
+        "name": "Better Perl Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-perl-syntax/1.0.14/1613172685440/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-perl-syntax",
         "category": "Programming Languages"
     },
     {
@@ -558,6 +726,48 @@
         "image": "https://martinvz.gallerycdn.vsassets.io/extensions/martinvz/better-php-error-logger/0.1.38/1682766048161/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "martinvz.better-php-error-logger",
         "category": "Debuggers"
+    },
+    {
+        "name": "Better PHPUnit",
+        "description": "calebporzio",
+        "image": "https://calebporzio.gallerycdn.vsassets.io/extensions/calebporzio/better-phpunit/1.6.2/1697026556508/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "calebporzio.better-phpunit",
+        "category": "Other"
+    },
+    {
+        "name": "Better Prolog Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-prolog-syntax/0.3.2/1666918540014/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-prolog-syntax",
+        "category": "Other"
+    },
+    {
+        "name": "Better Shell Syntax",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/better-shellscript-syntax/1.10.0/1721077425353/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.better-shellscript-syntax",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Better Solarized",
+        "description": "Ed Heltzel",
+        "image": "https://ginfuru.gallerycdn.vsassets.io/extensions/ginfuru/ginfuru-better-solarized-dark-theme/0.10.9/1718820860656/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ginfuru.ginfuru-better-solarized-dark-theme",
+        "category": "Themes"
+    },
+    {
+        "name": "Better TS Errors",
+        "description": "better-ts-errors",
+        "image": "https://better-ts-errors.gallerycdn.vsassets.io/extensions/better-ts-errors/better-ts-errors/1.8.2/1692920535564/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "better-ts-errors.better-ts-errors",
+        "category": "Linters"
+    },
+    {
+        "name": "Better YAML Formatter",
+        "description": "kennylong",
+        "image": "https://kennylong.gallerycdn.vsassets.io/extensions/kennylong/kubernetes-yaml-formatter/2.4.0/1733233354573/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kennylong.kubernetes-yaml-formatter",
+        "category": "Formatters"
     },
     {
         "name": "Black Formatter",
@@ -1183,6 +1393,41 @@
         "category": "Other"
     },
     {
+        "name": "CSV",
+        "description": "ReprEng",
+        "image": "https://repreng.gallerycdn.vsassets.io/extensions/repreng/csv/1.0.6/1738532516102/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ReprEng.csv",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "CSV to JSON Converter",
+        "description": "Chukwuamaka Osuji",
+        "image": "https://chukwuamaka.gallerycdn.vsassets.io/extensions/chukwuamaka/csvtojson-converter/1.0.2/1595217590320/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Chukwuamaka.csvtojson-converter",
+        "category": "Other"
+    },
+    {
+        "name": "CSV to Markdown Table",
+        "description": "phoihos",
+        "image": "https://phoihos.gallerycdn.vsassets.io/extensions/phoihos/csv-to-md-table/0.3.1/1656312106454/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "phoihos.csv-to-md-table",
+        "category": "Other"
+    },
+    {
+        "name": "CSV to Markdown Table Converter",
+        "description": "Marchiore",
+        "image": "https://marchiore.gallerycdn.vsassets.io/extensions/marchiore/csvtomarkdown/0.0.1/1582113976249/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Marchiore.csvtomarkdown",
+        "category": "Other"
+    },
+    {
+        "name": "CSV to Table",
+        "description": "Andrew Armstrong",
+        "image": "https://phplasma.gallerycdn.vsassets.io/extensions/phplasma/csv-to-table/1.4.1/1731718043706/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "phplasma.csv-to-table",
+        "category": "Other"
+    },
+    {
         "name": "Current File Path",
         "description": "yoshinorin",
         "image": "https://yoshinorin.gallerycdn.vsassets.io/extensions/yoshinorin/current-file-path/4.1.0/1710575817743/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1222,6 +1467,13 @@
         "description": "Thomaz",
         "image": "https://thomaz.gallerycdn.vsassets.io/extensions/thomaz/preparing/1.7.0/1647917867834/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "Thomaz.preparing",
+        "category": "Themes"
+    },
+    {
+        "name": "Dark C++ Theme",
+        "description": "Alexis Menard",
+        "image": "https://darktears.gallerycdn.vsassets.io/extensions/darktears/dark-c-plus-plus-theme/0.3.0/1571167391754/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "darktears.dark-c-plus-plus-theme",
         "category": "Themes"
     },
     {
@@ -1379,6 +1631,13 @@
         "category": "Other"
     },
     {
+        "name": "Depot Data Editor",
+        "description": "Afterschool Studio",
+        "image": "https://afterschool.gallerycdn.vsassets.io/extensions/afterschool/depot/1.6.1/1627693298819/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "afterschool.depot",
+        "category": "Other"
+    },
+    {
         "name": "Dev Containers",
         "description": "Microsoft",
         "image": "https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/remote-containers/0.395.0/1733940223207/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1491,6 +1750,13 @@
         "category": "Themes"
     },
     {
+        "name": "Draw Folder Structure",
+        "description": "Krivoox",
+        "image": "https://jmkrivocapich.gallerycdn.vsassets.io/extensions/jmkrivocapich/drawfolderstructure/1.4.0/1734375666808/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jmkrivocapich.drawfolderstructure",
+        "category": "Other"
+    },
+    {
         "name": "Draw.io Integration",
         "description": "Henning Dieterichs",
         "image": "https://hediet.gallerycdn.vsassets.io/extensions/hediet/vscode-drawio/1.6.6/1674119919721/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1547,28 +1813,88 @@
         "category": "Other"
     },
     {
+        "name": "Duplicate File",
+        "description": "Includable",
+        "image": "https://includable.gallerycdn.vsassets.io/extensions/includable/file-duplicate/1.0.5/1697284674076/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "includable.file-duplicate",
+        "category": "Other"
+    },
+    {
+        "name": "Easy Sass",
+        "description": "Wojciech Sura",
+        "image": "https://spook.gallerycdn.vsassets.io/extensions/spook/easysass/0.0.6/1492632757016/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "spook.easysass",
+        "category": "Other"
+    },
+    {
         "name": "eCSStractor for VSCode",
         "description": "diz",
         "image": "https://diz.gallerycdn.vsassets.io/extensions/diz/ecsstractor-port/0.0.3/1542274480137/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "diz.ecsstractor-port"
+        "extensionId": "diz.ecsstractor-port",
+        "category": "Other"
     },
     {
         "name": "Edit CSV",
         "description": "janisdd",
         "image": "https://janisdd.gallerycdn.vsassets.io/extensions/janisdd/vscode-edit-csv/0.11.1/1734614613330/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "janisdd.vscode-edit-csv"
+        "extensionId": "janisdd.vscode-edit-csv",
+        "category": "Other"
     },
-    { 
+    {
         "name": "EditorConfig for VS Code",
         "description": "EditorConfig",
         "image": "https://editorconfig.gallerycdn.vsassets.io/extensions/editorconfig/editorconfig/0.16.4/1607315835386/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "EditorConfig.EditorConfig"
+        "extensionId": "EditorConfig.EditorConfig",
+        "category": "Other"
+    },
+    {
+        "name": "EJS Beautify",
+        "description": "j69",
+        "image": "https://j69.gallerycdn.vsassets.io/extensions/j69/ejs-beautify/1.0.6/1631682823108/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "j69.ejs-beautify",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "EJS Eval",
+        "description": "kevgl",
+        "image": "https://kevgl.gallerycdn.vsassets.io/extensions/kevgl/ejs-eval/1.0.2/1621692271229/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kevgl.ejs-eval",
+        "category": "Other"
     },
     {
         "name": "EJS language support",
         "description": "DigitalBrainstem",
         "image": "https://digitalbrainstem.gallerycdn.vsassets.io/extensions/digitalbrainstem/javascript-ejs-support/1.3.3/1675866258942/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "DigitalBrainstem.javascript-ejs-support"
+        "extensionId": "DigitalBrainstem.javascript-ejs-support",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "EJS Language Support",
+        "description": "Leon S",
+        "image": "https://leonzalion.gallerycdn.vsassets.io/extensions/leonzalion/vscode-ejs/1.0.6/1650327019366/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "leonzalion.vscode-ejs",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "ejs Snippets",
+        "description": "TaodongWu",
+        "image": "https://taodongwu.gallerycdn.vsassets.io/extensions/taodongwu/ejs-snippets/0.1.0/1488163597266/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "TaodongWu.ejs-snippets",
+        "category": "Snippets"
+    },
+    {
+        "name": "EJS Snippets",
+        "description": "Theran",
+        "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
+        "extensionId": "Theran.ejs-snippets",
+        "category": "Snippets"
+    },
+    {
+        "name": "EJS Snippets And Color Highlighting",
+        "description": "Ayush Chugh",
+        "image": "https://ayushchugh.gallerycdn.vsassets.io/extensions/ayushchugh/ejs-snippets-and-color-highlighting/0.0.5/1625124300861/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "AyushChugh.ejs-snippets-and-color-highlighting",
+        "category": "Programming Languages"
     },
     {
         "name": "Emmet Keybindings",
@@ -1697,16 +2023,52 @@
         "extensionId": "figma.figma-vscode-extension"
     },
     {
+        "name": "File & Folder Icons",
+        "description": "Nextbook",
+        "image": "https://nextbook.gallerycdn.vsassets.io/extensions/nextbook/file-and-folder-icons/1.0.4/1571940593036/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "nextbook.file-and-folder-icons"
+    },
+    {
         "name": "File Browser",
         "description": "Bodil Stokke",
         "image": "https://bodil.gallerycdn.vsassets.io/extensions/bodil/file-browser/0.2.11/1668854930123/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "bodil.file-browser"
     },
     {
+        "name": "File Bunny",
+        "description": "Rob O'Leary",
+        "image": "https://robole.gallerycdn.vsassets.io/extensions/robole/file-bunny/2.4.0/1718120633627/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "robole.file-bunny"
+    },
+    {
+        "name": "File Downloader",
+        "description": "Microsoft DevLabs",
+        "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
+        "extensionId": "mindaro-dev.file-downloader"
+    },
+    {
+        "name": "File Nesting Updater",
+        "description": "Anthony Fu",
+        "image": "https://antfu.gallerycdn.vsassets.io/extensions/antfu/file-nesting/1.1.2/1671617479765/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "antfu.file-nesting"
+    },
+    {
+        "name": "File Peek",
+        "description": "abierbaum",
+        "image": "https://abierbaum.gallerycdn.vsassets.io/extensions/abierbaum/vscode-file-peek/1.0.1/1474455664924/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "abierbaum.vscode-file-peek"
+    },
+    {
         "name": "File Utils",
         "description": "Steffen Leistner",
         "image": "https://sleistner.gallerycdn.vsassets.io/extensions/sleistner/vscode-fileutils/3.10.3/1690034496024/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "sleistner.vscode-fileutils"
+    },
+    {
+        "name": "File Watcher",
+        "description": "Appulate",
+        "image": "https://appulate.gallerycdn.vsassets.io/extensions/appulate/filewatcher/2.0.0/1687877150103/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "appulate.filewatcher"
     },
     {
         "name": "file-icons",
@@ -1863,6 +2225,12 @@
         "description": "lacroixdavid1",
         "image": "https://lacroixdavid1.gallerycdn.vsassets.io/extensions/lacroixdavid1/vscode-format-context-menu/1.0.4/1536267432462/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "lacroixdavid1.vscode-format-context-menu"
+    },
+    {
+        "name": "Formatter Hero - Beautify Sass/Less/Scss/Typescript/Javascript/Jade/Pug",
+        "description": "Eno Yao",
+        "image": "https://wscats.gallerycdn.vsassets.io/extensions/wscats/qf/6.8.122/1608910778498/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Wscats.qf"
     },
     {
         "name": "Fresh Material",
@@ -2043,6 +2411,18 @@
         "description": "CodeZombie",
         "image": "https://codezombiech.gallerycdn.vsassets.io/extensions/codezombiech/gitignore/0.9.0/1658773731427/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "codezombiech.gitignore"
+    },
+    {
+        "name": "Gitlab MR",
+        "description": "Jason Nutter",
+        "image": "https://jasonn-porch.gallerycdn.vsassets.io/extensions/jasonn-porch/gitlab-mr/1.4.3/1587252319539/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jasonn-porch.gitlab-mr"
+    },
+    {
+        "name": "GitLab Workflow",
+        "description": "GitLab",
+        "image": "https://gitlab.gallerycdn.vsassets.io/extensions/gitlab/gitlab-workflow/6.2.0/1740691754882/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitLab.gitlab-workflow"
     },
     {
         "name": "GitLens — Git supercharged",
@@ -2333,10 +2713,28 @@
         "extensionId": "warren-buckley.iis-express"
     },
     {
+        "name": "Image",
+        "description": "Nerds Inc.",
+        "image": "https://n3rds-inc.gallerycdn.vsassets.io/extensions/n3rds-inc/image/0.5.0/1731122119587/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "n3rds-inc.image"
+    },
+    {
         "name": "Image preview",
         "description": "Kiss Tamás",
         "image": "https://kisstkondoros.gallerycdn.vsassets.io/extensions/kisstkondoros/vscode-gutter-preview/0.32.2/1732997211540/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "kisstkondoros.vscode-gutter-preview"
+    },
+    {
+        "name": "Image Sprites",
+        "description": "Güray Yarar",
+        "image": "https://gurayyarar.gallerycdn.vsassets.io/extensions/gurayyarar/imagesprites/1.0.0/1532282851312/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "gurayyarar.imagesprites"
+    },
+    {
+        "name": "Image Viewer",
+        "description": "Easy VSCode",
+        "image": "https://vscode-infra.gallerycdn.vsassets.io/extensions/vscode-infra/image-viewer/1.6.5/1714240704662/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscode-infra.image-viewer"
     },
     {
         "name": "Import Cost",
@@ -2525,6 +2923,12 @@
         "extensionId": "chadalen.vscode-jetbrains-icon-theme"
     },
     {
+        "name": "Jinja",
+        "description": "wholroyd",
+        "image": "https://wholroyd.gallerycdn.vsassets.io/extensions/wholroyd/jinja/0.0.8/1494339408424/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "wholroyd.jinja"
+    },
+    {
         "name": "json",
         "description": "ZainChen",
         "image": "https://zainchen.gallerycdn.vsassets.io/extensions/zainchen/json/2.0.2/1604812831428/Microsoft.VisualStudio.Services.Icons.Default",
@@ -2543,10 +2947,22 @@
         "extensionId": "nickdemayo.vscode-json-editor"
     },
     {
+        "name": "JSON Flow",
+        "description": "Manuel Gil",
+        "image": "https://imgildev.gallerycdn.vsassets.io/extensions/imgildev/vscode-json-flow/1.13.0/1737043178349/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "imgildev.vscode-json-flow"
+    },
+    {
         "name": "JSON formatter",
         "description": "Clemens Peters",
         "image": "https://clemenspeters.gallerycdn.vsassets.io/extensions/clemenspeters/format-json/1.0.3/1676116750843/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "ClemensPeters.format-json"
+    },
+    {
+        "name": "JSON to CSV",
+        "description": "Khaer Ansori",
+        "image": "https://khaeransori.gallerycdn.vsassets.io/extensions/khaeransori/json2csv/1.0.0/1728119820864/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "khaeransori.json2csv"
     },
     {
         "name": "Json to Dart Model",
@@ -2789,6 +3205,12 @@
         "extensionId": "betwo.vscode-linux-binary-preview"
     },
     {
+        "name": "Linux Desktop File support",
+        "description": "Nicolás Castellán",
+        "image": "https://nico-castell.gallerycdn.vsassets.io/extensions/nico-castell/linux-desktop-file/0.0.21/1650204300652/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "nico-castell.linux-desktop-file"
+    },
+    {
         "name": "Linux Themes for VS Code",
         "description": "SolarLiner",
         "image": "https://solarliner.gallerycdn.vsassets.io/extensions/solarliner/linux-themes/1.0.1/1506031334153/Microsoft.VisualStudio.Services.Icons.Default",
@@ -2855,6 +3277,12 @@
         "extensionId": "tomblind.local-lua-debugger-vscode"
     },
     {
+        "name": "Log File Highlighter",
+        "description": "Emil Åström",
+        "image": "https://emilast.gallerycdn.vsassets.io/extensions/emilast/logfilehighlighter/3.4.0/1735762025165/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "emilast.LogFileHighlighter"
+    },
+    {
         "name": "Lombok Annotations Support for VS Code",
         "description": "Microsoft",
         "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-lombok/1.1.2024071804/1721283529225/Microsoft.VisualStudio.Services.Icons.Default",
@@ -2901,6 +3329,12 @@
         "description": "devCAT",
         "image": "https://devcat.gallerycdn.vsassets.io/extensions/devcat/lua-debug/1.1.1/1554191578941/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "devCAT.lua-debug"
+    },
+    {
+        "name": "Luna Paint — Image Editor",
+        "description": "Daniel Imms",
+        "image": "https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/luna-paint/0.16.0/1661007177305/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Tyriar.luna-paint"
     },
     {
         "name": "Makefile Tools",
@@ -3287,6 +3721,30 @@
         "extensionId": "lakshits11.neon-city"
     },
     {
+        "name": "NGINX Configuration",
+        "description": "William Voyek",
+        "image": "https://william-voyek.gallerycdn.vsassets.io/extensions/william-voyek/vscode-nginx/0.7.2/1571759344116/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "william-voyek.vscode-nginx"
+    },
+    {
+        "name": "NGINX Configuration Language Support",
+        "description": "ahmadalli",
+        "image": "https://ahmadalli.gallerycdn.vsassets.io/extensions/ahmadalli/vscode-nginx-conf/0.3.5/1711059993560/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ahmadalli.vscode-nginx-conf"
+    },
+    {
+        "name": "NGINX Log Highlighter",
+        "description": "Jake Bathman",
+        "image": "https://jakebathman.gallerycdn.vsassets.io/extensions/jakebathman/nginx-log-highlighter/1.1.0/1509394256321/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jakebathman.nginx-log-highlighter"
+    },
+    {
+        "name": "nginx-formatter",
+        "description": "Simon Schneider",
+        "image": "https://raynigon.gallerycdn.vsassets.io/extensions/raynigon/nginx-formatter/0.0.13/1613760937734/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "raynigon.nginx-formatter"
+    },
+    {
         "name": "node-snippets",
         "description": "Chris Noring",
         "image": "https://chris-noring.gallerycdn.vsassets.io/extensions/chris-noring/node-snippets/1.3.3/1636325666317/Microsoft.VisualStudio.Services.Icons.Default",
@@ -3393,6 +3851,12 @@
         "description": "Eno Yao",
         "image": "https://wscats.gallerycdn.vsassets.io/extensions/wscats/cors-browser/1.0.11/1608035275932/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "Wscats.cors-browser"
+    },
+    {
+        "name": "Open file From Path",
+        "description": "jack89ita",
+        "image": "https://jack89ita.gallerycdn.vsassets.io/extensions/jack89ita/open-file-from-path/1.3.4/1592895636196/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jack89ita.open-file-from-path"
     },
     {
         "name": "open in browser",
@@ -3629,6 +4093,12 @@
         "extensionId": "pnp.polacode"
     },
     {
+        "name": "Polacode-2022",
+        "description": "Jeff Hykin",
+        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/polacode-2019/0.6.1/1658799448503/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jeff-hykin.polacode-2019"
+    },
+    {
         "name": "Polyglot Notebooks",
         "description": "Microsoft",
         "image": "https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/dotnet-interactive-vscode/1.0.6070011/1737499631779/Microsoft.VisualStudio.Services.Icons.Default",
@@ -3687,6 +4157,12 @@
         "description": "Mohsen Azimi",
         "image": "https://mohsen1.gallerycdn.vsassets.io/extensions/mohsen1/prettify-json/0.0.3/1474455407223/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "mohsen1.prettify-json"
+    },
+    {
+        "name": "Prettify TypeScript: Better Type Previews",
+        "description": "Myles Murphy",
+        "image": "https://mylesmurphy.gallerycdn.vsassets.io/extensions/mylesmurphy/prettify-ts/0.2.0/1740152818177/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "MylesMurphy.prettify-ts"
     },
     {
         "name": "Pretty TypeScript Errors",
@@ -3771,6 +4247,12 @@
         "description": "cantonios",
         "image": "https://cantonios.gallerycdn.vsassets.io/extensions/cantonios/project-templates/1.2.0/1544411541636/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "cantonios.project-templates"
+    },
+    {
+        "name": "psioniq File Header",
+        "description": "psioniq",
+        "image": "https://psioniq.gallerycdn.vsassets.io/extensions/psioniq/psi-header/1.25.1/1740037246960/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "psioniq.psi-header"
     },
     {
         "name": "Pubspec Assist",
@@ -3881,6 +4363,12 @@
         "extensionId": "AvneeshAgarwal.react-nextjs-snippets"
     },
     {
+        "name": "React Hooks Snippets",
+        "description": "Al Duncanson",
+        "image": "https://alduncanson.gallerycdn.vsassets.io/extensions/alduncanson/react-hooks-snippets/2.0.0/1739676374951/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "AlDuncanson.react-hooks-snippets"
+    },
+    {
         "name": "React Native Snippet",
         "description": "jundat95",
         "image": "https://jundat95.gallerycdn.vsassets.io/extensions/jundat95/react-native-snippet/0.5.6/1576310827484/Microsoft.VisualStudio.Services.Icons.Default",
@@ -3951,6 +4439,12 @@
         "description": "Red Hat",
         "image": "https://redhat.gallerycdn.vsassets.io/extensions/redhat/fabric8-analytics/0.9.5/1722424764316/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "redhat.fabric8-analytics"
+    },
+    {
+        "name": "Redux DevTools",
+        "description": "Jingkai",
+        "image": "https://jingkaizhao.gallerycdn.vsassets.io/extensions/jingkaizhao/vscode-redux-devtools/1.0.2/1552362283027/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "jingkaizhao.vscode-redux-devtools"
     },
     {
         "name": "Regex Previewer",
@@ -4037,6 +4531,12 @@
         "extensionId": "rocketseat.RocketseatReactJS"
     },
     {
+        "name": "ROOT File Viewer",
+        "description": "Alberto Pérez de Rada Fiol",
+        "image": "https://albertopdrf.gallerycdn.vsassets.io/extensions/albertopdrf/root-file-viewer/1.4.0/1731411372207/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "albertopdrf.root-file-viewer"
+    },
+    {
         "name": "RTOS Views",
         "description": "mcu-debug",
         "image": "https://mcu-debug.gallerycdn.vsassets.io/extensions/mcu-debug/rtos-views/0.0.7/1686751015734/Microsoft.VisualStudio.Services.Icons.Default",
@@ -4071,6 +4571,18 @@
         "description": "Microsoft DevLabs",
         "image": "https://msrvida.gallerycdn.vsassets.io/extensions/msrvida/vscode-sanddance/4.1.0/1675806254618/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "msrvida.vscode-sanddance"
+    },
+    {
+        "name": "Sass (.sass only)",
+        "description": "Syler",
+        "image": "https://syler.gallerycdn.vsassets.io/extensions/syler/sass-indented/1.8.33/1739551724362/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Syler.sass-indented"
+    },
+    {
+        "name": "Sass Formatter",
+        "description": "Saša Jovanović Spuki",
+        "image": "https://sasa.gallerycdn.vsassets.io/extensions/sasa/vscode-sass-format/1.1.7/1595964700138/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sasa.vscode-sass-format"
     },
     {
         "name": "Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro",
@@ -4289,6 +4801,12 @@
         "extensionId": "qwtel.sqlite-viewer"
     },
     {
+        "name": "SQLite3 Editor",
+        "description": "yy0931",
+        "image": "https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.204/1740321820018/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "yy0931.vscode-sqlite3-editor"
+    },
+    {
         "name": "SQLTools",
         "description": "Matheus Teixeira",
         "image": "https://mtxr.gallerycdn.vsassets.io/extensions/mtxr/sqltools/0.28.4/1739805157458/Microsoft.VisualStudio.Services.Icons.Default",
@@ -4457,6 +4975,18 @@
         "extensionId": "zokugun.sync-settings"
     },
     {
+        "name": "systemd-unit-file",
+        "description": "coolbear",
+        "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
+        "extensionId": "coolbear.systemd-unit-file"
+    },
+    {
+        "name": "Table Editor",
+        "description": "sswatson",
+        "image": "https://sswatson.gallerycdn.vsassets.io/extensions/sswatson/table-editor/0.3.16/1728060577888/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sswatson.table-editor"
+    },
+    {
         "name": "Tailwind Color Matcher",
         "description": "Omri Grossman",
         "image": "https://omrigrossman.gallerycdn.vsassets.io/extensions/omrigrossman/tailwind-color-matcher/1.0.8/1720041868028/Microsoft.VisualStudio.Services.Icons.Default",
@@ -4569,6 +5099,12 @@
         "description": "rafapaulin",
         "image": "https://rafapaulin.gallerycdn.vsassets.io/extensions/rafapaulin/try-material-icon-theme/3.9.0/1535818196155/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "rafapaulin.try-material-icon-theme"
+    },
+    {
+        "name": "TS/JS postfix completion",
+        "description": "Ireneusz Patalas",
+        "image": "https://ipatalas.gallerycdn.vsassets.io/extensions/ipatalas/vscode-postfix-ts/1.13.2/1714941356132/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ipatalas.vscode-postfix-ts"
     },
     {
         "name": "Turbo Console Log",
@@ -4954,7 +5490,19 @@
         "image": "https://redhat.gallerycdn.vsassets.io/extensions/redhat/vscode-yaml/1.15.0/1717739942488/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "redhat.vscode-yaml"
     },
-    { 
+    {
+        "name": "Zip File Explorer",
+        "description": "slevesque",
+        "image": "https://slevesque.gallerycdn.vsassets.io/extensions/slevesque/vscode-zipexplorer/0.3.1/1520043210813/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "slevesque.vscode-zipexplorer"
+    },
+    {
+        "name": "ZipFS - a zip file system",
+        "description": "Maël Nison",
+        "image": "https://arcanis.gallerycdn.vsassets.io/extensions/arcanis/vscode-zipfs/3.0.0/1649368992854/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "arcanis.vscode-zipfs"
+    },
+    {
         "name": "Zoom Bar",
         "description": "wraith13",
         "image": "https://wraith13.gallerycdn.vsassets.io/extensions/wraith13/zoombar-vscode/1.4.4/1676706795357/Microsoft.VisualStudio.Services.Icons.Default",
