@@ -1197,6 +1197,13 @@
         "category": "SCM Providers"
     },
     {
+        "name": "Checkstyle for Java",
+        "description": "ShengChen",
+        "image": "https://shengchen.gallerycdn.vsassets.io/extensions/shengchen/vscode-checkstyle/1.4.2/1680054146028/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "shengchen.vscode-checkstyle",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Choose a License",
         "description": "ultram4rine",
         "image": "https://ultram4rine.gallerycdn.vsassets.io/extensions/ultram4rine/vscode-choosealicense/0.9.4/1703625944120/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1230,6 +1237,13 @@
         "image": "https://compulim.gallerycdn.vsassets.io/extensions/compulim/vscode-clock/0.0.1/1474455404566/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "Compulim.vscode-clock",
         "category": "Other"
+    },
+    {
+        "name": "Cloudfoundry Manifest YML Support",
+        "description": "VMware",
+        "image": "https://vmware.gallerycdn.vsassets.io/extensions/vmware/vscode-manifest-yaml/1.56.2025030800/1741393023166/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vmware.vscode-manifest-yaml",
+        "category": "Programming Languages"
     },
     {
         "name": "CMake",
@@ -1442,6 +1456,13 @@
         "category": "Programming Languages"
     },
     {
+        "name": "Concourse CI Pipeline Editor",
+        "description": "VMware",
+        "image": "https://vmware.gallerycdn.vsassets.io/extensions/vmware/vscode-concourse/1.56.2025030800/1741393034225/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vmware.vscode-concourse",
+        "category": "Programming Languages"
+    },
+    {
         "name": "Conventional Commits",
         "description": "vivaxy",
         "image": "https://vivaxy.gallerycdn.vsassets.io/extensions/vivaxy/vscode-conventional-commits/1.26.0/1724730331483/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1461,6 +1482,13 @@
         "image": "https://marus25.gallerycdn.vsassets.io/extensions/marus25/cortex-debug/1.12.1/1694646289017/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "marus25.cortex-debug",
         "category": "Debuggers"
+    },
+    {
+        "name": "Coverage Gutters",
+        "description": "ryanluker",
+        "image": "https://ryanluker.gallerycdn.vsassets.io/extensions/ryanluker/vscode-coverage-gutters/2.13.0/1737913554375/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "ryanluker.vscode-coverage-gutters",
+        "category": "Testing"
     },
     {
         "name": "Crayon-VSCode",
@@ -1757,10 +1785,31 @@
         "category": "Other"
     },
     {
+        "name": "debug-tracker-vscode",
+        "description": "mcu-debug",
+        "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
+        "extensionId": "mcu-debug.debug-tracker-vscode",
+        "category": "Other"
+    },
+    {
         "name": "Debugger for Java",
         "description": "Microsoft",
         "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-java-debug/0.58.2024090204/1725253044625/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "vscjava.vscode-java-debug",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Decompiler",
+        "description": "tintinweb",
+        "image": "https://tintinweb.gallerycdn.vsassets.io/extensions/tintinweb/vscode-decompiler/0.1.0/1658326527090/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "tintinweb.vscode-decompiler",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Decompiler for Java",
+        "description": "David Gileadi",
+        "image": "https://dgileadi.gallerycdn.vsassets.io/extensions/dgileadi/java-decompiler/0.0.4/1711508847979/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "dgileadi.java-decompiler",
         "category": "Programming Languages"
     },
     {
@@ -1827,13 +1876,6 @@
         "category": "Azure"
     },
     {
-        "name": "Docker Registry Explorer",
-        "description": "Tauqeer Hassan",
-        "image": "https://tqrhsn.gallerycdn.vsassets.io/extensions/tqrhsn/vscode-docker-registry-explorer/0.1.3/1533881464222/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "TqrHsn.vscode-docker-registry-explorer",
-        "category": "Other"
-    },
-    {
         "name": "Docker Extension Pack",
         "description": "Jun Han",
         "image": "https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/docker-extension-pack/0.0.1/1500087230146/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1846,6 +1888,13 @@
         "image": "https://henriiik.gallerycdn.vsassets.io/extensions/henriiik/docker-linter/0.5.0/1511112618141/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "henriiik.docker-linter",
         "category": "Linters"
+    },
+    {
+        "name": "Docker Registry Explorer",
+        "description": "Tauqeer Hassan",
+        "image": "https://tqrhsn.gallerycdn.vsassets.io/extensions/tqrhsn/vscode-docker-registry-explorer/0.1.3/1533881464222/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "TqrHsn.vscode-docker-registry-explorer",
+        "category": "Other"
     },
     {
         "name": "Docker Run",
@@ -2192,6 +2241,18 @@
         "description": "Microsoft",
         "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-java-pack/0.29.2024091906/1726729234947/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "vscjava.vscode-java-pack"
+    },
+    {
+        "name": "Extension Pack for Java + Spring",
+        "description": "Loiane Groner",
+        "image": "https://loiane.gallerycdn.vsassets.io/extensions/loiane/java-spring-extension-pack/0.2.3/1711830542608/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "loiane.java-spring-extension-pack"
+    },
+    {
+        "name": "Extension Pack for Java Auto Config",
+        "description": "Pleiades",
+        "image": "https://pleiades.gallerycdn.vsassets.io/extensions/pleiades/java-extension-pack-jdk/2025.217.0/1739791090645/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Pleiades.java-extension-pack-jdk"
     },
     {
         "name": "Figma for VS Code",
@@ -2584,6 +2645,18 @@
         "extensionId": "GitHub.codespaces"
     },
     {
+        "name": "GitHub Copilot",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/copilot/1.280.1421/1741493793091/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.copilot"
+    },
+    {
+        "name": "GitHub Copilot Chat",
+        "description": "GitHub",
+        "image": "https://github.gallerycdn.vsassets.io/extensions/github/copilot-chat/0.26.2025030701/1741321495717/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "GitHub.copilot-chat"
+    },
+    {
         "name": "GitHub Pull Requests",
         "description": "GitHub",
         "image": "https://github.gallerycdn.vsassets.io/extensions/github/vscode-pull-request-github/0.103.2024121904/1734582273259/Microsoft.VisualStudio.Services.Icons.Default",
@@ -2738,6 +2811,12 @@
         "description": "Kamesh Kotwani",
         "image": "https://kameshkotwani.gallerycdn.vsassets.io/extensions/kameshkotwani/google-search/0.0.1/1551944897725/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "kameshkotwani.google-search"
+    },
+    {
+        "name": "Gradle Extension Pack",
+        "description": "Richard Willis",
+        "image": "https://richardwillis.gallerycdn.vsassets.io/extensions/richardwillis/vscode-gradle-extension-pack/0.0.4/1632339967201/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "richardwillis.vscode-gradle-extension-pack"
     },
     {
         "name": "Gradle for Java",
@@ -3134,6 +3213,24 @@
         "description": "Oracle Corporation",
         "image": "https://oracle.gallerycdn.vsassets.io/extensions/oracle/oracle-java/23.0.1/1732640571745/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "Oracle.oracle-java"
+    },
+    {
+        "name": "Java IDE",
+        "description": "JavaHub",
+        "image": "https://youmaycallmev.gallerycdn.vsassets.io/extensions/youmaycallmev/vscode-java-saber/0.1.2/1619351338404/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "YouMayCallMeV.vscode-java-saber"
+    },
+    {
+        "name": "Java Language Support",
+        "description": "George Fraser",
+        "image": "https://georgewfraser.gallerycdn.vsassets.io/extensions/georgewfraser/vscode-javac/0.2.46/1688618463228/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "georgewfraser.vscode-javac"
+    },
+    {
+        "name": "Java Run",
+        "description": "caolin",
+        "image": "https://caolin.gallerycdn.vsassets.io/extensions/caolin/java-run/1.1.4/1486692248325/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "caolin.java-run"
     },
     {
         "name": "JavaScript (ES6) code snippets",
@@ -4018,6 +4115,12 @@
         "extensionId": "SetiawanJodi.myci-extension"
     },
     {
+        "name": "MybatisX",
+        "description": "yangbaopan",
+        "image": "https://yangbaopan.gallerycdn.vsassets.io/extensions/yangbaopan/vscode-java-ibatisx/2024.12.11/1733735214176/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "yangbaopan.vscode-java-ibatisx"
+    },
+    {
         "name": "MySQL",
         "description": "Weijan Chen",
         "image": "https://cweijan.gallerycdn.vsassets.io/extensions/cweijan/vscode-mysql-client2/8.1.6/1740064092494/Microsoft.VisualStudio.Services.Icons.Default",
@@ -4490,12 +4593,6 @@
         "description": "P & P",
         "image": "https://pnp.gallerycdn.vsassets.io/extensions/pnp/polacode/0.3.4/1569601471865/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "pnp.polacode"
-    },
-    {
-        "name": "Polacode-2022",
-        "description": "Jeff Hykin",
-        "image": "https://jeff-hykin.gallerycdn.vsassets.io/extensions/jeff-hykin/polacode-2019/0.6.1/1658799448503/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "jeff-hykin.polacode-2019"
     },
     {
         "name": "Polyglot Notebooks",
@@ -5182,6 +5279,12 @@
         "extensionId": "jerrygoyal.shortcut-menu-bar"
     },
     {
+        "name": "Show Springboot dependency version properties and values.",
+        "description": "Sandip Chitale",
+        "image": "https://sandipchitale.gallerycdn.vsassets.io/extensions/sandipchitale/vscode-springboot-dependency-versions/1.0.10/1649140637361/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "sandipchitale.vscode-springboot-dependency-versions"
+    },
+    {
         "name": "Signed Dark Pro",
         "description": "Alex Munene",
         "image": "https://enenumxela.gallerycdn.vsassets.io/extensions/enenumxela/signed-dark-pro/1.2.0/1647687276309/Microsoft.VisualStudio.Services.Icons.Default",
@@ -5252,6 +5355,36 @@
         "description": "Danny Connell",
         "image": "https://dannyconnell.gallerycdn.vsassets.io/extensions/dannyconnell/split-html-attributes/1.0.10/1576590030363/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "dannyconnell.split-html-attributes"
+    },
+    {
+        "name": "Spring Boot Dashboard",
+        "description": "Microsoft",
+        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-spring-boot-dashboard/0.14.2024073000/1722304807801/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscjava.vscode-spring-boot-dashboard"
+    },
+    {
+        "name": "Spring Boot Extension Pack",
+        "description": "VMware",
+        "image": "https://vmware.gallerycdn.vsassets.io/extensions/vmware/vscode-boot-dev-pack/0.2.2/1738084841751/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vmware.vscode-boot-dev-pack"
+    },
+    {
+        "name": "Spring Boot Snippets",
+        "description": "Developer Soapbox",
+        "image": "https://developersoapbox.gallerycdn.vsassets.io/extensions/developersoapbox/vscode-springboot-snippets/1.2.0/1607650192735/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "developersoapbox.vscode-springboot-snippets"
+    },
+    {
+        "name": "Spring Boot Tools",
+        "description": "VMware",
+        "image": "https://vmware.gallerycdn.vsassets.io/extensions/vmware/vscode-spring-boot/1.61.2025030800/1741394420885/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vmware.vscode-spring-boot"
+    },
+    {
+        "name": "Spring Initializr Java Support",
+        "description": "Microsoft",
+        "image": "hthttps://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-spring-initializr/0.11.2024112703/1732694717130/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "vscjava.vscode-spring-initializr"
     },
     {
         "name": "SQL (BigQuery)",
@@ -5642,12 +5775,6 @@
         "description": "BriteSnow",
         "image": "https://britesnow.gallerycdn.vsassets.io/extensions/britesnow/vscode-toggle-quotes/0.3.6/1641325296851/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "BriteSnow.vscode-toggle-quotes"
-    },
-    {
-        "name": "Tooltitude for Go (GoLang)",
-        "description": "Tooltitude Team",
-        "image": "https://tooltitudeteam.gallerycdn.vsassets.io/extensions/tooltitudeteam/tooltitude/0.117.0/1740579548098/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "tooltitudeteam.tooltitude"
     },
     {
         "name": "Total TypeScript",
