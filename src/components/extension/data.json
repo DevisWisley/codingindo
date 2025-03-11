@@ -1365,6 +1365,20 @@
         "category": "Snippets"
     },
     {
+        "name": "Codeium Enterprise Updater",
+        "description": "Codeium",
+        "image": "https://codeium.gallerycdn.vsassets.io/extensions/codeium/codeium-enterprise-updater/1.0.18/1728942640585/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Codeium.codeium-enterprise-updater",
+        "category": "Programming Languages"
+    },
+    {
+        "name": "Codeium: AI Coding Autocomplete and Chat for Python, Javascript, Typescript, Java, Go, and more",
+        "description": "Codeium",
+        "image": "https://codeium.gallerycdn.vsassets.io/extensions/codeium/codeium/1.41.2/1741139022661/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Codeium.codeium",
+        "category": "Programming Languages"
+    },
+    {
         "name": "CodeLLDB",
         "description": "Vadim Chugunov",
         "image": "https://vadimcn.gallerycdn.vsassets.io/extensions/vadimcn/vscode-lldb/1.11.4/1739785980777/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1659,6 +1673,13 @@
         "category": "Themes"
     },
     {
+        "name": "Dark Low Contrast Themes",
+        "description": "Evgeniy Petukhov",
+        "image": "https://evgeniypetukhov.gallerycdn.vsassets.io/extensions/evgeniypetukhov/dark-low-contrast/0.6.0/1599165554066/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "EvgeniyPetukhov.dark-low-contrast",
+        "category": "Themes"
+    },
+    {
         "name": "Dart",
         "description": "Dart Code",
         "image": "https://dart-code.gallerycdn.vsassets.io/extensions/dart-code/dart-code/3.103.20241211/1733911990463/Microsoft.VisualStudio.Services.Icons.Default",
@@ -1852,6 +1873,34 @@
         "description": "Sayaib Sarkar",
         "image": "https://sayaib.gallerycdn.vsassets.io/extensions/sayaib/hue-console/10.40.103/1740048582613/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "sayaib.hue-console",
+        "category": "Snippets"
+    },
+    {
+        "name": "Discord Presence",
+        "description": "Crawl",
+        "image": "https://icrawl.gallerycdn.vsassets.io/extensions/icrawl/discord-vscode/5.8.0/1643564745218/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "icrawl.discord-vscode",
+        "category": "Other"
+    },
+    {
+        "name": "Discord Rich Presence",
+        "description": "leonardssh",
+        "image": "https://leonardssh.gallerycdn.vsassets.io/extensions/leonardssh/vscord/5.2.13/1724249793680/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "LeonardSSH.vscord",
+        "category": "Visualization"
+    },
+    {
+        "name": "Discord Theme",
+        "description": "tanmay",
+        "image": "https://tanmay.gallerycdn.vsassets.io/extensions/tanmay/discord-theme/1.0.6/1618468383754/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "tanmay.discord-theme",
+        "category": "Themes"
+    },
+    {
+        "name": "Discord Tools",
+        "description": "Darkempire",
+        "image": "https://darkempire78.gallerycdn.vsassets.io/extensions/darkempire78/discord-tools/1.5.0/1636647142810/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Darkempire78.discord-tools",
         "category": "Snippets"
     },
     {
@@ -2096,73 +2145,78 @@
         "name": "Elm Emmet",
         "description": "Max Vyz.",
         "image": "https://necinc.gallerycdn.vsassets.io/extensions/necinc/elmmet/1.0.1/1534748759999/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "necinc.elmmet"
+        "extensionId": "necinc.elmmet",
+        "category": "Formatters"
     },
     {
         "name": "Emmet commands and keybindings",
         "description": "Bognaum",
         "image": "https://bognaum.gallerycdn.vsassets.io/extensions/bognaum/emmet-commands-and-keybindings/2.0.5/1659080507095/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Bognaum.emmet-commands-and-keybindings"
+        "extensionId": "Bognaum.emmet-commands-and-keybindings",
+        "category": "Keymaps"
     },
     {
         "name": "Emmet JSS",
         "description": "Andrew Korin",
         "image": "https://carbonid1.gallerycdn.vsassets.io/extensions/carbonid1/emmet-jss/1.0.0/1571768190083/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "carbonid1.emmet-jss"
+        "extensionId": "carbonid1.emmet-jss",
+        "category": "Snippets"
     },
     {
         "name": "Emmet Keybindings",
         "description": "Andrés Gutiérrez",
         "image": "https://agutierrezr.gallerycdn.vsassets.io/extensions/agutierrezr/emmet-keybindings/1.2.1/1636557537614/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "agutierrezr.emmet-keybindings"
+        "extensionId": "agutierrezr.emmet-keybindings",
+        "category": "Keymaps"
     },
     {
         "name": "Emmet Live",
         "description": "Yurii Semeniuk",
         "image": "https://ysemeniuk.gallerycdn.vsassets.io/extensions/ysemeniuk/emmet-live/1.0.0/1571584988996/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ysemeniuk.emmet-live"
+        "extensionId": "ysemeniuk.emmet-live",
+        "category": "Other"
     },
     {
         "name": "Emoji Log",
         "description": "Ahmad Awais ⚡",
         "image": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/emoji-log-vscode/1.3.0/1676443927544/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ahmadawais.emoji-log-vscode"
-    },
-    {
-        "name": "Enhanced Status Bar",
-        "description": "Shellomo",
-        "image": "https://shellomo.gallerycdn.vsassets.io/extensions/shellomo/statusbar-notes/1.0.3/1732227115308/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "Shellomo.statusbar-notes"
+        "extensionId": "ahmadawais.emoji-log-vscode",
+        "category": "Other"
     },
     {
         "name": "ENV",
         "description": "Jakka Prihatna",
         "image": "https://irongeek.gallerycdn.vsassets.io/extensions/irongeek/vscode-env/0.1.0/1602639667760/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "IronGeek.vscode-env"
+        "extensionId": "IronGeek.vscode-env",
+        "category": "Programming Languages"
     },
     {
         "name": "Env Symbol Provider",
         "description": "ctf0",
         "image": "https://ctf0.gallerycdn.vsassets.io/extensions/ctf0/env-symbol-provider/0.0.4/1676542944924/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "ctf0.env-symbol-provider"
+        "extensionId": "ctf0.env-symbol-provider",
+        "category": "Programming Languages"
     },
     {
         "name": "env-cmd-file-syntax",
         "description": "Nixon",
         "image": "https://cdn.vsassets.io/v/M252_20250218.9/_content/Header/default_icon_128.png",
-        "extensionId": "Nixon.env-cmd-file-syntax"
+        "extensionId": "Nixon.env-cmd-file-syntax",
+        "category": "Programming Languages"
     },
     {
         "name": "eppz! (C# theme for Unity)",
         "description": "eppz!",
         "image": "https://eppz.gallerycdn.vsassets.io/extensions/eppz/eppz-code/1.2.52/1595543779806/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "eppz.eppz-code"
+        "extensionId": "eppz.eppz-code",
+        "category": "Programming Languages"
     },
     {
         "name": "Error Gutters",
         "description": "IgorSbitnev",
         "image": "https://igorsbitnev.gallerycdn.vsassets.io/extensions/igorsbitnev/error-gutters/1.0.1/1544476781922/Microsoft.VisualStudio.Services.Icons.Default",
-        "extensionId": "IgorSbitnev.error-gutters"
+        "extensionId": "IgorSbitnev.error-gutters",
+        "category": "Linters"
     },
     {
         "name": "Error Lens",
@@ -2945,6 +2999,12 @@
         "extensionId": "ybaumes.highlight-trailing-white-spaces"
     },
     {
+        "name": "HLSL Tools",
+        "description": "Tim G. Jones",
+        "image": "https://timgjones.gallerycdn.vsassets.io/extensions/timgjones/hlsltools/1.1.303/1635105031306/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "TimGJones.hlsltools"
+    },
+    {
         "name": "HTML (C#)",
         "description": "Fireside21",
         "image": "https://fireside21.gallerycdn.vsassets.io/extensions/fireside21/cshtml/0.1.3/1537566392605/Microsoft.VisualStudio.Services.Icons.Default",
@@ -3363,6 +3423,12 @@
         "description": "Gregor Biswanger",
         "image": "https://gregorbiswanger.gallerycdn.vsassets.io/extensions/gregorbiswanger/json2ts/0.0.6/1474455155728/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "GregorBiswanger.json2ts"
+    },
+    {
+        "name": "JSS Snippets",
+        "description": "visioncan",
+        "image": "https://visioncan.gallerycdn.vsassets.io/extensions/visioncan/vscode-jss-snippets/0.2.2/1501504109036/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "visioncan.vscode-jss-snippets"
     },
     {
         "name": "jump",
@@ -5261,6 +5327,12 @@
         "extensionId": "slevesque.shader"
     },
     {
+        "name": "ShaderlabVSCode(Free)",
+        "description": "AMLOVEY",
+        "image": "https://amlovey.gallerycdn.vsassets.io/extensions/amlovey/shaderlabvscodefree/1.3.6/1701475017048/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "amlovey.shaderlabvscodefree"
+    },
+    {
         "name": "Shades of Purple",
         "description": "Ahmad Awais ⚡",
         "image": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/shades-of-purple/7.3.2/1711003927871/Microsoft.VisualStudio.Services.Icons.Default",
@@ -5383,7 +5455,7 @@
     {
         "name": "Spring Initializr Java Support",
         "description": "Microsoft",
-        "image": "hthttps://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-spring-initializr/0.11.2024112703/1732694717130/Microsoft.VisualStudio.Services.Icons.Default",
+        "image": "https://vscjava.gallerycdn.vsassets.io/extensions/vscjava/vscode-spring-initializr/0.11.2024112703/1732694717130/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "vscjava.vscode-spring-initializr"
     },
     {
@@ -5865,6 +5937,66 @@
         "description": "Thiago Lúcio Bittencourt",
         "image": "https://thiagolciobittencourt.gallerycdn.vsassets.io/extensions/thiagolciobittencourt/ubuntuvscode/0.0.6/1637412990278/Microsoft.VisualStudio.Services.Icons.Default",
         "extensionId": "ThiagoLcioBittencourt.ubuntuvscode"
+    },
+    {
+        "name": "Unity",
+        "description": "Microsoft",
+        "image": "https://visualstudiotoolsforunity.gallerycdn.vsassets.io/extensions/visualstudiotoolsforunity/vstuc/1.1.0/1739204847914/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "VisualStudioToolsForUnity.vstuc"
+    },
+    {
+        "name": "Unity Code",
+        "description": "Pradeep Puri Goswami",
+        "image": "https://pradeeppurigoswami.gallerycdn.vsassets.io/extensions/pradeeppurigoswami/unity-code/0.0.2/1632735127991/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "PradeepPuriGoswami.unity-code"
+    },
+    {
+        "name": "Unity Code Snippets",
+        "description": "cemuka",
+        "image": "https://cemuka.gallerycdn.vsassets.io/extensions/cemuka/unity-code-snippets/0.1.1/1654116840677/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "cemuka.unity-code-snippets"
+    },
+    {
+        "name": "Unity Code Snippets",
+        "description": "Kleber Silva",
+        "image": "https://kleber-swf.gallerycdn.vsassets.io/extensions/kleber-swf/unity-code-snippets/2.4.0/1708884098302/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "kleber-swf.unity-code-snippets"
+    },
+    {
+        "name": "Unity Code Snippets Improved",
+        "description": "Emil Blennow",
+        "image": "https://blennster.gallerycdn.vsassets.io/extensions/blennster/unity-code-snippets-improved/1.4.1/1556925908620/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "blennster.unity-code-snippets-improved"
+    },
+    {
+        "name": "Unity Game Dev Bundle",
+        "description": "Jason A. Martin",
+        "image": "https://jasonamartin.gallerycdn.vsassets.io/extensions/jasonamartin/unity-game-dev-bundle/1.0.0/1561310679198/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "JasonAMartin.unity-game-dev-bundle"
+    },
+    {
+        "name": "Unity Snippets",
+        "description": "Ycleptic Studios",
+        "image": "https://yclepticstudios.gallerycdn.vsassets.io/extensions/yclepticstudios/unity-snippets/0.1.2/1474455512149/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "YclepticStudios.unity-snippets"
+    },
+    {
+        "name": "Unity Snippets Modified",
+        "description": "lionize",
+        "image": "https://lionize.gallerycdn.vsassets.io/extensions/lionize/unity-snippets-modified/0.4.0/1521726890865/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "lionize.unity-snippets-modified"
+    },
+    {
+        "name": "Unity Toolbox",
+        "description": "maxsroka",
+        "image": "https://pixl.gallerycdn.vsassets.io/extensions/pixl/unity-toolbox/100.0.3/1722280238340/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "pixl.unity-toolbox"
+    },
+    {
+        "name": "Unity Tools",
+        "description": "Avin Zarlez",
+        "image": "https://tobiah.gallerycdn.vsassets.io/extensions/tobiah/unity-tools/1.2.12/1599087118649/Microsoft.VisualStudio.Services.Icons.Default",
+        "extensionId": "Tobiah.unity-tools"
     },
     {
         "name": "Unofficial ClearCase SCM Commands",
